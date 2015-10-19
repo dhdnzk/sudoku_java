@@ -53,7 +53,7 @@ public class FunctionTest {
 
     @Test
     public void solveWhenNumOfZeroIsOneOfCol() {
-        
+
     }
 
 }
