@@ -108,7 +108,31 @@ public class Function {
         return numOfZero;
     }
 
+    public static int whatSectionIsThisSpot(int[][] TwoDArr, int row, int col) {
+        int section = 0;
 
+        if ( 0 * ( TwoDArr.length / 3 ) < row && row <=  1 * ( TwoDArr.length / 3 ) )
+            section ++;
+        else if ( 1 * ( TwoDArr.length / 3 ) < row && row <=  2 * ( TwoDArr.length / 3 ) )
+            section += 4;
+        else if ( 2 * ( TwoDArr.length / 3 ) < row && row <=  3 * ( TwoDArr.length / 3 ) )
+            section += 7;
+        else {
+            return -1;
+        }
+
+        if ( 0 * ( TwoDArr[row - 1].length / 3 ) < col && col <= 1 * ( TwoDArr[row-1].length / 3 ) ) {}
+        else if ( 1 * ( TwoDArr[row - 1].length / 3 ) < col && col <= 2 * ( TwoDArr[row-1].length / 3 ) ) {
+            section ++;
+        }
+        else if ( 2 * ( TwoDArr[row - 1].length / 3 ) < col && col <= 3 * ( TwoDArr[row-1].length / 3 ) ) {
+            section += 2;
+        }
+        else {
+            return -1;
+        }
+        return section;
+    }
 
     //매개변수 입력 순서 : 2차원 배열 주소, 행 번호, 열 번호, 계산할 숫자
     //반환형 : 해당 십자가에 입력한 숫자가 없으면 true를 반환 해당 십자가에 입력한 숫자가 존재하면 false를 반환
@@ -125,30 +149,5 @@ public class Function {
         return true;
     }
 
-    public static int whatSectionIsThisSpot(int[][] TwoDArr, int row, int col) {
-        int section = 1;
-
-        // 세로 길이 /3을 해서 나온 값*0 <= row <세로 길이/3을 해서 나온 값*1
-        // 
-
-        // 세로 길이 /3을 해서 나온 값*1 <= row < 세로 길이/3을 해서 나온 값*2
-        //
-
-        //세로 길이 /3을 해서 나온 값2 <= row < 세로 길이/3을 해서 나온 값 *3
-        //
-
-
-        section +=
-
-
-
-
-
-
-
-
-        return section;
-    }
 }
-
 

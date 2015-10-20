@@ -96,12 +96,21 @@ public class FunctionTest {
        };
 
        TestCase.assertEquals( 1, Function.whatSectionIsThisSpot( testArr, 1, 1 ) );
+       TestCase.assertEquals( 3, Function.whatSectionIsThisSpot( testArr, 2, 7 ) );
+       TestCase.assertEquals( 8, Function.whatSectionIsThisSpot( testArr, 7, 6 ) );
+       TestCase.assertEquals( 4, Function.whatSectionIsThisSpot( testArr, 4, 3 ) );
+       TestCase.assertEquals( 9, Function.whatSectionIsThisSpot( testArr, 7, 7 ) );
+       TestCase.assertEquals( 6, Function.whatSectionIsThisSpot( testArr, 6, 7 ) );
+       TestCase.assertEquals( -1, Function.whatSectionIsThisSpot( testArr, 0, 9 ) );
+       TestCase.assertEquals( -1, Function.whatSectionIsThisSpot( testArr, 10, 3 ) );
+       TestCase.assertEquals( -1, Function.whatSectionIsThisSpot( testArr, 1, 10 ) );
+       TestCase.assertEquals( -1, Function.whatSectionIsThisSpot( testArr, 10, 10 ) );
 
    }
 
 
     @Test
-    public void isThereSelectedNumberOrNotOnCross() {
+    public void couldBePlacedOnTheCenterOfThisCross() {
         int[][] testArr = {
                 { 1, 0, 3, 0, 0, 6, 0, 8, 9 },
                 { 2, 3, 0, 5, 6, 0, 8, 9, 0 },
