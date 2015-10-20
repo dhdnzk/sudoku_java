@@ -51,19 +51,20 @@
     <favorites_list name="sudoku" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5804688">
+    <splitter split-orientation="horizontal" split-proportion="0.57109374">
       <split-first>
         <leaf>
           <file leaf-file-name="JuniorExplanation.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/sudoku/JuniorExplanation.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.2918455">
-                  <caret line="155" column="0" selection-start-line="155" selection-start-column="0" selection-end-line="155" selection-end-column="0" />
+                <state vertical-scroll-proportion="0.77253217">
+                  <caret line="169" column="0" selection-start-line="169" selection-start-column="0" selection-end-line="169" selection-end-column="0" />
                   <folding>
                     <element signature="method#calcNumOfZeroOfRow#0;class#JuniorExplanation#0" expanded="false" />
                     <element signature="method#calcNumOfZeroOfCol#0;class#JuniorExplanation#0" expanded="false" />
                     <element signature="method#calcNumOfZeroOfThreeByThreeSection#0;class#JuniorExplanation#0" expanded="false" />
                     <element signature="method#whatSectionIsThisSpot#0;class#JuniorExplanation#0" expanded="false" />
+                    <element signature="method#couldBePlacedOnTheCenterOfThisCross#0;class#JuniorExplanation#0" expanded="false" />
                   </folding>
                 </state>
               </provider>
@@ -76,10 +77,16 @@
           <file leaf-file-name="JuniorExplanationTest.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/test/java/sudoku/JuniorExplanationTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-0.115879826">
-                  <caret line="133" column="15" selection-start-line="133" selection-start-column="15" selection-end-line="133" selection-end-column="15" />
+                <state vertical-scroll-proportion="0.75107294">
+                  <caret line="178" column="0" selection-start-line="178" selection-start-column="0" selection-end-line="178" selection-end-column="0" />
                   <folding>
                     <element signature="imports" expanded="true" />
+                    <element signature="method#calcNumOfZeroOfRow#0;class#JuniorExplanationTest#0" expanded="false" />
+                    <element signature="method#calcNumOfZeroOfCol#0;class#JuniorExplanationTest#0" expanded="false" />
+                    <element signature="method#calcNumOfZeroOfThreeByThreeSection#0;class#JuniorExplanationTest#0" expanded="false" />
+                    <element signature="method#whatSectionIsThisSpot#0;class#JuniorExplanationTest#0" expanded="false" />
+                    <element signature="method#couldBePlacedOnTheCenterOfThisCross#0;class#JuniorExplanationTest#0" expanded="false" />
+                    <element signature="method#returnSectionMinimumNumberOfZero#0;class#JuniorExplanationTest#0" expanded="false" />
                   </folding>
                 </state>
               </provider>
@@ -110,8 +117,8 @@
         <option value="$PROJECT_DIR$/src/main/java/sudoku/sudokuTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/sudoku/Problem.java" />
         <option value="$PROJECT_DIR$/src/main/java/sudoku/SudokuTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/sudoku/JuniorExplanation.java" />
         <option value="$PROJECT_DIR$/src/test/java/sudoku/JuniorExplanationTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/sudoku/JuniorExplanation.java" />
       </list>
     </option>
   </component>
@@ -705,12 +712,12 @@
       <created>1445265442530</created>
       <option name="number" value="Default" />
       <updated>1445265442530</updated>
-      <workItem from="1445265444679" duration="20376000" />
+      <workItem from="1445265444679" duration="21252000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20376000" />
+    <option name="totallyTimeSpent" value="21252000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -757,80 +764,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/sudoku/JuniorExplanation.java</url>
-          <line>151</line>
-          <properties />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/sudoku/JuniorExplanation.java</url>
-          <line>162</line>
-          <properties />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/sudoku/JuniorExplanation.java</url>
-          <line>150</line>
-          <properties />
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/sudoku/JuniorExplanation.java</url>
-          <line>152</line>
-          <properties />
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/sudoku/JuniorExplanation.java</url>
-          <line>154</line>
-          <properties />
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/sudoku/JuniorExplanation.java</url>
-          <line>153</line>
-          <properties />
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/sudoku/JuniorExplanation.java</url>
-          <line>155</line>
-          <properties />
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/sudoku/JuniorExplanation.java</url>
-          <line>158</line>
-          <properties />
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/sudoku/JuniorExplanation.java</url>
-          <line>157</line>
-          <properties />
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/sudoku/JuniorExplanation.java</url>
-          <line>159</line>
-          <properties />
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/sudoku/JuniorExplanation.java</url>
-          <line>160</line>
-          <properties />
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/sudoku/JuniorExplanation.java</url>
-          <line>161</line>
-          <properties />
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="12" />
+      <option name="time" value="13" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -855,25 +789,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/sudoku/JuniorExplanationTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.75107294">
+          <caret line="178" column="0" selection-start-line="178" selection-start-column="0" selection-end-line="178" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#calcNumOfZeroOfRow#0;class#JuniorExplanationTest#0" expanded="false" />
+            <element signature="method#calcNumOfZeroOfCol#0;class#JuniorExplanationTest#0" expanded="false" />
+            <element signature="method#calcNumOfZeroOfThreeByThreeSection#0;class#JuniorExplanationTest#0" expanded="false" />
+            <element signature="method#whatSectionIsThisSpot#0;class#JuniorExplanationTest#0" expanded="false" />
+            <element signature="method#couldBePlacedOnTheCenterOfThisCross#0;class#JuniorExplanationTest#0" expanded="false" />
+            <element signature="method#returnSectionMinimumNumberOfZero#0;class#JuniorExplanationTest#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/sudoku/JuniorExplanation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2918455">
-          <caret line="155" column="0" selection-start-line="155" selection-start-column="0" selection-end-line="155" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.77253217">
+          <caret line="169" column="0" selection-start-line="169" selection-start-column="0" selection-end-line="169" selection-end-column="0" />
           <folding>
             <element signature="method#calcNumOfZeroOfRow#0;class#JuniorExplanation#0" expanded="false" />
             <element signature="method#calcNumOfZeroOfCol#0;class#JuniorExplanation#0" expanded="false" />
             <element signature="method#calcNumOfZeroOfThreeByThreeSection#0;class#JuniorExplanation#0" expanded="false" />
             <element signature="method#whatSectionIsThisSpot#0;class#JuniorExplanation#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/sudoku/JuniorExplanationTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.115879826">
-          <caret line="133" column="15" selection-start-line="133" selection-start-column="15" selection-end-line="133" selection-end-column="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="method#couldBePlacedOnTheCenterOfThisCross#0;class#JuniorExplanation#0" expanded="false" />
           </folding>
         </state>
       </provider>
