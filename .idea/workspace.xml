@@ -40,8 +40,8 @@
       <file leaf-file-name="FunctionTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/sudoku/FunctionTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.31413612">
-              <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
+            <state vertical-scroll-proportion="-1.1596859">
+              <caret line="13" column="27" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -589,12 +589,12 @@
       <created>1445265442530</created>
       <option name="number" value="Default" />
       <updated>1445265442530</updated>
-      <workItem from="1445265444679" duration="4237000" />
+      <workItem from="1445265444679" duration="4386000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4237000" />
+    <option name="totallyTimeSpent" value="4386000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -658,8 +658,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/sudoku/FunctionTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.31413612">
-          <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
+        <state vertical-scroll-proportion="-1.1596859">
+          <caret line="13" column="27" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
