@@ -4,8 +4,6 @@ import junit.framework.TestCase;
 import org.junit.Test;
 
 //TODO 뭉쳐있는 9개 칸에 0 개수 확인 후 가능하면 푸는 방법
-//  2차원 배열에서의 임의의 인덱스 값을 매개변수로 받은 뒤에, 몇번째 섹터에 위치한 녀석인지 반환하는 메소드
-//  몇번째 섹터에 위치한 녀석인지를 매개변수로 받아서 해당 구역의 0의 개수를 구해서 반환하는 메소드
 //TODO 가로로 한줄 검사 후에 풀 수 있으면 푸는 방법
 //TODO 세로로 한줄 검사 후에 풀 수 있으면 푸는 방법
 //TODO 인덱스 불끄기 방식
@@ -14,28 +12,30 @@ import org.junit.Test;
 public class FunctionTest {
 
     @Test
-    public void returnNumOfZeroOfRow() {
-        int[] testArr1 = { 1, 2, 3, 4, 5, 6, 7, 8, 0};
-        int[] testArr2 = { 1, 0, 3, 4, 5, 6, 7, 8, 0};
-        int[] testArr3 = { 1, 2, 0, 0, 5, 6, 7, 8, 0};
-        int[] testArr4 = { 0, 2, 0, 0, 5, 6, 7, 8, 0};
-        int[][] testArr5 = {
+    public void calcNumOfZeroOfRow() {
+        int[][] testArr1 = {
+                { 1, 2, 3, 4, 5, 6, 7, 8, 0}
+        };
+        int[][] testArr2 = {
+                { 1, 0, 3, 4, 5, 6, 7, 8, 0},
+                { 1, 2, 0, 0, 5, 6, 7, 8, 0}
+        };
+        int[][] testArr3 = {
                 { 1, 7, 0, 0, 5, 0, 2, 0, 0 },
                 { 1, 2, 3, 4, 5, 6, 7, 0, 0 },
                 { 0, 0, 0, 0, 0, 0, 0, 0, 0 }
         };
 
-        TestCase.assertEquals( 1, Function.returnNumOfZeroOfRow( testArr1 ) );
-        TestCase.assertEquals( 2, Function.returnNumOfZeroOfRow( testArr2 ) );
-        TestCase.assertEquals( 3, Function.returnNumOfZeroOfRow( testArr3 ) );
-        TestCase.assertEquals( 4, Function.returnNumOfZeroOfRow( testArr4 ) );
-        TestCase.assertEquals( 5, Function.returnNumOfZeroOfRow( testArr5, 1 ) );
-        TestCase.assertEquals( 2, Function.returnNumOfZeroOfRow( testArr5, 2 ) );
-        TestCase.assertEquals( 9, Function.returnNumOfZeroOfRow( testArr5, 3 ) );
+        TestCase.assertEquals( 1, Function.calcNumOfZeroOfRow( testArr1, 1 ) );
+        TestCase.assertEquals( 2, Function.calcNumOfZeroOfRow( testArr2, 1 ) );
+        TestCase.assertEquals( 3, Function.calcNumOfZeroOfRow( testArr2, 2 ) );
+        TestCase.assertEquals( 5, Function.calcNumOfZeroOfRow( testArr3, 1 ) );
+        TestCase.assertEquals( 2, Function.calcNumOfZeroOfRow( testArr3, 2 ) );
+        TestCase.assertEquals( 9, Function.calcNumOfZeroOfRow( testArr3, 3 ) );
     }
 
     @Test
-    public void returnNumOfZeroOfCol() {
+    public void calcNumOfZeroOfCol() {
         int[][] testArr = {
                 { 1, 2, 3, 4, 0, 6, 0, 8, 9 },
                 { 2, 3, 4, 5, 6, 0, 8, 9, 0 },
@@ -48,15 +48,78 @@ public class FunctionTest {
                 { 0, 0, 0, 3, 4, 5, 0, 7, 8 }
         };
 
-        TestCase.assertEquals ( 1, Function.returnNumOfZeroOfCol( testArr, 1 ) );
-        TestCase.assertEquals ( 3, Function.returnNumOfZeroOfCol( testArr, 2 ) );
-        TestCase.assertEquals ( 5, Function.returnNumOfZeroOfCol( testArr, 3 ) );
-        TestCase.assertEquals ( 2, Function.returnNumOfZeroOfCol( testArr, 9 ) );
+        TestCase.assertEquals ( 1, Function.calcNumOfZeroOfCol(testArr, 1) );
+        TestCase.assertEquals ( 3, Function.calcNumOfZeroOfCol(testArr, 2) );
+        TestCase.assertEquals ( 5, Function.calcNumOfZeroOfCol(testArr, 3) );
+        TestCase.assertEquals ( 2, Function.calcNumOfZeroOfCol(testArr, 9) );
     }
+
 
     @Test
-    public void solveWhenNumOfZeroIsOneOfCol() {
+    public void calcNumOfZeroOfThreeByThreeSection() {
+        int[][] testArr = {
+                { 1, 0, 3, 0, 0, 6, 0, 8, 9 },
+                { 2, 3, 0, 5, 6, 0, 8, 9, 0 },
+                { 3, 4, 5, 6, 7, 0, 9, 1, 2 },
+                { 4, 0, 6, 7, 8, 0, 1, 0, 3 },
+                { 5, 6, 0, 0, 9, 0, 2, 0, 4 },
+                { 6, 7, 0, 0, 1, 2, 3, 4, 5 },
+                { 7, 0, 0, 1, 2, 3, 4, 5, 0 },
+                { 8, 0, 0, 2, 3, 4, 5, 6, 7 },
+                { 0, 0, 0, 3, 4, 5, 0, 7, 8 }
+        };
 
+        TestCase.assertEquals( 2, Function.calcNumOfZeroOfThreeByThreeSection(testArr, 1) );
+        TestCase.assertEquals( 4, Function.calcNumOfZeroOfThreeByThreeSection(testArr, 2) );
+        TestCase.assertEquals( 2, Function.calcNumOfZeroOfThreeByThreeSection(testArr, 3) );
+        TestCase.assertEquals( 3, Function.calcNumOfZeroOfThreeByThreeSection(testArr, 4) );
+        TestCase.assertEquals( 4, Function.calcNumOfZeroOfThreeByThreeSection(testArr, 5) );
+        TestCase.assertEquals( 2, Function.calcNumOfZeroOfThreeByThreeSection(testArr, 6) );
+        TestCase.assertEquals( 7, Function.calcNumOfZeroOfThreeByThreeSection(testArr, 7) );
+        TestCase.assertEquals( 0, Function.calcNumOfZeroOfThreeByThreeSection(testArr, 8) );
+        TestCase.assertEquals( 2, Function.calcNumOfZeroOfThreeByThreeSection(testArr, 9) );
     }
+
+
+   @Test
+   public void whatSectionIsThisSpot() {
+       int[][] testArr = {
+               { 1, 0, 3, 0, 0, 6, 0, 8, 9 },
+               { 2, 3, 0, 5, 6, 0, 8, 9, 0 },
+               { 3, 4, 5, 6, 7, 0, 9, 1, 2 },
+               { 4, 0, 6, 7, 8, 0, 1, 0, 3 },
+               { 5, 6, 0, 0, 9, 0, 2, 0, 4 },
+               { 6, 7, 0, 0, 1, 2, 3, 4, 5 },
+               { 7, 0, 0, 1, 2, 3, 4, 5, 0 },
+               { 8, 0, 0, 2, 3, 4, 5, 6, 7 },
+               { 0, 0, 0, 3, 4, 5, 0, 7, 8 }
+       };
+
+       TestCase.assertEquals( 1, Function.whatSectionIsThisSpot( testArr, 1, 1 ) );
+
+   }
+
+
+    @Test
+    public void isThereSelectedNumberOrNotOnCross() {
+        int[][] testArr = {
+                { 1, 0, 3, 0, 0, 6, 0, 8, 9 },
+                { 2, 3, 0, 5, 6, 0, 8, 9, 0 },
+                { 3, 4, 5, 6, 7, 0, 9, 1, 2 },
+                { 4, 0, 6, 7, 8, 0, 1, 0, 3 },
+                { 5, 6, 0, 0, 9, 0, 2, 0, 4 },
+                { 6, 7, 0, 0, 1, 2, 3, 4, 5 },
+                { 7, 0, 0, 1, 2, 3, 4, 5, 0 },
+                { 8, 0, 0, 2, 3, 4, 5, 6, 7 },
+                { 0, 0, 0, 3, 4, 5, 0, 7, 8 }
+        };
+
+        TestCase.assertTrue( Function.couldBePlacedOnTheCenterOfThisCross(testArr, 9, 9, 6) );
+        TestCase.assertTrue( Function.couldBePlacedOnTheCenterOfThisCross(testArr, 5, 6, 7));
+        TestCase.assertFalse( Function.couldBePlacedOnTheCenterOfThisCross(testArr, 8, 8, 5) );
+        TestCase.assertFalse( Function.couldBePlacedOnTheCenterOfThisCross(testArr, 1, 9, 4) );
+    }
+
+
 
 }
