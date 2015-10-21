@@ -24,10 +24,10 @@
     <SUITE FILE_PATH="coverage/sudoku$FunctionTest_calcNumOfZeroOfSection.coverage" NAME="FunctionTest.calcNumOfZeroOfSection Coverage Results" MODIFIED="1445313093542" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>sudoku.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/sudoku$JuniorExplanationTest_inTheArrBoundary.coverage" NAME="JuniorExplanationTest.inTheArrBoundary Coverage Results" MODIFIED="1445440280876" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/sudoku$JuniorExplanationTest_inTheArrBoundary.coverage" NAME="JuniorExplanationTest.inTheArrBoundary Coverage Results" MODIFIED="1445444125254" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>sudoku.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/sudoku$JuniorExplanationTest.coverage" NAME="JuniorExplanationTest Coverage Results" MODIFIED="1445431248119" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/sudoku$JuniorExplanationTest.coverage" NAME="JuniorExplanationTest Coverage Results" MODIFIED="1445444785043" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>sudoku.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/sudoku$JuniorExplanationTest_isThisRightColSection.coverage" NAME="JuniorExplanationTest.isThisRightColSection Coverage Results" MODIFIED="1445438839670" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
@@ -72,7 +72,7 @@
     <SUITE FILE_PATH="coverage/sudoku$FunctionTest_returnNumOfZeroOfCol.coverage" NAME="FunctionTest.returnNumOfZeroOfCol Coverage Results" MODIFIED="1445269092169" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>sudoku.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/sudoku$JuniorExplanationTest_canBeCenterOfThisCross.coverage" NAME="JuniorExplanationTest.canBeCenterOfThisCross Coverage Results" MODIFIED="1445441930827" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/sudoku$JuniorExplanationTest_canBeCenterOfThisCross.coverage" NAME="JuniorExplanationTest.canBeCenterOfThisCross Coverage Results" MODIFIED="1445444655806" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>sudoku.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/sudoku$JuniorExplanationTest_elementNumber.coverage" NAME="JuniorExplanationTest.elementNumber Coverage Results" MODIFIED="1445431855203" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
@@ -117,25 +117,20 @@
             <file leaf-file-name="JuniorExplanation.java" pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/src/main/java/sudoku/JuniorExplanation.java">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state vertical-scroll-proportion="0.4265403">
-                    <caret line="152" column="113" selection-start-line="152" selection-start-column="113" selection-end-line="152" selection-end-column="113" />
+                  <state vertical-scroll-proportion="0.2843602">
+                    <caret line="121" column="42" selection-start-line="121" selection-start-column="41" selection-end-line="121" selection-end-column="43" />
                     <folding>
                       <element signature="method#howManyThisNumberInThisRow#0;class#JuniorExplanation#0" expanded="false" />
                       <element signature="method#howManyThisNumberInThisCol#0;class#JuniorExplanation#0" expanded="false" />
-                      <element signature="method#howManyThisNumbersInThisSection#0;class#JuniorExplanation#0" expanded="false" />
+                      <element signature="method#howManyThisNumberInThisSection#0;class#JuniorExplanation#0" expanded="false" />
                       <element signature="method#whatSectionIsThisSpot#0;class#JuniorExplanation#0" expanded="false" />
-                      <element signature="method#canBeCenterOfThisCross#0;class#JuniorExplanation#0" expanded="false" />
                       <element signature="method#returnSectionMinimumNumberOfZero#0;class#JuniorExplanation#0" expanded="false" />
                       <element signature="method#couldBePlacedOnThreeByThree#0;class#JuniorExplanation#0" expanded="false" />
-                      <element signature="method#otherCrossesCheckInThreeByThreeBoundary#0;class#JuniorExplanation#0" expanded="false" />
-                      <element signature="method#elementZero#0;class#JuniorExplanation#0" expanded="false" />
-                      <element signature="method#elementNumber#0;class#JuniorExplanation#0" expanded="false" />
-                      <element signature="method#isThisUpperRowSection#0;class#JuniorExplanation#0" expanded="false" />
-                      <element signature="method#isThisMiddleRowSection#0;class#JuniorExplanation#0" expanded="false" />
-                      <element signature="method#isThisLowerRowSection#0;class#JuniorExplanation#0" expanded="false" />
-                      <element signature="method#isThisLeftColSection#0;class#JuniorExplanation#0" expanded="false" />
-                      <element signature="method#isThisMiddleColSection#0;class#JuniorExplanation#0" expanded="false" />
-                      <element signature="method#isThisRightColSection#0;class#JuniorExplanation#0" expanded="false" />
+                      <element signature="method#isHereThisNumber#0;class#JuniorExplanation#0" expanded="false" />
+                      <element signature="method#isHereLowerRowSection#0;class#JuniorExplanation#0" expanded="false" />
+                      <element signature="method#isHereLeftColSection#0;class#JuniorExplanation#0" expanded="false" />
+                      <element signature="method#isHereMiddleColSection#0;class#JuniorExplanation#0" expanded="false" />
+                      <element signature="method#isHereRightColSection#0;class#JuniorExplanation#0" expanded="false" />
                       <element signature="method#inTheArrayBoundary#0;class#JuniorExplanation#0" expanded="false" />
                     </folding>
                   </state>
@@ -156,11 +151,10 @@
       <file leaf-file-name="JuniorExplanationTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/sudoku/JuniorExplanationTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.076608784">
-              <caret line="116" column="23" selection-start-line="116" selection-start-column="23" selection-end-line="116" selection-end-column="23" />
+            <state vertical-scroll-proportion="0.47497445">
+              <caret line="31" column="10" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="10" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#otherCrossesCheckInThreeByThreeBoundary#0;class#JuniorExplanationTest#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -189,8 +183,8 @@
         <option value="$PROJECT_DIR$/src/main/java/sudoku/sudokuTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/sudoku/SudokuTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/sudoku/Problem.java" />
-        <option value="$PROJECT_DIR$/src/test/java/sudoku/JuniorExplanationTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/sudoku/JuniorExplanation.java" />
+        <option value="$PROJECT_DIR$/src/test/java/sudoku/JuniorExplanationTest.java" />
       </list>
     </option>
   </component>
@@ -369,59 +363,7 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager" selected="JUnit.JuniorExplanationTest.canBeCenterOfThisCross">
-    <configuration default="false" name="JuniorExplanationTest.whatSectionIsThisSpot" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="sudoku.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="sudoku" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="sudoku" />
-      <option name="MAIN_CLASS_NAME" value="sudoku.JuniorExplanationTest" />
-      <option name="METHOD_NAME" value="whatSectionIsThisSpot" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="JuniorExplanationTest.hoManyThisNumbersInThisSection" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="sudoku.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="sudoku" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="sudoku" />
-      <option name="MAIN_CLASS_NAME" value="sudoku.JuniorExplanationTest" />
-      <option name="METHOD_NAME" value="hoManyThisNumbersInThisSection" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.JuniorExplanationTest">
     <configuration default="false" name="JuniorExplanationTest.howManyThisNumberInThisRow" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -488,6 +430,58 @@
       <option name="MAIN_CLASS_NAME" value="sudoku.JuniorExplanationTest" />
       <option name="METHOD_NAME" value="canBeCenterOfThisCross" />
       <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="JuniorExplanationTest.inTheArrBoundary" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="sudoku.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="sudoku" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="sudoku" />
+      <option name="MAIN_CLASS_NAME" value="sudoku.JuniorExplanationTest" />
+      <option name="METHOD_NAME" value="inTheArrBoundary" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="JuniorExplanationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="sudoku.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="sudoku" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="sudoku" />
+      <option name="MAIN_CLASS_NAME" value="sudoku.JuniorExplanationTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -770,19 +764,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Cucumber java.SudokuTest" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.JuniorExplanationTest.whatSectionIsThisSpot" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.JuniorExplanationTest.hoManyThisNumbersInThisSection" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.JuniorExplanationTest.howManyThisNumberInThisRow" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.JuniorExplanationTest.howManyThisNumberInThisCol" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.JuniorExplanationTest.canBeCenterOfThisCross" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.JuniorExplanationTest.howManyThisNumberInThisRow" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.JuniorExplanationTest.howManyThisNumberInThisCol" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.JuniorExplanationTest.canBeCenterOfThisCross" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.JuniorExplanationTest.inTheArrBoundary" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.JuniorExplanationTest" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.JuniorExplanationTest.canBeCenterOfThisCross" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.JuniorExplanationTest.howManyThisNumberInThisCol" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.JuniorExplanationTest.howManyThisNumberInThisRow" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.JuniorExplanationTest.hoManyThisNumbersInThisSection" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.JuniorExplanationTest.whatSectionIsThisSpot" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.JuniorExplanationTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.JuniorExplanationTest.canBeCenterOfThisCross" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.JuniorExplanationTest.inTheArrBoundary" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.JuniorExplanationTest.howManyThisNumberInThisCol" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.JuniorExplanationTest.howManyThisNumberInThisRow" />
       </list>
     </recent_temporary>
   </component>
@@ -798,12 +792,12 @@
       <updated>1445265442530</updated>
       <workItem from="1445265444679" duration="30463000" />
       <workItem from="1445411864036" duration="4910000" />
-      <workItem from="1445430338158" duration="8127000" />
+      <workItem from="1445430338158" duration="10234000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43500000" />
+    <option name="totallyTimeSpent" value="45607000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -825,12 +819,12 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4099037" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40913606" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287483" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.10234375" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.10208333" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287483" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -862,23 +856,11 @@
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/sudoku/JuniorExplanationTest.java</url>
           <line>207</line>
-          <properties class="sudoku.JuniorExplanationTest" method="otherCrossesCheckInThreeByThreeBoundary" />
+          <properties class="sudoku.JuniorExplanationTest" />
           <option name="timeStamp" value="27" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/sudoku/JuniorExplanationTest.java</url>
-          <line>20</line>
-          <properties />
-          <option name="timeStamp" value="31" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/sudoku/JuniorExplanationTest.java</url>
-          <line>63</line>
-          <properties />
-          <option name="timeStamp" value="32" />
-        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="43" />
+      <option name="time" value="49" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -894,20 +876,15 @@
           <folding>
             <element signature="method#howManyThisNumberInThisRow#0;class#JuniorExplanation#0" expanded="false" />
             <element signature="method#howManyThisNumberInThisCol#0;class#JuniorExplanation#0" expanded="false" />
-            <element signature="method#howManyThisNumbersInThisSection#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#howManyThisNumberInThisSection#0;class#JuniorExplanation#0" expanded="false" />
             <element signature="method#whatSectionIsThisSpot#0;class#JuniorExplanation#0" expanded="false" />
-            <element signature="method#canBeCenterOfThisCross#0;class#JuniorExplanation#0" expanded="false" />
             <element signature="method#returnSectionMinimumNumberOfZero#0;class#JuniorExplanation#0" expanded="false" />
             <element signature="method#couldBePlacedOnThreeByThree#0;class#JuniorExplanation#0" expanded="false" />
-            <element signature="method#otherCrossesCheckInThreeByThreeBoundary#0;class#JuniorExplanation#0" expanded="false" />
-            <element signature="method#elementZero#0;class#JuniorExplanation#0" expanded="false" />
-            <element signature="method#elementNumber#0;class#JuniorExplanation#0" expanded="false" />
-            <element signature="method#isThisUpperRowSection#0;class#JuniorExplanation#0" expanded="false" />
-            <element signature="method#isThisMiddleRowSection#0;class#JuniorExplanation#0" expanded="false" />
-            <element signature="method#isThisLowerRowSection#0;class#JuniorExplanation#0" expanded="false" />
-            <element signature="method#isThisLeftColSection#0;class#JuniorExplanation#0" expanded="false" />
-            <element signature="method#isThisMiddleColSection#0;class#JuniorExplanation#0" expanded="false" />
-            <element signature="method#isThisRightColSection#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#isHereThisNumber#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#isHereLowerRowSection#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#isHereLeftColSection#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#isHereMiddleColSection#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#isHereRightColSection#0;class#JuniorExplanation#0" expanded="false" />
             <element signature="method#inTheArrayBoundary#0;class#JuniorExplanation#0" expanded="false" />
           </folding>
         </state>
@@ -919,7 +896,6 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#otherCrossesCheckInThreeByThreeBoundary#0;class#JuniorExplanationTest#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -949,36 +925,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/sudoku/JuniorExplanationTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.076608784">
-          <caret line="116" column="23" selection-start-line="116" selection-start-column="23" selection-end-line="116" selection-end-column="23" />
+        <state vertical-scroll-proportion="0.47497445">
+          <caret line="31" column="10" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#otherCrossesCheckInThreeByThreeBoundary#0;class#JuniorExplanationTest#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/sudoku/JuniorExplanation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4265403">
-          <caret line="152" column="113" selection-start-line="152" selection-start-column="113" selection-end-line="152" selection-end-column="113" />
+        <state vertical-scroll-proportion="0.2843602">
+          <caret line="121" column="42" selection-start-line="121" selection-start-column="41" selection-end-line="121" selection-end-column="43" />
           <folding>
             <element signature="method#howManyThisNumberInThisRow#0;class#JuniorExplanation#0" expanded="false" />
             <element signature="method#howManyThisNumberInThisCol#0;class#JuniorExplanation#0" expanded="false" />
-            <element signature="method#howManyThisNumbersInThisSection#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#howManyThisNumberInThisSection#0;class#JuniorExplanation#0" expanded="false" />
             <element signature="method#whatSectionIsThisSpot#0;class#JuniorExplanation#0" expanded="false" />
-            <element signature="method#canBeCenterOfThisCross#0;class#JuniorExplanation#0" expanded="false" />
             <element signature="method#returnSectionMinimumNumberOfZero#0;class#JuniorExplanation#0" expanded="false" />
             <element signature="method#couldBePlacedOnThreeByThree#0;class#JuniorExplanation#0" expanded="false" />
-            <element signature="method#otherCrossesCheckInThreeByThreeBoundary#0;class#JuniorExplanation#0" expanded="false" />
-            <element signature="method#elementZero#0;class#JuniorExplanation#0" expanded="false" />
-            <element signature="method#elementNumber#0;class#JuniorExplanation#0" expanded="false" />
-            <element signature="method#isThisUpperRowSection#0;class#JuniorExplanation#0" expanded="false" />
-            <element signature="method#isThisMiddleRowSection#0;class#JuniorExplanation#0" expanded="false" />
-            <element signature="method#isThisLowerRowSection#0;class#JuniorExplanation#0" expanded="false" />
-            <element signature="method#isThisLeftColSection#0;class#JuniorExplanation#0" expanded="false" />
-            <element signature="method#isThisMiddleColSection#0;class#JuniorExplanation#0" expanded="false" />
-            <element signature="method#isThisRightColSection#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#isHereThisNumber#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#isHereLowerRowSection#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#isHereLeftColSection#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#isHereMiddleColSection#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#isHereRightColSection#0;class#JuniorExplanation#0" expanded="false" />
             <element signature="method#inTheArrayBoundary#0;class#JuniorExplanation#0" expanded="false" />
           </folding>
         </state>
