@@ -2,30 +2,30 @@ package sudoku;
 
 public class JuniorExplanation {
 
-    public static int calcNumOfZeroOfRow(int[][] twoDArr, int numOfRow) {
-        int numOfZero = 0;
-        for (int i = 0; i < twoDArr[numOfRow - 1].length; i++) {
-            if ( elementZero( twoDArr, numOfRow, i + 1 ))
-                numOfZero++;
+    public static int howManyThisNumberInThisRow(int[][] twoDArr, int row, int number) {
+        int numOfNumber = 0;
+        for (int i = 0; i < twoDArr[row - 1].length; i++) {
+            if (elementNumber(twoDArr, row, i + 1, number))
+                numOfNumber++;
         }
-        return numOfZero;
+        return numOfNumber;
     }
 
-    public static int calcNumOfZeroOfCol(int[][] twoDArr, int numOfColumn) {
-        int numOfZero = 0;
+    public static int howManyThisNumberInThisCol(int[][] twoDArr, int col, int number) {
+        int numOfNumber = 0;
         for (int i = 0; i < twoDArr.length; i++) {
-            if ( elementZero( twoDArr, i + 1, numOfColumn ))
-                numOfZero++;
+            if (elementNumber(twoDArr, i + 1, col, number))
+                numOfNumber++;
         }
-        return numOfZero;
+        return numOfNumber;
     }
 
-    public static int calcAmountOfNumberOfThreeByThreeSection(int[][] twoDArr, int numOfSection, int number) {
+    public static int howManyThisNumbersInThisSection(int[][] twoDArr, int numOfSection, int number) {
         int amountOfNumber = 0;
         switch (numOfSection) {
             case 1:
-                for (int i = 0 * (twoDArr.length / 3); i < 1 * (twoDArr.length / 3); i++) {
-                    for (int j = 0 * (twoDArr.length / 3); j < 1 * (twoDArr[i].length / 3); j++) {
+                for (int i = 0; i < (twoDArr.length / 3); i++) {
+                    for (int j = 0; j < (twoDArr[i].length / 3); j++) {
                         if (twoDArr[i][j] == number)
                             amountOfNumber++;
                     }
@@ -33,8 +33,8 @@ public class JuniorExplanation {
                 break;
 
             case 2:
-                for (int i = 0 * (twoDArr.length / 3); i < 1 * (twoDArr.length / 3); i++) {
-                    for (int j = 1 * (twoDArr.length / 3); j < 2 * (twoDArr[i].length / 3); j++) {
+                for (int i = 0; i < (twoDArr.length / 3); i++) {
+                    for (int j = (twoDArr.length / 3); j < 2 * (twoDArr[i].length / 3); j++) {
                         if (twoDArr[i][j] == number)
                             amountOfNumber++;
                     }
@@ -43,7 +43,7 @@ public class JuniorExplanation {
                 break;
 
             case 3:
-                for (int i = 0 * (twoDArr.length / 3); i < 1 * (twoDArr.length / 3); i++) {
+                for (int i = 0; i < (twoDArr.length / 3); i++) {
                     for (int j = 2 * (twoDArr.length / 3); j < 3 * (twoDArr[i].length / 3); j++) {
                         if (twoDArr[i][j] == number)
                             amountOfNumber++;
@@ -110,137 +110,111 @@ public class JuniorExplanation {
 
     public static int whatSectionIsThisSpot(int[][] twoDArr, int row, int col) {
         int section = 0;
-
-        if (0 * (twoDArr.length / 3) < row && row <= 1 * (twoDArr.length / 3))
-            section++;
-        else if (1 * (twoDArr.length / 3) < row && row <= 2 * (twoDArr.length / 3))
-            section += 4;
-        else if (2 * (twoDArr.length / 3) < row && row <= 3 * (twoDArr.length / 3))
-            section += 7;
-        else {
-            return -1;
-        }
-
-        if (0 * (twoDArr[row - 1].length / 3) < col && col <= 1 * (twoDArr[row - 1].length / 3)) {
-        } else if (1 * (twoDArr[row - 1].length / 3) < col && col <= 2 * (twoDArr[row - 1].length / 3)) {
-            section++;
-        } else if (2 * (twoDArr[row - 1].length / 3) < col && col <= 3 * (twoDArr[row - 1].length / 3)) {
-            section += 2;
-        } else {
-            return -1;
-        }
+        if ( !(inTheArrayBoundary( twoDArr, row, col ) ) ) return -1;
+        if ( isThisUpperRowSection( twoDArr, row ) ) section ++;
+        if ( isThisMiddleRowSection( twoDArr, row ) ) section += 4;
+        if ( isThisLowerRowSection( twoDArr, row ) ) section += 7;
+        if ( isThisMiddleColSection(twoDArr, col) ) section ++;
+        if ( isThisRightColSection(twoDArr, col) ) section += 2;
         return section;
     }
 
-    //매개변수 입력 순서 : 2차원 배열 주소, 행 번호, 열 번호, 계산할 숫자
-    //반환형 : 해당 십자가에 입력한 숫자가 없으면 true를 반환 해당 십자가에 입력한 숫자가 존재하면 false를 반환
-    public static boolean couldBePlacedOnTheCenterOfThisCross(int[][] twoDArr, int row, int col, int number) {
-
-        if ( twoDArr[row - 1][col - 1] != 0 )
-            return false;
-
-        for (int i = 0; i < twoDArr[row - 1].length; i++) {
-            if (twoDArr[row - 1][i] == number)
-                return false;
-        }
-        for (int i = 0; i < twoDArr.length; i++) {
-            if (twoDArr[i][col - 1] == number)
-                return false;
-        }
+    public static boolean canBeCenterOfThisCross(int[][] twoDArr, int row, int col, int number) {
+        if (!elementZero(twoDArr, row, col)) return false;
+        if ( howManyThisNumberInThisRow( twoDArr, row, number ) != 0 ) return false;
+        if ( howManyThisNumberInThisCol( twoDArr, col, number ) != 0 ) return false;
         return true;
     }
 
     public static int returnSectionMinimumNumberOfZero(int[][] twoDArr) {
         int minSection = 1;
         for (int i = 0; i < 9; i++) {
-            if (calcAmountOfNumberOfThreeByThreeSection(twoDArr, i + 1, 0) == 1)
+            if (howManyThisNumbersInThisSection(twoDArr, i + 1, 0) == 1)
                 return i + 1;
-            if (calcAmountOfNumberOfThreeByThreeSection(twoDArr, i + 1, 0) == 0)
+            if (howManyThisNumbersInThisSection(twoDArr, i + 1, 0) == 0)
                 continue;
-            if ( ( calcAmountOfNumberOfThreeByThreeSection(twoDArr, i + 1, 0) < calcAmountOfNumberOfThreeByThreeSection(twoDArr, minSection, 0) ) ||
-                    calcAmountOfNumberOfThreeByThreeSection(twoDArr, minSection, 0) == 0 )
+            if ((howManyThisNumbersInThisSection(twoDArr, i + 1, 0) < howManyThisNumbersInThisSection(twoDArr, minSection, 0)) ||
+                    howManyThisNumbersInThisSection(twoDArr, minSection, 0) == 0)
                 minSection = i + 1;
         }
         return minSection;
     }
 
     public static boolean couldBePlacedOnThreeByThree(int[][] twoDArr, int row, int col, int number) {
-        if ( !elementZero( twoDArr, row, col) )
+        if (!elementZero(twoDArr, row, col))
             return false;
-        int section = whatSectionIsThisSpot( twoDArr, row, col );
-        if ( calcAmountOfNumberOfThreeByThreeSection( twoDArr, section, number ) == 0 )
+        int section = whatSectionIsThisSpot(twoDArr, row, col);
+        if (howManyThisNumbersInThisSection(twoDArr, section, number) == 0)
             return true;
         else
             return false;
     }
 
-
-
     public static boolean otherCrossesCheckInThreeByThreeBoundary(int[][] twoDArr, int row, int col, int number) {
 
 
-        switch ( whatSectionIsThisSpot( twoDArr, row, col ) ) {
+        switch (whatSectionIsThisSpot(twoDArr, row, col)) {
             case 1:
-                for (int i = 0 * (twoDArr.length / 3); i < 1 * (twoDArr.length / 3); i++) {
-                    for (int j = 0 * (twoDArr.length / 3); j < 1 * (twoDArr[i].length / 3); j++) {
-                        if ( i == row - 1 && j == col - 1 )
+                for (int i = 0; i < (twoDArr.length / 3); i++) {
+                    for (int j = 0; j < twoDArr[i].length / 3; j++) {
+                        if (i == row - 1 && j == col - 1)
                             continue;
-                        if ( couldBePlacedOnTheCenterOfThisCross( twoDArr, i, j, number ) )
+                        if (canBeCenterOfThisCross(twoDArr, i, j, number))
                             return false;
                     }
                 }
                 break;
 
             case 2:
-                for (int i = 0 * (twoDArr.length / 3); i < 1 * (twoDArr.length / 3); i++) {
-                    for (int j = 1 * (twoDArr.length / 3); j < 2 * (twoDArr[i].length / 3); j++) {
-                        if ( i == row - 1 && j == col - 1 )
+                for (int i = 0; i < twoDArr.length / 3; i++) {
+                    for (int j = twoDArr.length / 3; j < 2 * (twoDArr[i].length / 3); j++) {
+                        if (i == row - 1 && j == col - 1)
                             continue;
-                        if ( couldBePlacedOnTheCenterOfThisCross( twoDArr, i, j, number ) )
+                        if (canBeCenterOfThisCross(twoDArr, i, j, number))
                             return false;
                     }
                 }
                 break;
 
             case 3:
-                for (int i = 0 * (twoDArr.length / 3); i < 1 * (twoDArr.length / 3); i++) {
+                for (int i = 0; i < twoDArr.length / 3; i++) {
                     for (int j = 2 * (twoDArr.length / 3); j < 3 * (twoDArr[i].length / 3); j++) {
-                        if ( i == row - 1 && j == col - 1 )
+                        if (i == row - 1 && j == col - 1)
                             continue;
-                        if ( couldBePlacedOnTheCenterOfThisCross( twoDArr, i, j, number ) )
+                        if (canBeCenterOfThisCross(twoDArr, i, j, number))
                             return false;
                     }
                 }
                 break;
 
             case 4:
-                for (int i = 1 * (twoDArr.length / 3); i < 2 * (twoDArr.length / 3); i++) {
-                    for (int j = 0 * (twoDArr.length / 3); j < 1 * (twoDArr[i].length / 3); j++) {
-                        if ( i == row - 1 && j == col - 1 )
+                for (int i = twoDArr.length / 3; i < 2 * (twoDArr.length / 3); i++) {
+                    for (int j = 0; j < twoDArr[i].length / 3; j++) {
+                        if (i == row - 1 && j == col - 1)
                             continue;
-                        if ( couldBePlacedOnTheCenterOfThisCross( twoDArr, i, j, number ) )
+                        if (canBeCenterOfThisCross(twoDArr, i, j, number))
                             return false;
                     }
                 }
                 break;
 
             case 5:
-                for (int i = 1 * (twoDArr.length / 3); i < 2 * (twoDArr.length / 3); i++) {
-                    for (int j = 1 * (twoDArr.length / 3); j < 2 * (twoDArr[i].length / 3); j++) {
-                        if ( i == row - 1 && j == col - 1 )
+                for (int i = twoDArr.length / 3; i < 2 * (twoDArr.length / 3); i++) {
+                    for (int j = twoDArr.length / 3; j < 2 * (twoDArr[i].length / 3); j++) {
+                        if (i == row - 1 && j == col - 1)
                             continue;
-                        if ( couldBePlacedOnTheCenterOfThisCross( twoDArr, i, j, number ) )
+                        if (canBeCenterOfThisCross(twoDArr, i, j, number))
                             return false;
                     }
                 }
                 break;
 
             case 6:
-                for (int i = 1 * (twoDArr.length / 3); i < 2 * (twoDArr.length / 3); i++) {
+                for (int i = twoDArr.length / 3; i < 2 * (twoDArr.length / 3); i++) {
                     for (int j = 2 * (twoDArr.length / 3); j < 3 * (twoDArr[i].length / 3); j++) {
-                        if ( i == row - 1 && j == col - 1 )
+                        if (i == row - 1 && j == col - 1)
                             continue;
-                        if ( couldBePlacedOnTheCenterOfThisCross( twoDArr, i, j, number ) )
+                        if (canBeCenterOfThisCross(twoDArr, i, j, number))
                             return false;
                     }
                 }
@@ -248,10 +222,10 @@ public class JuniorExplanation {
 
             case 7:
                 for (int i = 2 * (twoDArr.length / 3); i < 3 * (twoDArr.length / 3); i++) {
-                    for (int j = 0 * (twoDArr.length / 3); j < 1 * (twoDArr[i].length / 3); j++) {
-                        if ( i == row - 1 && j == col - 1 )
+                    for (int j = 0; j < twoDArr[i].length / 3; j++) {
+                        if (i == row - 1 && j == col - 1)
                             continue;
-                        if ( couldBePlacedOnTheCenterOfThisCross( twoDArr, i, j, number ) )
+                        if (canBeCenterOfThisCross(twoDArr, i, j, number))
                             return false;
                     }
                 }
@@ -259,10 +233,10 @@ public class JuniorExplanation {
 
             case 8:
                 for (int i = 2 * (twoDArr.length / 3); i < 3 * (twoDArr.length / 3); i++) {
-                    for (int j = 1 * (twoDArr.length / 3); j < 2 * (twoDArr[i].length / 3); j++) {
-                        if ( i == row - 1 && j == col - 1 )
+                    for (int j = twoDArr.length / 3; j < 2 * (twoDArr[i].length / 3); j++) {
+                        if (i == row - 1 && j == col - 1)
                             continue;
-                        if ( couldBePlacedOnTheCenterOfThisCross( twoDArr, i, j, number ) )
+                        if (canBeCenterOfThisCross(twoDArr, i, j, number))
                             return false;
                     }
                 }
@@ -271,9 +245,9 @@ public class JuniorExplanation {
             case 9:
                 for (int i = 2 * (twoDArr.length / 3); i < 3 * (twoDArr.length / 3); i++) {
                     for (int j = 2 * (twoDArr.length / 3); j < 3 * (twoDArr[i].length / 3); j++) {
-                        if ( i == row - 1 && j == col - 1 )
+                        if (i == row - 1 && j == col - 1)
                             continue;
-                        if ( couldBePlacedOnTheCenterOfThisCross( twoDArr, i, j, number ) )
+                        if (canBeCenterOfThisCross(twoDArr, i, j, number))
                             return false;
                     }
                 }
@@ -283,11 +257,60 @@ public class JuniorExplanation {
     }
 
     public static boolean elementZero(int[][] twoDArr, int row, int col) {
-        if ( twoDArr[row - 1][col - 1] == 0)
+        if (twoDArr[row - 1][col - 1] == 0)
             return true;
         else
             return false;
     }
+
+    public static boolean elementNumber(int[][] twoDArr, int row, int col, int number) {
+        if (twoDArr[row - 1][col - 1] == number)
+            return true;
+        else
+            return false;
+    }
+
+    public static boolean isThisUpperRowSection(int[][] twoDArr, int row) {
+        if (0 < row && row <= twoDArr.length / 3) return true;
+        return false;
+    }
+
+    public static boolean isThisMiddleRowSection(int[][] twoDArr, int row) {
+        if (twoDArr.length / 3 < row && row <= 2 * (twoDArr.length / 3))
+            return true;
+        return false;
+    }
+
+    public static boolean isThisLowerRowSection(int[][] twoDArr, int row) {
+        if (2 * (twoDArr.length / 3) < row && row <= 3 * (twoDArr.length / 3))
+            return true;
+        return false;
+    }
+
+    public static boolean isThisLeftColSection(int[][] twoDArr, int col) {
+        if ( 0 < col && col <= twoDArr[0].length / 3 )
+            return true;
+        return false;
+    }
+
+    public static boolean isThisMiddleColSection(int[][] twoDArr, int col ) {
+        if (twoDArr[0].length / 3 < col && col <= 2 * (twoDArr[0].length / 3))
+            return true;
+        return false;
+    }
+
+    public static boolean isThisRightColSection(int[][] twoDArr, int col) {
+        if (2 * (twoDArr[0].length / 3) < col && col <= 3 * ( twoDArr[0].length / 3 ) )
+            return true;
+        return false;
+    }
+
+    public static boolean inTheArrayBoundary(int[][] twoDArr, int row, int col) {
+        if ( row < 1 || 9 < row ) return false;
+        if ( col < 1 || 9 < col ) return false;
+        return true;
+    }
+
 }
 
 // TODO 2차원 배열로 문제가 주어지면 후보자 수를 도입한 문제풀이에 적합한 형태의 매서드 생성
