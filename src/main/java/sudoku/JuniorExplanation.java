@@ -5,7 +5,7 @@ public class JuniorExplanation {
     public static int howManyThisNumberInThisRow(int[][] twoDArr, int row, int number) {
         int numOfNumber = 0;
         for (int i = 0; i < twoDArr[row - 1].length; i++) {
-            if (elementNumber(twoDArr, row, i + 1, number))
+            if (isHereThisNumber(twoDArr, row, i + 1, number))
                 numOfNumber++;
         }
         return numOfNumber;
@@ -14,13 +14,13 @@ public class JuniorExplanation {
     public static int howManyThisNumberInThisCol(int[][] twoDArr, int col, int number) {
         int numOfNumber = 0;
         for (int i = 0; i < twoDArr.length; i++) {
-            if (elementNumber(twoDArr, i + 1, col, number))
+            if (isHereThisNumber(twoDArr, i + 1, col, number))
                 numOfNumber++;
         }
         return numOfNumber;
     }
 
-    public static int howManyThisNumbersInThisSection(int[][] twoDArr, int numOfSection, int number) {
+    public static int howManyThisNumberInThisSection(int[][] twoDArr, int numOfSection, int number) {
         int amountOfNumber = 0;
         switch (numOfSection) {
             case 1:
@@ -111,48 +111,41 @@ public class JuniorExplanation {
     public static int whatSectionIsThisSpot(int[][] twoDArr, int row, int col) {
         int section = 0;
         if ( !(inTheArrayBoundary( twoDArr, row, col ) ) ) return -1;
-        if ( isThisUpperRowSection( twoDArr, row ) ) section ++;
-        if ( isThisMiddleRowSection( twoDArr, row ) ) section += 4;
-        if ( isThisLowerRowSection( twoDArr, row ) ) section += 7;
-        if ( isThisMiddleColSection(twoDArr, col) ) section ++;
-        if ( isThisRightColSection(twoDArr, col) ) section += 2;
+        if ( isHereUpperRowSection(twoDArr, row) ) section ++;
+        if ( isHereMiddleRowSection(twoDArr, row) ) section += 4;
+        if ( isHereLowerRowSection(twoDArr, row) ) section += 7;
+        if ( isHereMiddleColSection(twoDArr, col) ) section ++;
+        if ( isHereRightColSection(twoDArr, col) ) section += 2;
         return section;
     }
 
     public static boolean canBeCenterOfThisCross(int[][] twoDArr, int row, int col, int number) {
-        if (!elementZero(twoDArr, row, col)) return false;
+        if ( !( isHereZero(twoDArr, row, col ) ) ) return false;
         if ( howManyThisNumberInThisRow( twoDArr, row, number ) != 0 ) return false;
-        if ( howManyThisNumberInThisCol( twoDArr, col, number ) != 0 ) return false;
+        if ( howManyThisNumberInThisCol(twoDArr, col, number) != 0 ) return false;
         return true;
     }
 
     public static int returnSectionMinimumNumberOfZero(int[][] twoDArr) {
         int minSection = 1;
         for (int i = 0; i < 9; i++) {
-            if (howManyThisNumbersInThisSection(twoDArr, i + 1, 0) == 1)
-                return i + 1;
-            if (howManyThisNumbersInThisSection(twoDArr, i + 1, 0) == 0)
-                continue;
-            if ((howManyThisNumbersInThisSection(twoDArr, i + 1, 0) < howManyThisNumbersInThisSection(twoDArr, minSection, 0)) ||
-                    howManyThisNumbersInThisSection(twoDArr, minSection, 0) == 0)
+            if (howManyThisNumberInThisSection(twoDArr, i + 1, 0) == 1) return i + 1;
+            if (howManyThisNumberInThisSection(twoDArr, i + 1, 0) == 0) continue;
+            if ( ( howManyThisNumberInThisSection(twoDArr, i + 1, 0) < howManyThisNumberInThisSection(twoDArr, minSection, 0)) ||
+                   howManyThisNumberInThisSection(twoDArr, minSection, 0) == 0)
                 minSection = i + 1;
         }
         return minSection;
     }
 
     public static boolean couldBePlacedOnThreeByThree(int[][] twoDArr, int row, int col, int number) {
-        if (!elementZero(twoDArr, row, col))
-            return false;
+        if (!isHereZero(twoDArr, row, col)) return false;
         int section = whatSectionIsThisSpot(twoDArr, row, col);
-        if (howManyThisNumbersInThisSection(twoDArr, section, number) == 0)
-            return true;
-        else
-            return false;
+        if (howManyThisNumberInThisSection(twoDArr, section, number) == 0) return true;
+        return false;
     }
 
     public static boolean otherCrossesCheckInThreeByThreeBoundary(int[][] twoDArr, int row, int col, int number) {
-
-
         switch (whatSectionIsThisSpot(twoDArr, row, col)) {
             case 1:
                 for (int i = 0; i < (twoDArr.length / 3); i++) {
@@ -256,58 +249,53 @@ public class JuniorExplanation {
         return true;
     }
 
-    public static boolean elementZero(int[][] twoDArr, int row, int col) {
-        if (twoDArr[row - 1][col - 1] == 0)
-            return true;
-        else
-            return false;
-    }
-
-    public static boolean elementNumber(int[][] twoDArr, int row, int col, int number) {
-        if (twoDArr[row - 1][col - 1] == number)
-            return true;
-        else
-            return false;
-    }
-
-    public static boolean isThisUpperRowSection(int[][] twoDArr, int row) {
-        if (0 < row && row <= twoDArr.length / 3) return true;
+    public static boolean isHereZero(int[][] twoDArr, int row, int col) {
+        if (twoDArr[row - 1][col - 1] == 0) return true;
         return false;
     }
 
-    public static boolean isThisMiddleRowSection(int[][] twoDArr, int row) {
-        if (twoDArr.length / 3 < row && row <= 2 * (twoDArr.length / 3))
-            return true;
+    public static boolean isHereThisNumber(int[][] twoDArr, int row, int col, int number) {
+        if (twoDArr[row - 1][col - 1] == number) return true;
+        else return false;
+    }
+
+    public static boolean isHereUpperRowSection(int[][] twoDArr, int row) {
+        if ( 0 < row && row <= twoDArr.length / 3 ) return true;
         return false;
     }
 
-    public static boolean isThisLowerRowSection(int[][] twoDArr, int row) {
+    public static boolean isHereMiddleRowSection(int[][] twoDArr, int row) {
+        if ( twoDArr.length / 3 < row && row <= 2 * ( twoDArr.length / 3 ) ) return true;
+        return false;
+    }
+
+    public static boolean isHereLowerRowSection(int[][] twoDArr, int row) {
         if (2 * (twoDArr.length / 3) < row && row <= 3 * (twoDArr.length / 3))
             return true;
         return false;
     }
 
-    public static boolean isThisLeftColSection(int[][] twoDArr, int col) {
+    public static boolean isHereLeftColSection(int[][] twoDArr, int col) {
         if ( 0 < col && col <= twoDArr[0].length / 3 )
             return true;
         return false;
     }
 
-    public static boolean isThisMiddleColSection(int[][] twoDArr, int col ) {
+    public static boolean isHereMiddleColSection(int[][] twoDArr, int col) {
         if (twoDArr[0].length / 3 < col && col <= 2 * (twoDArr[0].length / 3))
             return true;
         return false;
     }
 
-    public static boolean isThisRightColSection(int[][] twoDArr, int col) {
+    public static boolean isHereRightColSection(int[][] twoDArr, int col) {
         if (2 * (twoDArr[0].length / 3) < col && col <= 3 * ( twoDArr[0].length / 3 ) )
             return true;
         return false;
     }
 
     public static boolean inTheArrayBoundary(int[][] twoDArr, int row, int col) {
-        if ( row < 1 || 9 < row ) return false;
-        if ( col < 1 || 9 < col ) return false;
+        if ( row < 1 || twoDArr[0].length < row ) return false;
+        if ( col < 1 || twoDArr.length < col ) return false;
         return true;
     }
 

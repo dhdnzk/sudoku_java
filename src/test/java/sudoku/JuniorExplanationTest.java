@@ -73,17 +73,17 @@ public class JuniorExplanationTest {
                 { 0, 0, 0, 3, 4, 5, 0, 7, 8 }
         };
 
-        TestCase.assertEquals( 2, JuniorExplanation.howManyThisNumbersInThisSection(testArr, 1, 0) );
-        TestCase.assertEquals( 4, JuniorExplanation.howManyThisNumbersInThisSection(testArr, 2, 0) );
-        TestCase.assertEquals( 2, JuniorExplanation.howManyThisNumbersInThisSection(testArr, 3, 0) );
-        TestCase.assertEquals( 3, JuniorExplanation.howManyThisNumbersInThisSection(testArr, 4, 0) );
-        TestCase.assertEquals( 3, JuniorExplanation.howManyThisNumbersInThisSection(testArr, 3, 9) );
-        TestCase.assertEquals( 2, JuniorExplanation.howManyThisNumbersInThisSection(testArr, 6, 0) );
-        TestCase.assertEquals( 7, JuniorExplanation.howManyThisNumbersInThisSection(testArr, 7, 0) );
-        TestCase.assertEquals( 0, JuniorExplanation.howManyThisNumbersInThisSection(testArr, 8, 0) );
-        TestCase.assertEquals( 2, JuniorExplanation.howManyThisNumbersInThisSection(testArr, 9, 0) );
-        TestCase.assertEquals( 3, JuniorExplanation.howManyThisNumbersInThisSection(testArr, 1, 3) );
-        TestCase.assertEquals( 2, JuniorExplanation.howManyThisNumbersInThisSection(testArr, 9, 5) );
+        TestCase.assertEquals( 2, JuniorExplanation.howManyThisNumberInThisSection(testArr, 1, 0) );
+        TestCase.assertEquals( 4, JuniorExplanation.howManyThisNumberInThisSection(testArr, 2, 0) );
+        TestCase.assertEquals( 2, JuniorExplanation.howManyThisNumberInThisSection(testArr, 3, 0) );
+        TestCase.assertEquals( 3, JuniorExplanation.howManyThisNumberInThisSection(testArr, 4, 0) );
+        TestCase.assertEquals( 3, JuniorExplanation.howManyThisNumberInThisSection(testArr, 3, 9) );
+        TestCase.assertEquals( 2, JuniorExplanation.howManyThisNumberInThisSection(testArr, 6, 0) );
+        TestCase.assertEquals( 7, JuniorExplanation.howManyThisNumberInThisSection(testArr, 7, 0) );
+        TestCase.assertEquals( 0, JuniorExplanation.howManyThisNumberInThisSection(testArr, 8, 0) );
+        TestCase.assertEquals( 2, JuniorExplanation.howManyThisNumberInThisSection(testArr, 9, 0) );
+        TestCase.assertEquals( 3, JuniorExplanation.howManyThisNumberInThisSection(testArr, 1, 3) );
+        TestCase.assertEquals( 2, JuniorExplanation.howManyThisNumberInThisSection(testArr, 9, 5) );
     }
 
     @Test
@@ -204,25 +204,25 @@ public class JuniorExplanationTest {
         TestCase.assertFalse(JuniorExplanation.couldBePlacedOnThreeByThree(testArr, 4, 3, 9));
     }
 
-    @Test
-    public void otherCrossesCheckInThreeByThreeBoundary () {
-        int[][] testArr = {
-                { 0, 0, 7,   0, 0, 6,   0, 8, 9 },
-                { 2, 0, 1,   5, 6, 0,   8, 9, 0 },
-                { 3, 4, 5,   6, 7, 0,   9, 1, 2 },
-
-                { 4, 0, 0,   3, 3, 3,   1, 0, 3 },
-                { 5, 9, 0,   3, 3, 3,   2, 0, 4 },
-                { 6, 7, 0,   3, 3, 0,   3, 4, 5 },
-
-                { 7, 0, 0,   1, 2, 3,   4, 5, 0 },
-                { 1, 0, 0,   2, 3, 4,   5, 6, 7 },
-                { 0, 0, 0,   3, 4, 5,   0, 7, 8 }
-        };
-
-        TestCase.assertTrue( JuniorExplanation.otherCrossesCheckInThreeByThreeBoundary( testArr, 1, 1, 1 ) );
-
-    }
+//    @Test
+//    public void otherCrossesCheckInThreeByThreeBoundary () {
+//        int[][] testArr = {
+//                { 0, 0, 7,   0, 0, 6,   0, 8, 9 },
+//                { 2, 0, 1,   5, 6, 0,   8, 9, 0 },
+//                { 3, 4, 5,   6, 7, 0,   9, 1, 2 },
+//
+//                { 4, 0, 0,   3, 3, 3,   1, 0, 3 },
+//                { 5, 9, 0,   3, 3, 3,   2, 0, 4 },
+//                { 6, 7, 0,   3, 3, 0,   3, 4, 5 },
+//
+//                { 7, 0, 0,   1, 2, 3,   4, 5, 0 },
+//                { 1, 0, 0,   2, 3, 4,   5, 6, 7 },
+//                { 0, 0, 0,   3, 4, 5,   0, 7, 8 }
+//        };
+//
+//        TestCase.assertTrue( JuniorExplanation.otherCrossesCheckInThreeByThreeBoundary( testArr, 1, 1, 1 ) );
+//
+//    }
 
     @Test
     public void elementZero () {
@@ -239,12 +239,12 @@ public class JuniorExplanationTest {
                 { 1, 0, 0,   2, 3, 4,   5, 6, 7 },
                 { 0, 0, 0,   3, 4, 5,   0, 7, 8 }
         };
-        TestCase.assertTrue( JuniorExplanation.elementZero(testArr, 1, 1) );
-        TestCase.assertTrue( JuniorExplanation.elementZero(testArr, 1, 2) );
-        TestCase.assertFalse( JuniorExplanation.elementZero(testArr, 1, 3) );
-        TestCase.assertFalse( JuniorExplanation.elementZero(testArr, 5, 5) );
-        TestCase.assertFalse( JuniorExplanation.elementZero(testArr, 4, 4) );
-        TestCase.assertFalse( JuniorExplanation.elementZero(testArr, 6, 9) );
+        TestCase.assertTrue( JuniorExplanation.isHereZero(testArr, 1, 1) );
+        TestCase.assertTrue( JuniorExplanation.isHereZero(testArr, 1, 2) );
+        TestCase.assertFalse( JuniorExplanation.isHereZero(testArr, 1, 3) );
+        TestCase.assertFalse( JuniorExplanation.isHereZero(testArr, 5, 5) );
+        TestCase.assertFalse( JuniorExplanation.isHereZero(testArr, 4, 4) );
+        TestCase.assertFalse( JuniorExplanation.isHereZero(testArr, 6, 9) );
     }
 
 
@@ -264,11 +264,11 @@ public class JuniorExplanationTest {
                 { 0, 0, 0,   3, 4, 5,   0, 7, 8 }
         };
 
-        TestCase.assertTrue( JuniorExplanation.elementNumber( testArr, 1, 3, 7 ) );
-        TestCase.assertTrue( JuniorExplanation.elementNumber( testArr, 2, 2, 0 ) );
-        TestCase.assertTrue( JuniorExplanation.elementNumber( testArr, 3, 3, 5 ) );
-        TestCase.assertFalse(JuniorExplanation.elementNumber(testArr, 1, 3, 3));
-        TestCase.assertFalse(JuniorExplanation.elementNumber(testArr, 9, 9, 9));
+        TestCase.assertTrue( JuniorExplanation.isHereThisNumber(testArr, 1, 3, 7) );
+        TestCase.assertTrue( JuniorExplanation.isHereThisNumber(testArr, 2, 2, 0) );
+        TestCase.assertTrue( JuniorExplanation.isHereThisNumber(testArr, 3, 3, 5) );
+        TestCase.assertFalse(JuniorExplanation.isHereThisNumber(testArr, 1, 3, 3));
+        TestCase.assertFalse(JuniorExplanation.isHereThisNumber(testArr, 9, 9, 9));
     }
 
 
@@ -288,13 +288,13 @@ public class JuniorExplanationTest {
                 { 0, 0, 0,   3, 4, 5,   0, 7, 8 }
         };
 
-        TestCase.assertTrue( JuniorExplanation.isThisUpperRowSection(testArr, 1) );
-        TestCase.assertTrue( JuniorExplanation.isThisUpperRowSection(testArr, 2) );
-        TestCase.assertTrue( JuniorExplanation.isThisUpperRowSection(testArr, 3) );
-        TestCase.assertFalse( JuniorExplanation.isThisUpperRowSection(testArr, -1) );
-        TestCase.assertFalse( JuniorExplanation.isThisUpperRowSection(testArr, 5) );
-        TestCase.assertFalse( JuniorExplanation.isThisUpperRowSection(testArr, 10) );
-        TestCase.assertFalse( JuniorExplanation.isThisUpperRowSection(testArr, 0) );
+        TestCase.assertTrue( JuniorExplanation.isHereUpperRowSection(testArr, 1) );
+        TestCase.assertTrue( JuniorExplanation.isHereUpperRowSection(testArr, 2) );
+        TestCase.assertTrue( JuniorExplanation.isHereUpperRowSection(testArr, 3) );
+        TestCase.assertFalse( JuniorExplanation.isHereUpperRowSection(testArr, -1) );
+        TestCase.assertFalse( JuniorExplanation.isHereUpperRowSection(testArr, 5) );
+        TestCase.assertFalse( JuniorExplanation.isHereUpperRowSection(testArr, 10) );
+        TestCase.assertFalse( JuniorExplanation.isHereUpperRowSection(testArr, 0) );
     }
 
     @Test
@@ -313,12 +313,12 @@ public class JuniorExplanationTest {
                 { 0, 0, 0,   3, 4, 5,   0, 7, 8 }
         };
 
-        TestCase.assertTrue( JuniorExplanation.isThisMiddleRowSection(testArr, 4) );
-        TestCase.assertTrue( JuniorExplanation.isThisMiddleRowSection(testArr, 5) );
-        TestCase.assertTrue( JuniorExplanation.isThisMiddleRowSection(testArr, 6) );
-        TestCase.assertFalse( JuniorExplanation.isThisMiddleRowSection(testArr, 1) );
-        TestCase.assertFalse( JuniorExplanation.isThisMiddleRowSection(testArr, -1) );
-        TestCase.assertFalse( JuniorExplanation.isThisMiddleRowSection(testArr, 10) );
+        TestCase.assertTrue( JuniorExplanation.isHereMiddleRowSection(testArr, 4) );
+        TestCase.assertTrue( JuniorExplanation.isHereMiddleRowSection(testArr, 5) );
+        TestCase.assertTrue( JuniorExplanation.isHereMiddleRowSection(testArr, 6) );
+        TestCase.assertFalse( JuniorExplanation.isHereMiddleRowSection(testArr, 1) );
+        TestCase.assertFalse( JuniorExplanation.isHereMiddleRowSection(testArr, -1) );
+        TestCase.assertFalse( JuniorExplanation.isHereMiddleRowSection(testArr, 10) );
     }
 
 
@@ -338,12 +338,12 @@ public class JuniorExplanationTest {
                 { 0, 0, 0,   3, 4, 5,   0, 7, 8 }
         };
 
-        TestCase.assertTrue( JuniorExplanation.isThisLowerRowSection(testArr, 7) );
-        TestCase.assertTrue( JuniorExplanation.isThisLowerRowSection(testArr, 8) );
-        TestCase.assertTrue( JuniorExplanation.isThisLowerRowSection(testArr, 9) );
-        TestCase.assertFalse( JuniorExplanation.isThisLowerRowSection(testArr, 1) );
-        TestCase.assertFalse( JuniorExplanation.isThisLowerRowSection(testArr, -1) );
-        TestCase.assertFalse( JuniorExplanation.isThisLowerRowSection(testArr, 10) );
+        TestCase.assertTrue( JuniorExplanation.isHereLowerRowSection(testArr, 7) );
+        TestCase.assertTrue( JuniorExplanation.isHereLowerRowSection(testArr, 8) );
+        TestCase.assertTrue( JuniorExplanation.isHereLowerRowSection(testArr, 9) );
+        TestCase.assertFalse( JuniorExplanation.isHereLowerRowSection(testArr, 1) );
+        TestCase.assertFalse( JuniorExplanation.isHereLowerRowSection(testArr, -1) );
+        TestCase.assertFalse( JuniorExplanation.isHereLowerRowSection(testArr, 10) );
 
     }
 
@@ -364,13 +364,13 @@ public class JuniorExplanationTest {
                 { 0, 0, 0,   3, 4, 5,   0, 7, 8 }
         };
 
-        TestCase.assertTrue ( JuniorExplanation.isThisLeftColSection ( testArr, 1 ) );
-        TestCase.assertTrue ( JuniorExplanation.isThisLeftColSection ( testArr, 2 ) );
-        TestCase.assertTrue ( JuniorExplanation.isThisLeftColSection ( testArr, 3 ) );
-        TestCase.assertFalse ( JuniorExplanation.isThisLeftColSection ( testArr, 0 ) );
-        TestCase.assertFalse ( JuniorExplanation.isThisLeftColSection ( testArr, 4 ) );
-        TestCase.assertFalse ( JuniorExplanation.isThisLeftColSection ( testArr, 10 ) );
-        TestCase.assertFalse ( JuniorExplanation.isThisLeftColSection ( testArr, -1 ) );
+        TestCase.assertTrue ( JuniorExplanation.isHereLeftColSection(testArr, 1) );
+        TestCase.assertTrue ( JuniorExplanation.isHereLeftColSection(testArr, 2) );
+        TestCase.assertTrue ( JuniorExplanation.isHereLeftColSection(testArr, 3) );
+        TestCase.assertFalse ( JuniorExplanation.isHereLeftColSection(testArr, 0) );
+        TestCase.assertFalse ( JuniorExplanation.isHereLeftColSection(testArr, 4) );
+        TestCase.assertFalse ( JuniorExplanation.isHereLeftColSection(testArr, 10) );
+        TestCase.assertFalse ( JuniorExplanation.isHereLeftColSection(testArr, -1) );
     }
 
 
@@ -390,13 +390,13 @@ public class JuniorExplanationTest {
                 { 0, 0, 0,   3, 4, 5,   0, 7, 8 }
         };
 
-        TestCase.assertTrue ( JuniorExplanation.isThisMiddleColSection(testArr, 4) );
-        TestCase.assertTrue ( JuniorExplanation.isThisMiddleColSection(testArr, 5) );
-        TestCase.assertTrue ( JuniorExplanation.isThisMiddleColSection(testArr, 6) );
-        TestCase.assertFalse ( JuniorExplanation.isThisMiddleColSection(testArr, 0) );
-        TestCase.assertFalse ( JuniorExplanation.isThisMiddleColSection(testArr, 3) );
-        TestCase.assertFalse ( JuniorExplanation.isThisMiddleColSection(testArr, 10) );
-        TestCase.assertFalse ( JuniorExplanation.isThisMiddleColSection(testArr, -1) );
+        TestCase.assertTrue ( JuniorExplanation.isHereMiddleColSection(testArr, 4) );
+        TestCase.assertTrue ( JuniorExplanation.isHereMiddleColSection(testArr, 5) );
+        TestCase.assertTrue ( JuniorExplanation.isHereMiddleColSection(testArr, 6) );
+        TestCase.assertFalse ( JuniorExplanation.isHereMiddleColSection(testArr, 0) );
+        TestCase.assertFalse ( JuniorExplanation.isHereMiddleColSection(testArr, 3) );
+        TestCase.assertFalse ( JuniorExplanation.isHereMiddleColSection(testArr, 10) );
+        TestCase.assertFalse ( JuniorExplanation.isHereMiddleColSection(testArr, -1) );
     }
 
    @Test
@@ -415,13 +415,13 @@ public class JuniorExplanationTest {
                { 0, 0, 0,   3, 4, 5,   0, 7, 8 }
        };
 
-       TestCase.assertTrue ( JuniorExplanation.isThisRightColSection(testArr, 7) );
-       TestCase.assertTrue ( JuniorExplanation.isThisRightColSection(testArr, 8) );
-       TestCase.assertTrue ( JuniorExplanation.isThisRightColSection(testArr, 9) );
-       TestCase.assertFalse ( JuniorExplanation.isThisRightColSection(testArr, 0) );
-       TestCase.assertFalse ( JuniorExplanation.isThisRightColSection(testArr, 6) );
-       TestCase.assertFalse ( JuniorExplanation.isThisRightColSection(testArr, 10) );
-       TestCase.assertFalse ( JuniorExplanation.isThisRightColSection(testArr, -1) );
+       TestCase.assertTrue ( JuniorExplanation.isHereRightColSection(testArr, 7) );
+       TestCase.assertTrue ( JuniorExplanation.isHereRightColSection(testArr, 8) );
+       TestCase.assertTrue ( JuniorExplanation.isHereRightColSection(testArr, 9) );
+       TestCase.assertFalse ( JuniorExplanation.isHereRightColSection(testArr, 0) );
+       TestCase.assertFalse ( JuniorExplanation.isHereRightColSection(testArr, 6) );
+       TestCase.assertFalse ( JuniorExplanation.isHereRightColSection(testArr, 10) );
+       TestCase.assertFalse ( JuniorExplanation.isHereRightColSection(testArr, -1) );
    }
 
     @Test
@@ -447,7 +447,7 @@ public class JuniorExplanationTest {
         TestCase.assertFalse( JuniorExplanation.inTheArrayBoundary(testArr, 10, 1) );
         TestCase.assertFalse( JuniorExplanation.inTheArrayBoundary(testArr, 1, 10) );
         TestCase.assertFalse( JuniorExplanation.inTheArrayBoundary(testArr, -1, 1) );
-        TestCase.assertFalse(JuniorExplanation.inTheArrayBoundary(testArr, 1, -1));
+        TestCase.assertFalse( JuniorExplanation.inTheArrayBoundary(testArr, 1, -1));
     }
 
 
