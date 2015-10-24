@@ -20,9 +20,9 @@ public class JuniorExplanation {
         return numOfNumber;
     }
 
-    public static int howManyThisNumberInThisSection(int[][] twoDArr, int numOfSection, int number) {
+    public static int howManyThisNumberInThisSection(int[][] twoDArr, int section, int number) {
         int amountOfNumber = 0;
-        switch (numOfSection) {
+        switch (section) {
             case 1:
                 for (int i = 0; i < (twoDArr.length / 3); i++) {
                     for (int j = 0; j < (twoDArr[i].length / 3); j++) {
@@ -126,7 +126,7 @@ public class JuniorExplanation {
         return true;
     }
 
-    public static int returnSectionMinimumNumberOfZero(int[][] twoDArr) {
+    public static int searchEasySectionToSolve(int[][] twoDArr) {
         int minSection = 1;
         for (int i = 0; i < 9; i++) {
             if (howManyThisNumberInThisSection(twoDArr, i + 1, 0) == 1) return i + 1;
@@ -138,7 +138,7 @@ public class JuniorExplanation {
         return minSection;
     }
 
-    public static boolean couldBePlacedOnThreeByThree(int[][] twoDArr, int row, int col, int number) {
+    public static boolean couldBeHereInThisSection(int[][] twoDArr, int row, int col, int number) {
         if (!isHereZero(twoDArr, row, col)) return false;
         int section = whatSectionIsThisSpot(twoDArr, row, col);
         if (howManyThisNumberInThisSection(twoDArr, section, number) == 0) return true;

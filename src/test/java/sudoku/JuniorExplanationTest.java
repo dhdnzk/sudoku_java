@@ -60,7 +60,7 @@ public class JuniorExplanationTest {
     }
 
     @Test
-    public void hoManyThisNumbersInThisSection() {
+    public void howManyThisNumberInThisSection() {
         int[][] testArr = {
                 { 1, 0, 3, 0, 0, 6, 0, 8, 9 },
                 { 2, 3, 0, 5, 6, 0, 8, 9, 0 },
@@ -137,7 +137,7 @@ public class JuniorExplanationTest {
     }
 
     @Test
-    public void returnSectionMinimumNumberOfZero() {
+    public void searchEasySectionToSolve() {
         int[][] testArr1 = {
                 { 1, 1, 3,   0, 0, 6,   0, 8, 9 },
                 { 2, 3, 1,   5, 6, 0,   8, 9, 0 },
@@ -177,13 +177,13 @@ public class JuniorExplanationTest {
                 { 8, 0, 0,   2, 3, 4,   5, 6, 7 },
                 { 0, 0, 0,   3, 4, 5,   0, 7, 8 }
         };
-        TestCase.assertEquals( 5, JuniorExplanation.returnSectionMinimumNumberOfZero( testArr1 ) );
-        TestCase.assertEquals( 8, JuniorExplanation.returnSectionMinimumNumberOfZero( testArr2 ) );
-        TestCase.assertEquals( 1, JuniorExplanation.returnSectionMinimumNumberOfZero(testArr3) );
+        TestCase.assertEquals( 5, JuniorExplanation.searchEasySectionToSolve(testArr1) );
+        TestCase.assertEquals( 8, JuniorExplanation.searchEasySectionToSolve(testArr2) );
+        TestCase.assertEquals( 1, JuniorExplanation.searchEasySectionToSolve(testArr3) );
     }
 
     @Test
-    public void couldBePlacedOnThreeByThree( ) {
+    public void couldBeHereInThisSection() {
         int[][] testArr = {
                 { 0, 1, 7,   0, 0, 6,   0, 8, 9 },
                 { 2, 0, 1,   5, 6, 0,   8, 9, 0 },
@@ -198,10 +198,10 @@ public class JuniorExplanationTest {
                 { 0, 0, 0,   3, 4, 5,   0, 7, 8 }
         };
 
-        TestCase.assertTrue( JuniorExplanation.couldBePlacedOnThreeByThree( testArr, 1, 1, 9 ) );
-        TestCase.assertFalse(JuniorExplanation.couldBePlacedOnThreeByThree(testArr, 7, 1, 9));
-        TestCase.assertFalse(JuniorExplanation.couldBePlacedOnThreeByThree(testArr, 2, 6, 7));
-        TestCase.assertFalse(JuniorExplanation.couldBePlacedOnThreeByThree(testArr, 4, 3, 9));
+        TestCase.assertTrue( JuniorExplanation.couldBeHereInThisSection(testArr, 1, 1, 9) );
+        TestCase.assertFalse(JuniorExplanation.couldBeHereInThisSection(testArr, 7, 1, 9));
+        TestCase.assertFalse(JuniorExplanation.couldBeHereInThisSection(testArr, 2, 6, 7));
+        TestCase.assertFalse(JuniorExplanation.couldBeHereInThisSection(testArr, 4, 3, 9));
     }
 
 //    @Test
@@ -225,7 +225,7 @@ public class JuniorExplanationTest {
 //    }
 
     @Test
-    public void elementZero () {
+    public void isHereZero() {
         int[][] testArr = {
                 { 0, 0, 7,   0, 0, 6,   0, 8, 9 },
                 { 2, 0, 1,   5, 6, 0,   8, 9, 0 },
@@ -249,7 +249,7 @@ public class JuniorExplanationTest {
 
 
     @Test
-    public void elementNumber () {
+    public void isHereThisNumber() {
         int[][] testArr = {
                 { 0, 0, 7,   0, 0, 6,   0, 8, 9 },
                 { 2, 0, 1,   5, 6, 0,   8, 9, 0 },
@@ -273,7 +273,7 @@ public class JuniorExplanationTest {
 
 
     @Test
-    public void isThisUpperRowSection () {
+    public void isHereUpperRowSection() {
         int[][] testArr = {
                 { 0, 0, 7,   0, 0, 6,   0, 8, 9 },
                 { 2, 0, 1,   5, 6, 0,   8, 9, 0 },
@@ -298,7 +298,7 @@ public class JuniorExplanationTest {
     }
 
     @Test
-    public void isThisMiddleRowSection() {
+    public void isHereMiddleRowSection() {
         int[][] testArr = {
                 { 0, 0, 7,   0, 0, 6,   0, 8, 9 },
                 { 2, 0, 1,   5, 6, 0,   8, 9, 0 },
@@ -323,7 +323,7 @@ public class JuniorExplanationTest {
 
 
     @Test
-    public void isThisBottomRowSection() {
+    public void isHereLowerRowSection() {
         int[][] testArr = {
                 { 0, 0, 7,   0, 0, 6,   0, 8, 9 },
                 { 2, 0, 1,   5, 6, 0,   8, 9, 0 },
@@ -349,7 +349,7 @@ public class JuniorExplanationTest {
 
 
     @Test
-    public void isThisLeftColSection () {
+    public void isHereLeftColSection() {
         int[][] testArr = {
                 { 0, 0, 7,   0, 0, 6,   0, 8, 9 },
                 { 2, 0, 1,   5, 6, 0,   8, 9, 0 },
@@ -375,7 +375,7 @@ public class JuniorExplanationTest {
 
 
     @Test
-    public void isThisMiddleColSection () {
+    public void isHereMiddleColSection() {
         int[][] testArr = {
                 { 0, 0, 7,   0, 0, 6,   0, 8, 9 },
                 { 2, 0, 1,   5, 6, 0,   8, 9, 0 },
@@ -400,7 +400,7 @@ public class JuniorExplanationTest {
     }
 
    @Test
-    public void isThisRightColSection () {
+    public void isHereRightColSection() {
        int[][] testArr = {
                { 0, 0, 7,   0, 0, 6,   0, 8, 9 },
                { 2, 0, 1,   5, 6, 0,   8, 9, 0 },
@@ -425,7 +425,7 @@ public class JuniorExplanationTest {
    }
 
     @Test
-    public void inTheArrBoundary () {
+    public void inTheArrayBoundary() {
         int[][] testArr = {
                 { 0, 0, 7,   0, 0, 6,   0, 8, 9 },
                 { 2, 0, 1,   5, 6, 0,   8, 9, 0 },
@@ -449,25 +449,4 @@ public class JuniorExplanationTest {
         TestCase.assertFalse( JuniorExplanation.inTheArrayBoundary(testArr, -1, 1) );
         TestCase.assertFalse( JuniorExplanation.inTheArrayBoundary(testArr, 1, -1));
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
