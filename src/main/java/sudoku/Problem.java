@@ -25,7 +25,7 @@ public class Problem {
         return this.numOfZero;
     }
 
-    public Element[][] getcandidateBoard () {
+    public Element[][] getCandidateBoard() {
         return this.candidateBoard;
     }
 

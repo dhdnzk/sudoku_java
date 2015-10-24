@@ -23,8 +23,9 @@ public class ProblemTest {
 
         Problem testProblem = new Problem ( testArr );
         TestCase.assertEquals( 51, testProblem.getNumOfZero() );
-        TestCase.assertEquals( 8, testProblem.getcandidateBoard()[2][2].getConfirmedElement());
-        TestCase.assertEquals( 0, testProblem.getcandidateBoard()[1][1].getConfirmedElement());
+        TestCase.assertEquals( 8, testProblem.getCandidateBoard()[2][2].getConfirmedElement() );
+        TestCase.assertEquals( 0, testProblem.getCandidateBoard()[1][1].getConfirmedElement() );
+        TestCase.assertEquals( null, testProblem.getCandidateBoard()[2][2].getCandidates() );
     }
 
 
