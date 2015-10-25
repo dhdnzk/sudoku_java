@@ -7,7 +7,6 @@ public class SudokuTest {
         while ( 0 < p1.numOfZero ) {
             JuniorExplanation.juniorExplanation( p1 );
 //          seniorExplanation( p1 );
-            p1.showState();
         }
         p1.showState();
     }

@@ -553,6 +553,14 @@ public class JuniorExplanationTest {
         TestCase.assertEquals( 4, testProblem.getCandidateBoard()[8][0].getNumOfCandidates() );
     }
 
+    // TODO 3x3 구현
+    @Test
+    public void sectionCandidateRemoval() {
+
+    }
+
+
+
     @Test
     public void transformSingleCandidateToConfirmedElement () {
         Element testElement = new Element();
@@ -619,6 +627,15 @@ public class JuniorExplanationTest {
 
     }
 
+    // TODO 3x3 구현
+    @Test
+    public void sectionTransformSingleCandidateToConfirmedElement() {
+
+    }
+
+
+
+    // TODO 3x3section 풀이법 완성하면 추가해서 테스트할것
     @Test
     public void solveSingleCandidate() {
         int[][] testArr = {
@@ -639,12 +656,6 @@ public class JuniorExplanationTest {
         JuniorExplanation.solveSingleCandidate( testProblem );
 
     }
-
-
-
-
-
-
 
 
 

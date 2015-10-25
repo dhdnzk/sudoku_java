@@ -253,14 +253,18 @@ public class JuniorExplanation {
 
     public static void rowTransformSingleCandidtateToConfirmedElement( Problem problem, int row ) {
         for (int i = 0; i < problem.getCandidateBoard()[row - 1].length; i ++ )
-            if ( transformSingleCandidateToConfirmedElement( problem.getCandidateBoard()[row - 1][i] ) )
-                problem.numOfZero --;
+            if ( transformSingleCandidateToConfirmedElement( problem.getCandidateBoard()[row - 1][i] ) ) {
+                problem.numOfZero--;
+                problem.showState();
+            }
     }
 
     public static void colTransformSingleCandidateToConfirmedElement( Problem problem, int col) {
         for ( int i= 0; i < problem.getCandidateBoard().length; i ++ )
-            if ( transformSingleCandidateToConfirmedElement( problem.getCandidateBoard()[i][col - 1] ) )
-                problem.numOfZero --;
+            if ( transformSingleCandidateToConfirmedElement( problem.getCandidateBoard()[i][col - 1] ) ) {
+                problem.numOfZero--;
+                problem.showState();
+            }
     }
 
     public static void solveSingleCandidate( Problem problem ) {
@@ -272,6 +276,10 @@ public class JuniorExplanation {
             colCandidateRemoval( problem.getCandidateBoard(), col + 1 );
             colTransformSingleCandidateToConfirmedElement( problem, col + 1 );
         }
+//        for (int section = 1; section <= 9; section ++ ) {
+//
+//
+//        }
     }
 
     public static void juniorExplanation( Problem problem ) {
