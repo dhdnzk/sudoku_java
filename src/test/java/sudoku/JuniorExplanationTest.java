@@ -3,10 +3,6 @@ package sudoku;
 import junit.framework.TestCase;
 import org.junit.Test;
 
-// 초급 풀이법
-// 후보자 수가 하나일 때
-// 숨겨진 후보가 유일한 요소가 존재할때
-
 public class JuniorExplanationTest {
 
     @Test
@@ -231,7 +227,6 @@ public class JuniorExplanationTest {
         TestCase.assertFalse( JuniorExplanation.isHereZero(testProblem.getCandidateBoard(), 6, 9) );
     }
 
-
     @Test
     public void isHereThisNumber() {
         int[][] testArr = {
@@ -255,7 +250,6 @@ public class JuniorExplanationTest {
         TestCase.assertFalse(JuniorExplanation.isHereThisNumber(testProblem.getCandidateBoard(), 1, 3, 3));
         TestCase.assertFalse(JuniorExplanation.isHereThisNumber(testProblem.getCandidateBoard(), 9, 9, 9));
     }
-
 
     @Test
     public void isHereUpperRowSection() {
@@ -308,7 +302,6 @@ public class JuniorExplanationTest {
         TestCase.assertFalse( JuniorExplanation.isHereMiddleRowSection(testProblem.getCandidateBoard(), 10) );
     }
 
-
     @Test
     public void isHereLowerRowSection() {
         int[][] testArr = {
@@ -334,7 +327,6 @@ public class JuniorExplanationTest {
         TestCase.assertFalse( JuniorExplanation.isHereLowerRowSection(testProblem.getCandidateBoard(), 10) );
 
     }
-
 
     @Test
     public void isHereLeftColSection() {
@@ -362,7 +354,6 @@ public class JuniorExplanationTest {
         TestCase.assertFalse ( JuniorExplanation.isHereLeftColSection(testProblem.getCandidateBoard(), -1) );
     }
 
-
     @Test
     public void isHereMiddleColSection() {
         int[][] testArr = {
@@ -389,31 +380,31 @@ public class JuniorExplanationTest {
         TestCase.assertFalse ( JuniorExplanation.isHereMiddleColSection(testProblem.getCandidateBoard(), -1) );
     }
 
-   @Test
+    @Test
     public void isHereRightColSection() {
-       int[][] testArr = {
-               { 0, 0, 7,   0, 0, 6,   0, 8, 9 },
-               { 2, 0, 1,   5, 6, 0,   8, 9, 0 },
-               { 3, 4, 5,   6, 7, 0,   9, 1, 2 },
+        int[][] testArr = {
+                { 0, 0, 7,   0, 0, 6,   0, 8, 9 },
+                { 2, 0, 1,   5, 6, 0,   8, 9, 0 },
+                { 3, 4, 5,   6, 7, 0,   9, 1, 2 },
 
-               { 4, 0, 0,   3, 3, 3,   1, 0, 3 },
-               { 5, 9, 0,   3, 3, 3,   2, 0, 4 },
-               { 6, 7, 0,   3, 3, 0,   3, 4, 5 },
+                { 4, 0, 0,   3, 3, 3,   1, 0, 3 },
+                { 5, 9, 0,   3, 3, 3,   2, 0, 4 },
+                { 6, 7, 0,   3, 3, 0,   3, 4, 5 },
 
-               { 7, 0, 0,   1, 2, 3,   4, 5, 0 },
-               { 1, 0, 0,   2, 3, 4,   5, 6, 7 },
-               { 0, 0, 0,   3, 4, 5,   0, 7, 8 }
-       };
-       Problem testProblem = new Problem( testArr );
+                { 7, 0, 0,   1, 2, 3,   4, 5, 0 },
+                { 1, 0, 0,   2, 3, 4,   5, 6, 7 },
+                { 0, 0, 0,   3, 4, 5,   0, 7, 8 }
+        };
+        Problem testProblem = new Problem( testArr );
 
-       TestCase.assertTrue ( JuniorExplanation.isHereRightColSection(testProblem.getCandidateBoard(), 7) );
-       TestCase.assertTrue ( JuniorExplanation.isHereRightColSection(testProblem.getCandidateBoard(), 8) );
-       TestCase.assertTrue ( JuniorExplanation.isHereRightColSection(testProblem.getCandidateBoard(), 9) );
-       TestCase.assertFalse ( JuniorExplanation.isHereRightColSection(testProblem.getCandidateBoard(), 0) );
-       TestCase.assertFalse ( JuniorExplanation.isHereRightColSection(testProblem.getCandidateBoard(), 6) );
-       TestCase.assertFalse ( JuniorExplanation.isHereRightColSection(testProblem.getCandidateBoard(), 10) );
-       TestCase.assertFalse ( JuniorExplanation.isHereRightColSection(testProblem.getCandidateBoard(), -1) );
-   }
+        TestCase.assertTrue ( JuniorExplanation.isHereRightColSection(testProblem.getCandidateBoard(), 7) );
+        TestCase.assertTrue ( JuniorExplanation.isHereRightColSection(testProblem.getCandidateBoard(), 8) );
+        TestCase.assertTrue ( JuniorExplanation.isHereRightColSection(testProblem.getCandidateBoard(), 9) );
+        TestCase.assertFalse ( JuniorExplanation.isHereRightColSection(testProblem.getCandidateBoard(), 0) );
+        TestCase.assertFalse ( JuniorExplanation.isHereRightColSection(testProblem.getCandidateBoard(), 6) );
+        TestCase.assertFalse ( JuniorExplanation.isHereRightColSection(testProblem.getCandidateBoard(), 10) );
+        TestCase.assertFalse ( JuniorExplanation.isHereRightColSection(testProblem.getCandidateBoard(), -1) );
+    }
 
     @Test
     public void inTheArrayBoundary() {
@@ -485,6 +476,7 @@ public class JuniorExplanationTest {
         TestCase.assertFalse(JuniorExplanation.isHereConfirmed(testProblem.getCandidateBoard(), 1, 1));
 
     }
+
     @Test
     public void candidateRemoval() {
         Element testElement = new Element();
@@ -561,7 +553,6 @@ public class JuniorExplanationTest {
         TestCase.assertEquals( 4, testProblem.getCandidateBoard()[8][0].getNumOfCandidates() );
     }
 
-
     @Test
     public void transformSingleCandidateToConfirmedElement () {
         Element testElement = new Element();
@@ -574,10 +565,62 @@ public class JuniorExplanationTest {
         TestCase.assertEquals( 1, testElement.getConfirmedElement() );
     }
 
-
     @Test
     public void rowTranformSingleCandidateToConfirmedElement() {
+        int[][] testArr1 = { { 1, 2, 3, 4, 5, 6, 7, 8, 0 } };
+        int[][] testArr2 = {
+                {1, 2, 3, 4, 5, 6, 7, 8, 0},
+                {0, 3, 4, 5, 6, 7, 8, 9, 1}
+        };
+        Problem testProblem1 = new Problem( testArr1 );
+        Problem testProblem2 = new Problem( testArr2 );
 
+        JuniorExplanation.rowCandidateRemoval( testProblem1.getCandidateBoard(), 1);
+        JuniorExplanation.rowCandidateRemoval( testProblem2.getCandidateBoard(), 1);
+        JuniorExplanation.rowCandidateRemoval( testProblem2.getCandidateBoard(), 2);
+
+        JuniorExplanation.rowTransformSingleCandidtateToConfirmedElement( testProblem1, 1 );
+        JuniorExplanation.rowTransformSingleCandidtateToConfirmedElement( testProblem2, 1 );
+        JuniorExplanation.rowTransformSingleCandidtateToConfirmedElement( testProblem2, 2 );
+
+        TestCase.assertEquals( 9, testProblem1.getCandidateBoard()[0][8].getConfirmedElement() );
+        TestCase.assertEquals( 9, testProblem2.getCandidateBoard()[0][8].getConfirmedElement() );
+        TestCase.assertEquals( 2, testProblem2.getCandidateBoard()[1][0].getConfirmedElement() );
+    }
+
+    @Test
+    public void colTransformSingleCandidateToConfirmedElement() {
+        int[][] testArr = {
+                { 1, 2, 3 },
+                { 2, 3, 0 },
+                { 3, 4, 5 },
+                { 4, 5, 6 },
+                { 0, 6, 7 },
+                { 6, 7, 8 },
+                { 7, 0, 9 },
+                { 8, 9, 1 },
+                { 9, 1, 2 }
+
+        };
+
+        Problem testProblem = new Problem( testArr );
+
+        JuniorExplanation.colCandidateRemoval( testProblem.getCandidateBoard(), 1);
+        JuniorExplanation.colCandidateRemoval( testProblem.getCandidateBoard(), 2);
+        JuniorExplanation.colCandidateRemoval( testProblem.getCandidateBoard(), 3);
+
+        JuniorExplanation.colTransformSingleCandidateToConfirmedElement( testProblem, 1);
+        JuniorExplanation.colTransformSingleCandidateToConfirmedElement( testProblem, 2);
+        JuniorExplanation.colTransformSingleCandidateToConfirmedElement( testProblem, 3);
+
+        TestCase.assertEquals( 5, testProblem.getCandidateBoard()[4][0].getConfirmedElement() );
+        TestCase.assertEquals( 8, testProblem.getCandidateBoard()[6][1].getConfirmedElement() );
+        TestCase.assertEquals( 4, testProblem.getCandidateBoard()[1][2].getConfirmedElement() );
+
+    }
+
+    @Test
+    public void solveSingleCandidate() {
         int[][] testArr = {
                 {5, 3, 0,  0, 7, 0,  0, 0, 0},
                 {6, 0, 0,  1, 9, 5,  0, 0, 0},
@@ -591,15 +634,11 @@ public class JuniorExplanationTest {
                 {0, 0, 0,  4, 1, 9,  0, 0, 5},
                 {0, 0, 0,  0, 8, 0,  0, 7, 9}
         };
+        Problem testProblem = new Problem(testArr);
 
-        Problem testProblem = new Problem( testArr );
+        JuniorExplanation.solveSingleCandidate( testProblem );
 
     }
-
-
-
-
-
 
 
 

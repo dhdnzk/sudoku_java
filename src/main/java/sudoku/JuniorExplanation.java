@@ -20,7 +20,7 @@ public class JuniorExplanation {
         return numOfNumber;
     }
 
-    // FIXME switch문 간단하게 리펙토링 요망(section별로 case구분하지 않고 흐름 분기될 수 있도록)
+// FIXME switch문 간단하게 리펙토링 요망(section별로 case구분하지 않고 흐름 분기될 수 있도록)
     public static int howManyThisNumberInThisSection(Element[][] candidateTwoDArr, int section, int number) {
         int amountOfNumber = 0;
         switch (section) {
@@ -240,7 +240,6 @@ public class JuniorExplanation {
     }
 
     public static boolean transformSingleCandidateToConfirmedElement( Element element ) {
-
         if ( element.getNumOfCandidates() == 1 ) {
             for ( int i = 0; i < element.getCandidates().length; i ++ ) {
                 if ( element.getCandidates()[i] != 0 ) {
@@ -252,12 +251,36 @@ public class JuniorExplanation {
         return false;
     }
 
+    public static void rowTransformSingleCandidtateToConfirmedElement( Problem problem, int row ) {
+        for (int i = 0; i < problem.getCandidateBoard()[row - 1].length; i ++ )
+            if ( transformSingleCandidateToConfirmedElement( problem.getCandidateBoard()[row - 1][i] ) )
+                problem.numOfZero --;
+    }
 
+    public static void colTransformSingleCandidateToConfirmedElement( Problem problem, int col) {
+        for ( int i= 0; i < problem.getCandidateBoard().length; i ++ )
+            if ( transformSingleCandidateToConfirmedElement( problem.getCandidateBoard()[i][col - 1] ) )
+                problem.numOfZero --;
+    }
 
-// TODO solveSingleCandidate
-// TODO solveHiddenSingleCandidate
+    public static void solveSingleCandidate( Problem problem ) {
+        for (int row = 0; row < problem.getCandidateBoard().length; row ++ ) {
+            rowCandidateRemoval( problem.getCandidateBoard(), row + 1 );
+            rowTransformSingleCandidtateToConfirmedElement( problem, row + 1 );
+        }
+        for (int col = 0; col < problem.getCandidateBoard()[0].length; col ++ ) {
+            colCandidateRemoval( problem.getCandidateBoard(), col + 1 );
+            colTransformSingleCandidateToConfirmedElement( problem, col + 1 );
+        }
+    }
 
+    public static void juniorExplanation( Problem problem ) {
+        solveSingleCandidate( problem );
+    }
 
+// TODO 초급 풀이법
+// TODO 후보자 수가 하나일때 : solveSingleCandidate
+// TODO 후보들 중에서 숨겨진 유일한 후보가 존재할 때 : solveHiddenSingleCandidate
 
 }
 

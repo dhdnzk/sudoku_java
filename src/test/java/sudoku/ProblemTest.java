@@ -6,7 +6,7 @@ import org.junit.Test;
 public class ProblemTest {
 
     @Test
-    public void matchQuizToCandidateBoard() {
+    public void matchSimpleBoardToCandidateBoard() {
         int[][] testArr = {
                 { 5, 3, 0,  0, 7, 0,  0, 0, 0 },
                 { 6, 0, 0,  1, 9, 5,  0, 0, 0 },
@@ -27,6 +27,7 @@ public class ProblemTest {
         TestCase.assertEquals( 0, testProblem.getCandidateBoard()[1][1].getConfirmedElement() );
         TestCase.assertEquals( null, testProblem.getCandidateBoard()[2][2].getCandidates() );
     }
+
 
 
 }

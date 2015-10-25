@@ -30,6 +30,11 @@ public class Problem {
     }
 
     public void showState() {
+
+        for (int i = 0; i < 100; i ++ ) {
+            System.out.println("");
+        }
+
         for (int row = 0; row < this.candidateBoard.length; row++) {
             if ( row % 3 == 0 && row > 1 )
                 System.out.println( "━━━━━━━━━━━━━━━━" );
@@ -43,6 +48,12 @@ public class Problem {
                     System.out.print("  ");
             }
             System.out.println("");
+        }
+        System.out.println("\n\n");
+        try {
+            Thread.sleep(1000);
+        }catch(InterruptedException e){
+            System.out.println(e.getMessage());
         }
     }
 
