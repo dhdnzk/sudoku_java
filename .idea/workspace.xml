@@ -291,8 +291,8 @@
           <file leaf-file-name="JuniorExplanationTest.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/test/java/sudoku/JuniorExplanationTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.48497853">
-                  <caret line="578" column="60" selection-start-line="578" selection-start-column="16" selection-end-line="578" selection-end-column="61" />
+                <state vertical-scroll-proportion="0.4635193">
+                  <caret line="577" column="9" selection-start-line="577" selection-start-column="9" selection-end-line="577" selection-end-column="9" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -965,12 +965,12 @@
       <workItem from="1445582699486" duration="739000" />
       <workItem from="1445583776597" duration="1041000" />
       <workItem from="1445586522236" duration="1213000" />
-      <workItem from="1445689955401" duration="26763000" />
+      <workItem from="1445689955401" duration="26907000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81061000" />
+    <option name="totallyTimeSpent" value="81205000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -1360,8 +1360,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/sudoku/JuniorExplanationTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.48497853">
-          <caret line="578" column="60" selection-start-line="578" selection-start-column="16" selection-end-line="578" selection-end-column="61" />
+        <state vertical-scroll-proportion="0.4635193">
+          <caret line="577" column="9" selection-start-line="577" selection-start-column="9" selection-end-line="577" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
