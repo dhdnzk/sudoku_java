@@ -535,11 +535,15 @@ public class JuniorExplanationTest {
         Problem testProblem = new Problem(testArr);
 
         JuniorExplanation.rowCandidateRemoval ( testProblem.getCandidateBoard(), 1 );
-//        TestCase.assertEquals( 6, testProblem.getCandidateBoard()[0][2].getCandidates()[7] );
-        TestCase.assertEquals( 6, testProblem.getCandidateBoard()[0][2].getNumOfCandidates() );
-//        TestCase.assertEquals( 4, testProblem.getCandidateBoard()[6][0].getNumOfCandidates() );
-//        TestCase.assertEquals( 4, testProblem.getCandidateBoard()[7][0].getNumOfCandidates() );
-//        TestCase.assertEquals( 4, testProblem.getCandidateBoard()[8][0].getNumOfCandidates() );
+        JuniorExplanation.rowCandidateRemoval ( testProblem.getCandidateBoard(), 2 );
+        TestCase.assertEquals( 0, testProblem.getCandidateBoard()[0][2].getCandidates()[6] );
+        TestCase.assertEquals( 5, testProblem.getCandidateBoard()[1][1].getNumOfCandidates() );
+        TestCase.assertEquals( 5, testProblem.getCandidateBoard()[1][6].getNumOfCandidates() );
+        TestCase.assertEquals( 5, testProblem.getCandidateBoard()[1][7].getNumOfCandidates() );
+        TestCase.assertEquals( 5, testProblem.getCandidateBoard()[1][8].getNumOfCandidates() );
+
+        JuniorExplanation.colCandidateRemoval ( testProblem.getCandidateBoard(), 2 );
+        TestCase.assertEquals( 4, testProblem.getCandidateBoard()[1][1].getNumOfCandidates() );
 
     }
 

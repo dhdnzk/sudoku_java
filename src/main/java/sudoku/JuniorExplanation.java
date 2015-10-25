@@ -220,9 +220,9 @@ public class JuniorExplanation {
 
     public static void rowCandidateRemoval(Element[][] candidateTwoDArr, int row) {
         for (int i = 0; i < candidateTwoDArr[row - 1].length; i++) {
-            if (isHereConfirmed(candidateTwoDArr, i + 1, row)) {
+            if (isHereConfirmed(candidateTwoDArr, row, i + 1)) {
                 for (int j = 0; j < candidateTwoDArr[row - 1].length; j++) {
-                    candidateRemoval(candidateTwoDArr[row - 1][j], candidateTwoDArr[row - 1][j].getConfirmedElement());
+                    candidateRemoval(candidateTwoDArr[row - 1][j], candidateTwoDArr[row - 1][i].getConfirmedElement());
                 }
             }
         }
