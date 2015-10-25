@@ -195,6 +195,53 @@ public class JuniorExplanation {
         return true;
     }
 
+    public static boolean isHereThisCandidate(Element[][] candidateTwoDArr , int row, int col, int number) {
+        if ( !inTheArrayBoundary( candidateTwoDArr, row, col ) ) return false;
+        if ( candidateTwoDArr[row - 1][col - 1].getCandidates() == null ) return false;
+        if ( candidateTwoDArr[row - 1][col - 1].getCandidates()[number - 1] == 0) return false;
+        return true;
+    }
+
+    public static boolean isHereConfirmed(Element[][] candidateTwoDArr, int row, int col) {
+        if ( !inTheArrayBoundary( candidateTwoDArr, row, col ) ) return false;
+        if ( candidateTwoDArr[row - 1][col - 1].getConfirmedElement() != 0 ) return true;
+        // singleCandidate 메소드 작성해서 후보자 수가 하나 남았을때 처리해서 true 반환하도록 기능 확장
+        return false;
+    }
+
+    public static void candidateRemoval(Element element, int number) {
+        if ( 9 < number || number < 1) return;
+        if ( element.getConfirmedElement() != 0 ) return;
+        if ( element.getCandidates()[number - 1] != 0 ) {
+            element.getCandidates()[number - 1] = 0;
+            element.decreaseNumOfCandidates();
+        }
+    }
+
+    public static void rowCandidateRemoval(Element[][] candidateTwoDArr, int row) {
+        for (int i = 0; i < candidateTwoDArr[row - 1].length; i++) {
+            if (isHereConfirmed(candidateTwoDArr, i + 1, row)) {
+                for (int j = 0; j < candidateTwoDArr[row - 1].length; j++) {
+                    candidateRemoval(candidateTwoDArr[row - 1][j], candidateTwoDArr[row - 1][j].getConfirmedElement());
+                }
+            }
+        }
+    }
+
+    public static void colCandidateRemoval(Element[][] candidateTwoDArr, int col) {
+        for ( int i = 0; i < candidateTwoDArr.length; i ++ ) {
+            if ( isHereConfirmed( candidateTwoDArr, i + 1, col ) ) {
+                for (int j = 0; j < candidateTwoDArr.length; j++) {
+                    candidateRemoval( candidateTwoDArr[j][col - 1], candidateTwoDArr[i][col - 1].getConfirmedElement() );
+                }
+            }
+        }
+    }
+
+
+
+    // solveSingleCandidate
+    // solveHiddenSingleCandidate
 
 }
 

@@ -74,7 +74,9 @@ class Element {
         this.numOfCandidates --;
         return this.numOfCandidates;
     }
-
-
-
 }
+
+
+
+
+

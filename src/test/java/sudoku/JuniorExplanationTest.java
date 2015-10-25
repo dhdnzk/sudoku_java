@@ -14,6 +14,10 @@ import org.junit.Test;
 //  3x3내의 모든 빈칸들 십자가 검사해서 전부 false 나오면 채우기
 //TODO 기타 풀이법 생각날때마다 하나씩 추가
 
+
+
+//TODO 후보자 수가 하나일 때
+
 public class JuniorExplanationTest {
 
     @Test
@@ -449,20 +453,126 @@ public class JuniorExplanationTest {
         TestCase.assertFalse( JuniorExplanation.inTheArrayBoundary(testProblem.getCandidateBoard(), 1, -1));
     }
 
-//    @Test
-//    public void rowCandidateRemoval() {
-//
-//        public
+    @Test
+    public void isHereThisCandidate() {
+        int[][] testArr = {
+                { 0, 0, 7,   0, 0, 6,   0, 8, 9 },
+                { 2, 0, 1,   5, 6, 0,   8, 9, 0 },
+                { 3, 4, 5,   6, 7, 0,   9, 1, 2 },
+
+                { 4, 0, 0,   3, 3, 3,   1, 0, 3 },
+                { 5, 9, 0,   3, 3, 3,   2, 0, 4 },
+                { 6, 7, 0,   3, 3, 0,   3, 4, 5 },
+
+                { 7, 0, 0,   1, 2, 3,   4, 5, 0 },
+                { 1, 0, 0,   2, 3, 4,   5, 6, 7 },
+                { 0, 0, 0,   3, 4, 5,   0, 7, 8 }
+        };
+        Problem testProblem = new Problem( testArr );
+
+        TestCase.assertEquals(false, JuniorExplanation.isHereThisCandidate( testProblem.getCandidateBoard(), 1, 3, 4));
+        TestCase.assertEquals(true, JuniorExplanation.isHereThisCandidate(testProblem.getCandidateBoard(), 1, 1, 4));
+    }
+
+    @Test
+    public void isHereConfirmed() {
+        int[][] testArr = {
+                {0, 0, 7, 0, 0, 6, 0, 8, 9},
+                {2, 0, 1, 5, 6, 0, 8, 9, 0},
+                {3, 4, 5, 6, 7, 0, 9, 1, 2},
+
+                {4, 0, 0, 3, 3, 3, 1, 0, 3},
+                {5, 9, 0, 3, 3, 3, 2, 0, 4},
+                {6, 7, 0, 3, 3, 0, 3, 4, 5},
+
+                {7, 0, 0, 1, 2, 3, 4, 5, 0},
+                {1, 0, 0, 2, 3, 4, 5, 6, 7},
+                {0, 0, 0, 3, 4, 5, 0, 7, 8}
+        };
+        Problem testProblem = new Problem(testArr);
+
+        TestCase.assertTrue(JuniorExplanation.isHereConfirmed(testProblem.getCandidateBoard(), 1, 3));
+        TestCase.assertTrue(JuniorExplanation.isHereConfirmed(testProblem.getCandidateBoard(), 3, 3));
+        TestCase.assertFalse(JuniorExplanation.isHereConfirmed(testProblem.getCandidateBoard(), 1, 1));
+
+    }
+    @Test
+    public void candidateRemoval() {
+        Element testElement = new Element();
+
+        JuniorExplanation.candidateRemoval( testElement, 3 );
+        TestCase.assertEquals( 0, testElement.getCandidates()[2] );
+
+        JuniorExplanation.candidateRemoval( testElement, 5 );
+        TestCase.assertEquals( 0, testElement.getCandidates()[4] );
+
+        JuniorExplanation.candidateRemoval( testElement, 9 );
+        TestCase.assertEquals( 0, testElement.getCandidates()[8] );
+
+        TestCase.assertEquals( 1, testElement.getCandidates()[0] );
+
+        JuniorExplanation.candidateRemoval( testElement, 1 );
+        TestCase.assertEquals( 0, testElement.getCandidates()[0] );
+
+        TestCase.assertEquals( 5, testElement.getNumOfCandidates() );
+    }
+
+    @Test
+    public void rowCandidateRemoval() {
+        int[][] testArr = {
+                {5, 3, 0,  0, 7, 0,  0, 0, 0},
+                {6, 0, 0,  1, 9, 5,  0, 0, 0},
+                {0, 9, 8,  0, 0, 0,  0, 6, 0},
+
+                {8, 0, 0,  0, 6, 0,  0, 0, 3},
+                {4, 0, 0,  8, 0, 3,  0, 0, 1},
+                {7, 0, 0,  0, 2, 0,  0, 0, 6},
+
+                {0, 6, 0,  0, 0, 0,  2, 8, 0},
+                {0, 0, 0,  4, 1, 9,  0, 0, 5},
+                {0, 0, 0,  0, 8, 0,  0, 7, 9}
+        };
+        Problem testProblem = new Problem(testArr);
+
+        JuniorExplanation.rowCandidateRemoval ( testProblem.getCandidateBoard(), 1 );
+//        TestCase.assertEquals( 6, testProblem.getCandidateBoard()[0][2].getCandidates()[7] );
+        TestCase.assertEquals( 6, testProblem.getCandidateBoard()[0][2].getNumOfCandidates() );
+//        TestCase.assertEquals( 4, testProblem.getCandidateBoard()[6][0].getNumOfCandidates() );
+//        TestCase.assertEquals( 4, testProblem.getCandidateBoard()[7][0].getNumOfCandidates() );
+//        TestCase.assertEquals( 4, testProblem.getCandidateBoard()[8][0].getNumOfCandidates() );
+
+    }
+
+    @Test
+    public void colCandidateRemoval() {
+        int[][] testArr = {
+                {5, 3, 0,  0, 7, 0,  0, 0, 0},
+                {6, 0, 0,  1, 9, 5,  0, 0, 0},
+                {0, 9, 8,  0, 0, 0,  0, 6, 0},
+
+                {8, 0, 0,  0, 6, 0,  0, 0, 3},
+                {4, 0, 0,  8, 0, 3,  0, 0, 1},
+                {7, 0, 0,  0, 2, 0,  0, 0, 6},
+
+                {0, 6, 0,  0, 0, 0,  2, 8, 0},
+                {0, 0, 0,  4, 1, 9,  0, 0, 5},
+                {0, 0, 0,  0, 8, 0,  0, 7, 9}
+        };
+        Problem testProblem = new Problem(testArr);
+
+        JuniorExplanation.colCandidateRemoval(testProblem.getCandidateBoard(), 1);
+        TestCase.assertEquals( 0, testProblem.getCandidateBoard()[2][0].getCandidates()[7] );
+        TestCase.assertEquals( 4, testProblem.getCandidateBoard()[2][0].getNumOfCandidates() );
+        TestCase.assertEquals( 4, testProblem.getCandidateBoard()[6][0].getNumOfCandidates() );
+        TestCase.assertEquals( 4, testProblem.getCandidateBoard()[7][0].getNumOfCandidates() );
+        TestCase.assertEquals( 4, testProblem.getCandidateBoard()[8][0].getNumOfCandidates() );
+    }
 
 
 
 
 
 
-
-
-
-//    }
 
 
 }
