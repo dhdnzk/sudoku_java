@@ -238,6 +238,9 @@ public class JuniorExplanation {
         }
     }
 
+    public static void sectionCandidateRemoval(Element[][] candidateTwoDArr, int section) {
+
+    }
 
 
     // solveSingleCandidate

@@ -4,18 +4,18 @@ public class Problem {
     int numOfZero;
     private Element[][] candidateBoard;
 
-    Problem ( int[][] simpleBoard ) {
+    Problem(int[][] simpleBoard) {
         this.numOfZero = 81;
-        this.candidateBoard = matchSimpleBoardToCandidateBoard( simpleBoard );
+        this.candidateBoard = matchSimpleBoardToCandidateBoard(simpleBoard);
     }
 
     public Element[][] matchSimpleBoardToCandidateBoard(int[][] simpleBoard) {
         Element[][] tmp = new Element[9][9];
-        for ( int row = 0; row < simpleBoard.length; row ++ ) {
-            for ( int col = 0; col < simpleBoard[row].length; col ++ ) {
+        for (int row = 0; row < simpleBoard.length; row++) {
+            for (int col = 0; col < simpleBoard[row].length; col++) {
                 tmp[row][col] = new Element();
-                tmp[row][col].setConfirmedElement( simpleBoard[row][col] );
-                if ( tmp[row][col].getConfirmedElement() != 0 ) this.numOfZero --;
+                tmp[row][col].setConfirmedElement(simpleBoard[row][col]);
+                if (tmp[row][col].getConfirmedElement() != 0) this.numOfZero--;
             }
         }
         return tmp;
@@ -29,6 +29,22 @@ public class Problem {
         return this.candidateBoard;
     }
 
+    public void showState() {
+        for (int row = 0; row < this.candidateBoard.length; row++) {
+            if ( row % 3 == 0 && row > 1 )
+                System.out.println( "━━━━━━━━━━━━━━━━" );
+            for (int col = 0; col < this.candidateBoard[row].length; col++) {
+                if ( col % 3 == 0 && col > 1 )
+                    System.out.print( "┃ " );
+                if (candidateBoard[row][col].getConfirmedElement() != 0) {
+                    System.out.print( candidateBoard[row][col].getConfirmedElement() + " " );
+                }
+                else
+                    System.out.print("  ");
+            }
+            System.out.println("");
+        }
+    }
 }
 
 
