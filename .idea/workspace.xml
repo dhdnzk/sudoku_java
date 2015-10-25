@@ -84,10 +84,16 @@
     <SUITE FILE_PATH="coverage/sudoku$JuniorExplanationTest_inTheArrBoundary.coverage" NAME="JuniorExplanationTest.inTheArrBoundary Coverage Results" MODIFIED="1445444125254" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>sudoku.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/sudoku$JuniorExplanationTest.coverage" NAME="JuniorExplanationTest Coverage Results" MODIFIED="1445707235224" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/sudoku$JuniorExplanationTest.coverage" NAME="JuniorExplanationTest Coverage Results" MODIFIED="1445749920653" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>sudoku.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/sudoku$JuniorExplanationTest_isThisRightColSection.coverage" NAME="JuniorExplanationTest.isThisRightColSection Coverage Results" MODIFIED="1445438839670" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>sudoku.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/sudoku$JuniorExplanationTest_rowCandidateRemoval.coverage" NAME="JuniorExplanationTest.rowCandidateRemoval Coverage Results" MODIFIED="1445753137855" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>sudoku.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/sudoku$JuniorExplanationTest_isHereConfirmed.coverage" NAME="JuniorExplanationTest.isHereConfirmed Coverage Results" MODIFIED="1445748943802" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>sudoku.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/sudoku$JuniorExplanationTest_isHereZero.coverage" NAME="JuniorExplanationTest.isHereZero Coverage Results" MODIFIED="1445705829564" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
@@ -183,10 +189,16 @@
     <SUITE FILE_PATH="coverage/sudoku$JuniorExplanationTest_calcNumOfZeroOfCol.coverage" NAME="JuniorExplanationTest.calcNumOfZeroOfCol Coverage Results" MODIFIED="1445418802456" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>sudoku.*</FILTER>
     </SUITE>
+    <SUITE FILE_PATH="coverage/sudoku$JuniorExplanationTest_candidateRemoval.coverage" NAME="JuniorExplanationTest.candidateRemoval Coverage Results" MODIFIED="1445749843799" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>sudoku.*</FILTER>
+    </SUITE>
     <SUITE FILE_PATH="coverage/sudoku$JuniorExplanationTest_isHereMiddleColSection.coverage" NAME="JuniorExplanationTest.isHereMiddleColSection Coverage Results" MODIFIED="1445705187145" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>sudoku.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/sudoku$JuniorExplanationTest_couldBePlacedOnTheCenterOfThisCross.coverage" NAME="JuniorExplanationTest.couldBePlacedOnTheCenterOfThisCross Coverage Results" MODIFIED="1445432125792" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>sudoku.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/sudoku$JuniorExplanationTest_isHereThisCandidate.coverage" NAME="JuniorExplanationTest.isHereThisCandidate Coverage Results" MODIFIED="1445747730011" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>sudoku.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/sudoku$ElementTest_setConfirmedElement.coverage" NAME="ElementTest.setConfirmedElement Coverage Results" MODIFIED="1445694442670" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
@@ -213,17 +225,16 @@
     <favorites_list name="sudoku" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.4890625">
+    <splitter split-orientation="horizontal" split-proportion="0.71875">
       <split-first>
         <leaf>
           <file leaf-file-name="Problem.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/sudoku/Problem.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0">
-                  <caret line="34" column="14" selection-start-line="34" selection-start-column="14" selection-end-line="34" selection-end-column="14" />
+                  <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
                   <folding>
                     <element signature="method#Problem#0;class#Problem#0" expanded="false" />
-                    <element signature="method#matchSimpleBoardToCandidateBoard#0;class#Problem#0" expanded="false" />
                     <element signature="e#1240#1241#0" expanded="true" />
                     <element signature="e#1278#1279#0" expanded="true" />
                     <element signature="e#1318#1319#0" expanded="true" />
@@ -238,8 +249,8 @@
           <file leaf-file-name="JuniorExplanation.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/sudoku/JuniorExplanation.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.32188842">
-                  <caret line="147" column="0" selection-start-line="147" selection-start-column="0" selection-end-line="147" selection-end-column="0" />
+                <state vertical-scroll-proportion="0.9656652">
+                  <caret line="240" column="0" selection-start-line="240" selection-start-column="0" selection-end-line="240" selection-end-column="0" />
                   <folding>
                     <element signature="method#howManyThisNumberInThisRow#0;class#JuniorExplanation#0" expanded="false" />
                     <element signature="method#howManyThisNumberInThisCol#0;class#JuniorExplanation#0" expanded="false" />
@@ -248,6 +259,20 @@
                     <element signature="method#canBeCenterOfThisCross#0;class#JuniorExplanation#0" expanded="false" />
                     <element signature="method#searchEasySectionToSolve#0;class#JuniorExplanation#0" expanded="false" />
                     <element signature="method#couldBeHereInThisSection#0;class#JuniorExplanation#0" expanded="false" />
+                    <element signature="method#isHereZero#0;class#JuniorExplanation#0" expanded="false" />
+                    <element signature="method#isHereThisNumber#0;class#JuniorExplanation#0" expanded="false" />
+                    <element signature="method#isHereUpperRowSection#0;class#JuniorExplanation#0" expanded="false" />
+                    <element signature="method#isHereMiddleRowSection#0;class#JuniorExplanation#0" expanded="false" />
+                    <element signature="method#isHereLowerRowSection#0;class#JuniorExplanation#0" expanded="false" />
+                    <element signature="method#isHereLeftColSection#0;class#JuniorExplanation#0" expanded="false" />
+                    <element signature="method#isHereMiddleColSection#0;class#JuniorExplanation#0" expanded="false" />
+                    <element signature="method#isHereRightColSection#0;class#JuniorExplanation#0" expanded="false" />
+                    <element signature="method#inTheArrayBoundary#0;class#JuniorExplanation#0" expanded="false" />
+                    <element signature="method#isHereThisCandidate#0;class#JuniorExplanation#0" expanded="false" />
+                    <element signature="method#isHereConfirmed#0;class#JuniorExplanation#0" expanded="false" />
+                    <element signature="method#candidateRemoval#0;class#JuniorExplanation#0" expanded="false" />
+                    <element signature="method#rowCandidateRemoval#0;class#JuniorExplanation#0" expanded="false" />
+                    <element signature="method#colCandidateRemoval#0;class#JuniorExplanation#0" expanded="false" />
                   </folding>
                 </state>
               </provider>
@@ -260,9 +285,11 @@
           <file leaf-file-name="JuniorExplanationTest.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/test/java/sudoku/JuniorExplanationTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.32188842">
-                  <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
-                  <folding />
+                <state vertical-scroll-proportion="-8.420601">
+                  <caret line="105" column="15" selection-start-line="105" selection-start-column="15" selection-end-line="105" selection-end-column="15" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -516,111 +543,7 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager" selected="JUnit.JuniorExplanationTest">
-    <configuration default="false" name="JuniorExplanationTest.canBeCenterOfThisCross" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="sudoku.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="sudoku" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="sudoku" />
-      <option name="MAIN_CLASS_NAME" value="sudoku.JuniorExplanationTest" />
-      <option name="METHOD_NAME" value="canBeCenterOfThisCross" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="JuniorExplanationTest.howManyThisNumberInThisSection" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="sudoku.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="sudoku" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="sudoku" />
-      <option name="MAIN_CLASS_NAME" value="sudoku.JuniorExplanationTest" />
-      <option name="METHOD_NAME" value="howManyThisNumberInThisSection" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="JuniorExplanationTest.searchEasySectionToSolve" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="sudoku.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="sudoku" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="sudoku" />
-      <option name="MAIN_CLASS_NAME" value="sudoku.JuniorExplanationTest" />
-      <option name="METHOD_NAME" value="searchEasySectionToSolve" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="JuniorExplanationTest.couldBeHereInThisSection" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="sudoku.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="sudoku" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="sudoku" />
-      <option name="MAIN_CLASS_NAME" value="sudoku.JuniorExplanationTest" />
-      <option name="METHOD_NAME" value="couldBeHereInThisSection" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.JuniorExplanationTest.rowCandidateRemoval">
     <configuration default="false" name="JuniorExplanationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -635,6 +558,110 @@
       <option name="MAIN_CLASS_NAME" value="sudoku.JuniorExplanationTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="JuniorExplanationTest.isHereThisCandidate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="sudoku.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="sudoku" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="sudoku" />
+      <option name="MAIN_CLASS_NAME" value="sudoku.JuniorExplanationTest" />
+      <option name="METHOD_NAME" value="isHereThisCandidate" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="JuniorExplanationTest.isHereConfirmed" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="sudoku.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="sudoku" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="sudoku" />
+      <option name="MAIN_CLASS_NAME" value="sudoku.JuniorExplanationTest" />
+      <option name="METHOD_NAME" value="isHereConfirmed" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="JuniorExplanationTest.candidateRemoval" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="sudoku.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="sudoku" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="sudoku" />
+      <option name="MAIN_CLASS_NAME" value="sudoku.JuniorExplanationTest" />
+      <option name="METHOD_NAME" value="candidateRemoval" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="JuniorExplanationTest.rowCandidateRemoval" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="sudoku.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="sudoku" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="sudoku" />
+      <option name="MAIN_CLASS_NAME" value="sudoku.JuniorExplanationTest" />
+      <option name="METHOD_NAME" value="rowCandidateRemoval" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -917,19 +944,18 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Cucumber java.SudokuTest" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.JuniorExplanationTest.canBeCenterOfThisCross" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.JuniorExplanationTest.howManyThisNumberInThisSection" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.JuniorExplanationTest.searchEasySectionToSolve" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.JuniorExplanationTest.couldBeHereInThisSection" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.JuniorExplanationTest" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.JuniorExplanationTest" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.JuniorExplanationTest.isHereThisCandidate" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.JuniorExplanationTest.isHereConfirmed" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.JuniorExplanationTest.candidateRemoval" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.JuniorExplanationTest.rowCandidateRemoval" />
     </list>
     <recent_temporary>
-      <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.JuniorExplanationTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.JuniorExplanationTest.couldBeHereInThisSection" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.JuniorExplanationTest.searchEasySectionToSolve" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.JuniorExplanationTest.howManyThisNumberInThisSection" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.JuniorExplanationTest.canBeCenterOfThisCross" />
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.JuniorExplanationTest.rowCandidateRemoval" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.JuniorExplanationTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.JuniorExplanationTest.candidateRemoval" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.JuniorExplanationTest.isHereConfirmed" />
       </list>
     </recent_temporary>
   </component>
@@ -953,12 +979,12 @@
       <workItem from="1445582699486" duration="739000" />
       <workItem from="1445583776597" duration="1041000" />
       <workItem from="1445586522236" duration="1213000" />
-      <workItem from="1445689955401" duration="11152000" />
+      <workItem from="1445689955401" duration="18501000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65450000" />
+    <option name="totallyTimeSpent" value="72799000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -980,7 +1006,7 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4085282" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40851736" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -991,8 +1017,8 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.253125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35350758" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3533123" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Test Runs" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1015,7 +1041,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="66" />
+      <option name="time" value="87" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1062,7 +1088,6 @@
           <caret line="5" column="15" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
           <folding>
             <element signature="method#Problem#0;class#Problem#0" expanded="false" />
-            <element signature="method#matchSimpleBoardToCandidateBoard#0;class#Problem#0" expanded="false" />
             <element signature="e#1240#1241#0" expanded="true" />
             <element signature="e#1278#1279#0" expanded="true" />
             <element signature="e#1318#1319#0" expanded="true" />
@@ -1299,10 +1324,9 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/sudoku/Problem.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="34" column="14" selection-start-line="34" selection-start-column="14" selection-end-line="34" selection-end-column="14" />
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding>
             <element signature="method#Problem#0;class#Problem#0" expanded="false" />
-            <element signature="method#matchSimpleBoardToCandidateBoard#0;class#Problem#0" expanded="false" />
             <element signature="e#1240#1241#0" expanded="true" />
             <element signature="e#1278#1279#0" expanded="true" />
             <element signature="e#1318#1319#0" expanded="true" />
@@ -1313,10 +1337,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/sudoku/JuniorExplanationTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.420601">
+          <caret line="105" column="15" selection-start-line="105" selection-start-column="15" selection-end-line="105" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/sudoku/JuniorExplanation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32188842">
-          <caret line="147" column="0" selection-start-line="147" selection-start-column="0" selection-end-line="147" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.9656652">
+          <caret line="240" column="0" selection-start-line="240" selection-start-column="0" selection-end-line="240" selection-end-column="0" />
           <folding>
             <element signature="method#howManyThisNumberInThisRow#0;class#JuniorExplanation#0" expanded="false" />
             <element signature="method#howManyThisNumberInThisCol#0;class#JuniorExplanation#0" expanded="false" />
@@ -1325,15 +1359,21 @@
             <element signature="method#canBeCenterOfThisCross#0;class#JuniorExplanation#0" expanded="false" />
             <element signature="method#searchEasySectionToSolve#0;class#JuniorExplanation#0" expanded="false" />
             <element signature="method#couldBeHereInThisSection#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#isHereZero#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#isHereThisNumber#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#isHereUpperRowSection#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#isHereMiddleRowSection#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#isHereLowerRowSection#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#isHereLeftColSection#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#isHereMiddleColSection#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#isHereRightColSection#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#inTheArrayBoundary#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#isHereThisCandidate#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#isHereConfirmed#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#candidateRemoval#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#rowCandidateRemoval#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#colCandidateRemoval#0;class#JuniorExplanation#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/sudoku/JuniorExplanationTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32188842">
-          <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
