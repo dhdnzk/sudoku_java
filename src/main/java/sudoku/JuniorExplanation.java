@@ -20,6 +20,7 @@ public class JuniorExplanation {
         return numOfNumber;
     }
 
+    // FIXME switch문 간단하게 리펙토링 요망(section별로 case구분하지 않고 흐름 분기될 수 있도록)
     public static int howManyThisNumberInThisSection(Element[][] candidateTwoDArr, int section, int number) {
         int amountOfNumber = 0;
         switch (section) {
@@ -110,19 +111,19 @@ public class JuniorExplanation {
 
     public static int whatSectionIsThisSpot(Element[][] candidateTwoDArr, int row, int col) {
         int section = 0;
-        if ( !(inTheArrayBoundary( candidateTwoDArr, row, col ) ) ) return -1;
-        if ( isHereUpperRowSection( candidateTwoDArr, row) ) section ++;
-        if ( isHereMiddleRowSection( candidateTwoDArr, row) ) section += 4;
-        if ( isHereLowerRowSection( candidateTwoDArr, row) ) section += 7;
-        if ( isHereMiddleColSection( candidateTwoDArr, col) ) section ++;
-        if ( isHereRightColSection( candidateTwoDArr, col) ) section += 2;
+        if (!(inTheArrayBoundary(candidateTwoDArr, row, col))) return -1;
+        if (isHereUpperRowSection(candidateTwoDArr, row)) section++;
+        if (isHereMiddleRowSection(candidateTwoDArr, row)) section += 4;
+        if (isHereLowerRowSection(candidateTwoDArr, row)) section += 7;
+        if (isHereMiddleColSection(candidateTwoDArr, col)) section++;
+        if (isHereRightColSection(candidateTwoDArr, col)) section += 2;
         return section;
     }
 
     public static boolean canBeCenterOfThisCross(Element[][] candidateTwoDArr, int row, int col, int number) {
-        if ( !( isHereZero(candidateTwoDArr, row, col ) ) ) return false;
-        if ( howManyThisNumberInThisRow(candidateTwoDArr, row, number ) != 0 ) return false;
-        if ( howManyThisNumberInThisCol(candidateTwoDArr, col, number) != 0 ) return false;
+        if (!(isHereZero(candidateTwoDArr, row, col))) return false;
+        if (howManyThisNumberInThisRow(candidateTwoDArr, row, number) != 0) return false;
+        if (howManyThisNumberInThisCol(candidateTwoDArr, col, number) != 0) return false;
         return true;
     }
 
@@ -131,8 +132,8 @@ public class JuniorExplanation {
         for (int i = 0; i < 9; i++) {
             if (howManyThisNumberInThisSection(candidateTwoDArr, i + 1, 0) == 1) return i + 1;
             if (howManyThisNumberInThisSection(candidateTwoDArr, i + 1, 0) == 0) continue;
-            if ( ( howManyThisNumberInThisSection(candidateTwoDArr, i + 1, 0) < howManyThisNumberInThisSection(candidateTwoDArr, minSection, 0)) ||
-                   howManyThisNumberInThisSection(candidateTwoDArr, minSection, 0) == 0)
+            if ((howManyThisNumberInThisSection(candidateTwoDArr, i + 1, 0) < howManyThisNumberInThisSection(candidateTwoDArr, minSection, 0)) ||
+                    howManyThisNumberInThisSection(candidateTwoDArr, minSection, 0) == 0)
                 minSection = i + 1;
         }
         return minSection;
@@ -156,15 +157,15 @@ public class JuniorExplanation {
     }
 
     public static boolean isHereUpperRowSection(Element[][] twoDArr, int row) {
-        if ( 0 < row && row <= twoDArr.length / 3 ) return true;
+        if (0 < row && row <= twoDArr.length / 3) return true;
         return false;
     }
 
     public static boolean isHereMiddleRowSection(Element[][] candidateTwoDArr, int row) {
-        if ( candidateTwoDArr.length / 3 < row && row <= 2 * ( candidateTwoDArr.length / 3 ) ) return true;
+        if (candidateTwoDArr.length / 3 < row && row <= 2 * (candidateTwoDArr.length / 3)) return true;
         return false;
     }
-//
+
     public static boolean isHereLowerRowSection(Element[][] candidateTwoDArr, int row) {
         if (2 * (candidateTwoDArr.length / 3) < row && row <= 3 * (candidateTwoDArr.length / 3))
             return true;
@@ -172,7 +173,7 @@ public class JuniorExplanation {
     }
 
     public static boolean isHereLeftColSection(Element[][] candidateTwoDArr, int col) {
-        if ( 0 < col && col <= candidateTwoDArr[0].length / 3 )
+        if (0 < col && col <= candidateTwoDArr[0].length / 3)
             return true;
         return false;
     }
@@ -184,35 +185,35 @@ public class JuniorExplanation {
     }
 
     public static boolean isHereRightColSection(Element[][] candidateTwoDArr, int col) {
-        if (2 * (candidateTwoDArr[0].length / 3) < col && col <= 3 * ( candidateTwoDArr[0].length / 3 ) )
+        if (2 * (candidateTwoDArr[0].length / 3) < col && col <= 3 * (candidateTwoDArr[0].length / 3))
             return true;
         return false;
     }
 
-    public static boolean inTheArrayBoundary( Element[][] candidateTwoDArr, int row, int col) {
-        if ( row < 1 || candidateTwoDArr[0].length < row ) return false;
-        if ( col < 1 || candidateTwoDArr.length < col ) return false;
+    public static boolean inTheArrayBoundary(Element[][] candidateTwoDArr, int row, int col) {
+        if (row < 1 || candidateTwoDArr[0].length < row) return false;
+        if (col < 1 || candidateTwoDArr.length < col) return false;
         return true;
     }
 
-    public static boolean isHereThisCandidate(Element[][] candidateTwoDArr , int row, int col, int number) {
-        if ( !inTheArrayBoundary( candidateTwoDArr, row, col ) ) return false;
-        if ( candidateTwoDArr[row - 1][col - 1].getCandidates() == null ) return false;
-        if ( candidateTwoDArr[row - 1][col - 1].getCandidates()[number - 1] == 0) return false;
+    public static boolean isHereThisCandidate(Element[][] candidateTwoDArr, int row, int col, int number) {
+        if (!inTheArrayBoundary(candidateTwoDArr, row, col)) return false;
+        if (candidateTwoDArr[row - 1][col - 1].getCandidates() == null) return false;
+        if (candidateTwoDArr[row - 1][col - 1].getCandidates()[number - 1] == 0) return false;
         return true;
     }
 
     public static boolean isHereConfirmed(Element[][] candidateTwoDArr, int row, int col) {
-        if ( !inTheArrayBoundary( candidateTwoDArr, row, col ) ) return false;
-        if ( candidateTwoDArr[row - 1][col - 1].getConfirmedElement() != 0 ) return true;
+        if (!inTheArrayBoundary(candidateTwoDArr, row, col)) return false;
+        if (candidateTwoDArr[row - 1][col - 1].getConfirmedElement() != 0) return true;
         // singleCandidate 메소드 작성해서 후보자 수가 하나 남았을때 처리해서 true 반환하도록 기능 확장
         return false;
     }
 
     public static void candidateRemoval(Element element, int number) {
-        if ( 9 < number || number < 1) return;
-        if ( element.getConfirmedElement() != 0 ) return;
-        if ( element.getCandidates()[number - 1] != 0 ) {
+        if (9 < number || number < 1) return;
+        if (element.getConfirmedElement() != 0) return;
+        if (element.getCandidates()[number - 1] != 0) {
             element.getCandidates()[number - 1] = 0;
             element.decreaseNumOfCandidates();
         }
@@ -229,34 +230,36 @@ public class JuniorExplanation {
     }
 
     public static void colCandidateRemoval(Element[][] candidateTwoDArr, int col) {
-        for ( int i = 0; i < candidateTwoDArr.length; i ++ ) {
-            if ( isHereConfirmed( candidateTwoDArr, i + 1, col ) ) {
+        for (int i = 0; i < candidateTwoDArr.length; i++) {
+            if (isHereConfirmed(candidateTwoDArr, i + 1, col)) {
                 for (int j = 0; j < candidateTwoDArr.length; j++) {
-                    candidateRemoval( candidateTwoDArr[j][col - 1], candidateTwoDArr[i][col - 1].getConfirmedElement() );
+                    candidateRemoval(candidateTwoDArr[j][col - 1], candidateTwoDArr[i][col - 1].getConfirmedElement());
                 }
             }
         }
     }
 
-    public static void sectionCandidateRemoval(Element[][] candidateTwoDArr, int section) {
+    public static boolean transformSingleCandidateToConfirmedElement( Element element ) {
 
+        if ( element.getNumOfCandidates() == 1 ) {
+            for ( int i = 0; i < element.getCandidates().length; i ++ ) {
+                if ( element.getCandidates()[i] != 0 ) {
+                    element.setConfirmedElement( i + 1 );
+                    return true;
+                }
+            }
+        }
+        return false;
     }
 
 
-    // solveSingleCandidate
-    // solveHiddenSingleCandidate
+
+// TODO solveSingleCandidate
+// TODO solveHiddenSingleCandidate
+
+
 
 }
 
-// TODO 2차원 배열로 문제가 주어지면 후보자 수를 도입한 문제풀이에 적합한 형태의 매서드 생성
-//
-//
-/*
- * 행 하나 탐색해서 0 개수 반환해주는 메소드
- * 열 하나 탐색해서 0 개수 반환해주는 메소드
- * 3x3 섹션에서 입력한 수의 개수 반환해주는 메소드
- * 한 점을 찍으면 그 점이 어느 섹션인지를 반환해주는 메소드
- * 배열, 행, 열, 구하고자 하는 숫자를 매개변수로 입력하면 십자가 상에 그 수가 이미 있는지 여부 반환
- * 배열을 매개변수로 받으면 어느 3x3섹션이 제일 빈칸이 적은지(풀만한지) 반환해주는 메소드
- *
- */
+
+

@@ -3,20 +3,9 @@ package sudoku;
 import junit.framework.TestCase;
 import org.junit.Test;
 
-//TODO 1. 뭉쳐있는 9개 칸에 0 개수 확인 후 빈칸 1개면 푸는 방법
-//TODO 2. 가로로 한줄 검사 후에 빈칸 1개면 푸는 방법
-//TODO 3. 세로로 한줄 검사 후에 빈칸 1개면 푸는 방법
-//TODO 4. 해당 자리에서 3x3 & 인접한 두 라인의 세로줄 고려
-//TODO 5. 해당 자리에서 3x3 & 인접한 두 라인의 가로줄 고려
-//TODO 6. 해당 자리에서 3x3 & 십자가 고려
-//  현재 자리에서 3x3으로 가능하다 &&
-//  현재 자리에서 십자가로 판단해서 가능하다 &&
-//  3x3내의 모든 빈칸들 십자가 검사해서 전부 false 나오면 채우기
-//TODO 기타 풀이법 생각날때마다 하나씩 추가
-
-
-
-//TODO 후보자 수가 하나일 때
+// 초급 풀이법
+// 후보자 수가 하나일 때
+// 숨겨진 후보가 유일한 요소가 존재할때
 
 public class JuniorExplanationTest {
 
@@ -574,7 +563,21 @@ public class JuniorExplanationTest {
 
 
     @Test
-    public void sectionCandidateRemoval() {
+    public void transformSingleCandidateToConfirmedElement () {
+        Element testElement = new Element();
+        for ( int i = 2; i <= 8; i ++ ) {
+            testElement.removeACandidate( i );
+        }
+        TestCase.assertFalse(JuniorExplanation.transformSingleCandidateToConfirmedElement(testElement));
+        testElement.removeACandidate( 9 );
+        TestCase.assertTrue(JuniorExplanation.transformSingleCandidateToConfirmedElement(testElement));
+        TestCase.assertEquals( 1, testElement.getConfirmedElement() );
+    }
+
+
+    @Test
+    public void rowTranformSingleCandidateToConfirmedElement() {
+
         int[][] testArr = {
                 {5, 3, 0,  0, 7, 0,  0, 0, 0},
                 {6, 0, 0,  1, 9, 5,  0, 0, 0},
@@ -588,11 +591,18 @@ public class JuniorExplanationTest {
                 {0, 0, 0,  4, 1, 9,  0, 0, 5},
                 {0, 0, 0,  0, 8, 0,  0, 7, 9}
         };
-        Problem testProblem = new Problem(testArr);
 
-        JuniorExplanation.sectionCandidateRemoval( testProblem.getCandidateBoard(), 1 );
-        //TestCase.assertEquals( );
+        Problem testProblem = new Problem( testArr );
+
     }
+
+
+
+
+
+
+
+
 
 
 
