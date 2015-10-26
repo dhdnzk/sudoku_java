@@ -20,7 +20,7 @@ public class JuniorExplanation {
         return numOfNumber;
     }
 
-// FIXME switch문 간단하게 리펙토링 요망(section별로 case구분하지 않고 흐름 분기될 수 있도록)
+    // FIXME switch문 간단하게 리펙토링 요망(section별로 case구분하지 않고 간결한 코드로 흐름 분기될 수 있도록)
     public static int howManyThisNumberInThisSection(Element[][] candidateTwoDArr, int section, int number) {
         int amountOfNumber = 0;
         switch (section) {
@@ -239,11 +239,125 @@ public class JuniorExplanation {
         }
     }
 
-    public static boolean transformSingleCandidateToConfirmedElement( Element element ) {
-        if ( element.getNumOfCandidates() == 1 ) {
-            for ( int i = 0; i < element.getCandidates().length; i ++ ) {
-                if ( element.getCandidates()[i] != 0 ) {
-                    element.setConfirmedElement( i + 1 );
+    // FIXME switch문 간단하게 리펙토링 요망(section별로 case구분하지 않고 간결한 코드로 흐름 분기될 수 있도록)
+    public static void sectionCandidateRemoval(Problem problem, int section) {
+        switch (section) {
+            case 1:
+                for (int i = 0; i < (problem.getCandidateBoard().length / 3); i++) {
+                    for (int j = 0; j < (problem.getCandidateBoard()[i].length / 3); j++) {
+                        for (int row = 0; row < (problem.getCandidateBoard().length / 3); row++) {
+                            for (int col = 0; col < (problem.getCandidateBoard()[row].length / 3); col++) {
+                                candidateRemoval(problem.getCandidateBoard()[row][col], problem.getCandidateBoard()[i][j].getConfirmedElement());
+                            }
+                        }
+                    }
+                }
+                break;
+
+            case 2:
+                for (int i = 0; i < (problem.getCandidateBoard().length / 3); i++) {
+                    for (int j = (problem.getCandidateBoard().length / 3); j < 2 * (problem.getCandidateBoard()[i].length / 3); j++) {
+                        for (int row = 0; row < (problem.getCandidateBoard().length / 3); row++) {
+                            for (int col = (problem.getCandidateBoard().length / 3); col < 2 * (problem.getCandidateBoard()[row].length / 3); col++) {
+                                candidateRemoval(problem.getCandidateBoard()[row][col], problem.getCandidateBoard()[i][j].getConfirmedElement());
+                            }
+                        }
+                    }
+                }
+
+                break;
+
+            case 3:
+                for (int i = 0; i < (problem.getCandidateBoard().length / 3); i++) {
+                    for (int j = 2 * (problem.getCandidateBoard().length / 3); j < 3 * (problem.getCandidateBoard()[i].length / 3); j++) {
+                        for (int row = 0; row < (problem.getCandidateBoard().length / 3); row++) {
+                            for (int col = 2 * (problem.getCandidateBoard().length / 3); col < 3 * (problem.getCandidateBoard()[row].length / 3); col++) {
+                                candidateRemoval(problem.getCandidateBoard()[row][col], problem.getCandidateBoard()[i][j].getConfirmedElement());
+                            }
+                        }
+                    }
+                }
+                break;
+
+            case 4:
+                for (int i = 1 * (problem.getCandidateBoard().length / 3); i < 2 * (problem.getCandidateBoard().length / 3); i++) {
+                    for (int j = 0 * (problem.getCandidateBoard().length / 3); j < 1 * (problem.getCandidateBoard()[i].length / 3); j++) {
+                        for (int row = 1 * (problem.getCandidateBoard().length / 3); row < 2 * (problem.getCandidateBoard().length / 3); row++) {
+                            for (int col = 0 * (problem.getCandidateBoard().length / 3); col < 1 * (problem.getCandidateBoard()[row].length / 3); col++) {
+                                candidateRemoval(problem.getCandidateBoard()[row][col], problem.getCandidateBoard()[i][j].getConfirmedElement());
+                            }
+                        }
+                    }
+                }
+                break;
+
+            case 5:
+                for (int i = 1 * (problem.getCandidateBoard().length / 3); i < 2 * (problem.getCandidateBoard().length / 3); i++) {
+                    for (int j = 1 * (problem.getCandidateBoard().length / 3); j < 2 * (problem.getCandidateBoard()[i].length / 3); j++) {
+                        for (int row = 1 * (problem.getCandidateBoard().length / 3); row < 2 * (problem.getCandidateBoard().length / 3); row++) {
+                            for (int col = 1 * (problem.getCandidateBoard().length / 3); col < 2 * (problem.getCandidateBoard()[row].length / 3); col++) {
+                                candidateRemoval(problem.getCandidateBoard()[row][col], problem.getCandidateBoard()[i][j].getConfirmedElement());
+                            }
+                        }
+                    }
+                }
+                break;
+
+            case 6:
+                for (int i = 1 * (problem.getCandidateBoard().length / 3); i < 2 * (problem.getCandidateBoard().length / 3); i++) {
+                    for (int j = 2 * (problem.getCandidateBoard().length / 3); j < 3 * (problem.getCandidateBoard()[i].length / 3); j++) {
+                        for (int row = 1 * (problem.getCandidateBoard().length / 3); row < 2 * (problem.getCandidateBoard().length / 3); row++) {
+                            for (int col = 2 * (problem.getCandidateBoard().length / 3); col < 3 * (problem.getCandidateBoard()[row].length / 3); col++) {
+                                candidateRemoval(problem.getCandidateBoard()[row][col], problem.getCandidateBoard()[i][j].getConfirmedElement());
+                            }
+                        }
+                    }
+                }
+                break;
+
+            case 7:
+                for (int i = 2 * (problem.getCandidateBoard().length / 3); i < 3 * (problem.getCandidateBoard().length / 3); i++) {
+                    for (int j = 0 * (problem.getCandidateBoard().length / 3); j < 1 * (problem.getCandidateBoard()[i].length / 3); j++) {
+                        for (int row = 2 * (problem.getCandidateBoard().length / 3); row < 3 * (problem.getCandidateBoard().length / 3); row++) {
+                            for (int col = 0 * (problem.getCandidateBoard().length / 3); col < 1 * (problem.getCandidateBoard()[row].length / 3); col++) {
+                                candidateRemoval(problem.getCandidateBoard()[row][col], problem.getCandidateBoard()[i][j].getConfirmedElement());
+                            }
+                        }
+                    }
+                }
+                break;
+
+            case 8:
+                for (int i = 2 * (problem.getCandidateBoard().length / 3); i < 3 * (problem.getCandidateBoard().length / 3); i++) {
+                    for (int j = 1 * (problem.getCandidateBoard().length / 3); j < 2 * (problem.getCandidateBoard()[i].length / 3); j++) {
+                        for (int row = 2 * (problem.getCandidateBoard().length / 3); row < 3 * (problem.getCandidateBoard().length / 3); row++) {
+                            for (int col = 1 * (problem.getCandidateBoard().length / 3); col < 2 * (problem.getCandidateBoard()[row].length / 3); col++) {
+                                candidateRemoval(problem.getCandidateBoard()[row][col], problem.getCandidateBoard()[i][j].getConfirmedElement());
+                            }
+                        }
+                    }
+                }
+                break;
+
+            case 9:
+                for (int i = 2 * (problem.getCandidateBoard().length / 3); i < 3 * (problem.getCandidateBoard().length / 3); i++) {
+                    for (int j = 2 * (problem.getCandidateBoard().length / 3); j < 3 * (problem.getCandidateBoard()[i].length / 3); j++) {
+                        for (int row = 2 * (problem.getCandidateBoard().length / 3); row < 3 * (problem.getCandidateBoard().length / 3); row++) {
+                            for (int col = 2 * (problem.getCandidateBoard().length / 3); col < 3 * (problem.getCandidateBoard()[row].length / 3); col++) {
+                                candidateRemoval(problem.getCandidateBoard()[row][col], problem.getCandidateBoard()[i][j].getConfirmedElement());
+                            }
+                        }
+                    }
+                }
+                break;
+        }
+    }
+
+    public static boolean transformSingleCandidateToConfirmedElement(Element element) {
+        if (element.getNumOfCandidates() == 1) {
+            for (int i = 0; i < element.getCandidates().length; i++) {
+                if (element.getCandidates()[i] != 0) {
+                    element.setConfirmedElement(i + 1);
                     return true;
                 }
             }
@@ -251,46 +365,166 @@ public class JuniorExplanation {
         return false;
     }
 
-    public static void rowTransformSingleCandidtateToConfirmedElement( Problem problem, int row ) {
-        for (int i = 0; i < problem.getCandidateBoard()[row - 1].length; i ++ )
-            if ( transformSingleCandidateToConfirmedElement( problem.getCandidateBoard()[row - 1][i] ) ) {
+    public static void rowTransformSingleCandidtateToConfirmedElement(Problem problem, int row) {
+        for (int i = 0; i < problem.getCandidateBoard()[row - 1].length; i++)
+            if (transformSingleCandidateToConfirmedElement(problem.getCandidateBoard()[row - 1][i])) {
                 problem.numOfZero--;
                 problem.showState();
             }
     }
 
-    public static void colTransformSingleCandidateToConfirmedElement( Problem problem, int col) {
-        for ( int i= 0; i < problem.getCandidateBoard().length; i ++ )
-            if ( transformSingleCandidateToConfirmedElement( problem.getCandidateBoard()[i][col - 1] ) ) {
+    public static void colTransformSingleCandidateToConfirmedElement(Problem problem, int col) {
+        for (int i = 0; i < problem.getCandidateBoard().length; i++)
+            if (transformSingleCandidateToConfirmedElement(problem.getCandidateBoard()[i][col - 1])) {
                 problem.numOfZero--;
                 problem.showState();
             }
     }
 
-    public static void solveSingleCandidate( Problem problem ) {
-        for (int row = 0; row < problem.getCandidateBoard().length; row ++ ) {
-            rowCandidateRemoval( problem.getCandidateBoard(), row + 1 );
-            rowTransformSingleCandidtateToConfirmedElement( problem, row + 1 );
+    // FIXME switch문 간단하게 리펙토링 요망(section별로 case구분하지 않고 간결한 코드로 흐름 분기될 수 있도록)
+    public static void sectionTransformSingleCandidateToConfirmedElement(Problem problem, int section) {
+        switch (section) {
+            case 1:
+                for (int row = 0; row < (problem.getCandidateBoard().length / 3); row++) {
+                    for (int col = 0; col < (problem.getCandidateBoard()[row].length / 3); col++) {
+                        if (transformSingleCandidateToConfirmedElement(problem.getCandidateBoard()[row][col])) {
+                            problem.numOfZero--;
+                            problem.showState();
+                        }
+                    }
+                }
+                break;
+
+            case 2:
+                for (int row = 0; row < (problem.getCandidateBoard().length / 3); row++) {
+                    for (int col = (problem.getCandidateBoard().length / 3); col < 2 * (problem.getCandidateBoard()[row].length / 3); col++) {
+                        if (transformSingleCandidateToConfirmedElement(problem.getCandidateBoard()[row][col])) {
+                            problem.numOfZero--;
+                            problem.showState();
+                        }
+                    }
+                }
+
+                break;
+
+            case 3:
+                for (int row = 0; row < (problem.getCandidateBoard().length / 3); row++) {
+                    for (int col = 2 * (problem.getCandidateBoard().length / 3); col < 3 * (problem.getCandidateBoard()[row].length / 3); col++) {
+                        if (transformSingleCandidateToConfirmedElement(problem.getCandidateBoard()[row][col])) {
+                            problem.numOfZero--;
+                            problem.showState();
+                        }
+                    }
+                }
+                break;
+
+            case 4:
+                for (int row = 1 * (problem.getCandidateBoard().length / 3); row < 2 * (problem.getCandidateBoard().length / 3); row++) {
+                    for (int col = 0 * (problem.getCandidateBoard().length / 3); col < 1 * (problem.getCandidateBoard()[row].length / 3); col++) {
+                        if (transformSingleCandidateToConfirmedElement(problem.getCandidateBoard()[row][col])) {
+                            problem.numOfZero--;
+                            problem.showState();
+                        }
+                    }
+                }
+                break;
+
+            case 5:
+                for (int row = 1 * (problem.getCandidateBoard().length / 3); row < 2 * (problem.getCandidateBoard().length / 3); row++) {
+                    for (int col = 1 * (problem.getCandidateBoard().length / 3); col < 2 * (problem.getCandidateBoard()[row].length / 3); col++) {
+                        if (transformSingleCandidateToConfirmedElement(problem.getCandidateBoard()[row][col])) {
+                            problem.numOfZero--;
+                            problem.showState();
+                        }
+                    }
+                }
+                break;
+
+            case 6:
+                for (int row = 1 * (problem.getCandidateBoard().length / 3); row < 2 * (problem.getCandidateBoard().length / 3); row++) {
+                    for (int col = 2 * (problem.getCandidateBoard().length / 3); col < 3 * (problem.getCandidateBoard()[row].length / 3); col++) {
+                        if (transformSingleCandidateToConfirmedElement(problem.getCandidateBoard()[row][col])) {
+                            problem.numOfZero--;
+                            problem.showState();
+                        }
+                    }
+                }
+                break;
+
+            case 7:
+                for (int row = 2 * (problem.getCandidateBoard().length / 3); row < 3 * (problem.getCandidateBoard().length / 3); row++) {
+                    for (int col = 0 * (problem.getCandidateBoard().length / 3); col < 1 * (problem.getCandidateBoard()[row].length / 3); col++) {
+                        if (transformSingleCandidateToConfirmedElement(problem.getCandidateBoard()[row][col])) {
+                            problem.numOfZero--;
+                            problem.showState();
+                        }
+                    }
+                }
+                break;
+
+            case 8:
+                for (int row = 2 * (problem.getCandidateBoard().length / 3); row < 3 * (problem.getCandidateBoard().length / 3); row++) {
+                    for (int col = 1 * (problem.getCandidateBoard().length / 3); col < 2 * (problem.getCandidateBoard()[row].length / 3); col++) {
+                        if (transformSingleCandidateToConfirmedElement(problem.getCandidateBoard()[row][col])) {
+                            problem.numOfZero--;
+                            problem.showState();
+                        }
+                    }
+                }
+                break;
+
+            case 9:
+                for (int row = 2 * (problem.getCandidateBoard().length / 3); row < 3 * (problem.getCandidateBoard().length / 3); row++) {
+                    for (int col = 2 * (problem.getCandidateBoard().length / 3); col < 3 * (problem.getCandidateBoard()[row].length / 3); col++) {
+                        if (transformSingleCandidateToConfirmedElement(problem.getCandidateBoard()[row][col])) {
+                            problem.numOfZero--;
+                            problem.showState();
+                        }
+                    }
+                }
+                break;
         }
-        for (int col = 0; col < problem.getCandidateBoard()[0].length; col ++ ) {
-            colCandidateRemoval( problem.getCandidateBoard(), col + 1 );
-            colTransformSingleCandidateToConfirmedElement( problem, col + 1 );
-        }
-//        for (int section = 1; section <= 9; section ++ ) {
-//
-//
-//        }
     }
 
-    public static void juniorExplanation( Problem problem ) {
-        solveSingleCandidate( problem );
+    public static void rowSolveSingleCandidate(Problem problem) {
+        for (int row = 0; row < problem.getCandidateBoard().length; row++) {
+            rowCandidateRemoval(problem.getCandidateBoard(), row + 1);
+            rowTransformSingleCandidtateToConfirmedElement(problem, row + 1);
+        }
     }
 
-// TODO 초급 풀이법
-// TODO 후보자 수가 하나일때 : solveSingleCandidate
-// TODO 후보들 중에서 숨겨진 유일한 후보가 존재할 때 : solveHiddenSingleCandidate
+    public static void colSolveSingleCandidate(Problem problem) {
+        for (int col = 0; col < problem.getCandidateBoard()[0].length; col++) {
+            colCandidateRemoval(problem.getCandidateBoard(), col + 1);
+            colTransformSingleCandidateToConfirmedElement(problem, col + 1);
+        }
+    }
+
+    public static void sectionSolveSingleCandidate(Problem problem) {
+        for (int section = 1; section <= 9; section++) {
+            sectionCandidateRemoval(problem, section);
+            sectionTransformSingleCandidateToConfirmedElement(problem, section);
+        }
+    }
+
+    public static void solvingSingleCandidate(Problem problem) {
+        rowSolveSingleCandidate(problem);
+        colSolveSingleCandidate(problem);
+        sectionSolveSingleCandidate(problem);
+    }
+
+    public static void juniorExplanation(Problem problem) {
+        solvingSingleCandidate(problem);
+    }
 
 }
+
+// TODO 초급 풀이법
+// TODO 후보자 수가 하나일때 : solveSingleCandidate ( 완료 )
+// TODO 후보들 중에서 숨겨진 유일한 후보가 존재할 때 : solveHiddenSingleCandidate
+// TODO 리펙토링 하고싶은 요소들 : showState 메소드를 메인메소드에서 호출하면, 여러 단계를 건너뛰어서 듬성듬성 보여주는 문제, switch문 간결화 문제
+// TODO 풀이법별로 클래스 분리하기
+
 
 
 

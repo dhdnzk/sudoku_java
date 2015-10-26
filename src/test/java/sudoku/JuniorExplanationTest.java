@@ -3,7 +3,7 @@ package sudoku;
 import junit.framework.TestCase;
 import org.junit.Test;
 
-public class JuniorExplanationTest {
+public class JuniorExplanationTest extends JuniorExplanation {
 
     @Test
     public void howManyThisNumberInThisRow() {
@@ -553,13 +553,29 @@ public class JuniorExplanationTest {
         TestCase.assertEquals( 4, testProblem.getCandidateBoard()[8][0].getNumOfCandidates() );
     }
 
-    // TODO 3x3 구현
     @Test
     public void sectionCandidateRemoval() {
+        int[][] testArr = {
+                { 5, 3, 4,  6, 7, 8,  9, 1, 2 },
+                { 6, 7, 2,  1, 9, 5,  3, 4, 8 },
+                { 1, 9, 8,  3, 4, 2,  5, 6, 7 },
+
+                { 8, 5, 9,  7, 6, 1,  4, 2, 3 },
+                { 4, 2, 6,  8, 5, 3,  7, 9, 1 },
+                { 7, 1, 3,  9, 2, 4,  8, 5, 6 },
+
+                { 9, 6, 1,  5, 3, 7,  2, 8, 4 },
+                { 2, 8, 7,  4, 1, 9,  6, 3, 5 },
+                { 3, 4, 5,  2, 8, 6,  1, 7, 9 }
+        };
+
+        Problem testProblem = new Problem( testArr );
+
+        JuniorExplanation.sectionCandidateRemoval( testProblem, 1 );
+
+
 
     }
-
-
 
     @Test
     public void transformSingleCandidateToConfirmedElement () {
@@ -575,9 +591,27 @@ public class JuniorExplanationTest {
 
     @Test
     public void rowTranformSingleCandidateToConfirmedElement() {
-        int[][] testArr1 = { { 1, 2, 3, 4, 5, 6, 7, 8, 0 } };
+        int[][] testArr1 = {
+                { 1, 2, 3, 4, 5, 6, 7, 8, 0 },
+                { 1, 2, 3, 4, 5, 6, 7, 8, 0 },
+                { 1, 2, 3, 4, 5, 6, 7, 8, 0 },
+                { 1, 2, 3, 4, 5, 6, 7, 8, 0 },
+                { 1, 2, 3, 4, 5, 6, 7, 8, 0 },
+                { 1, 2, 3, 4, 5, 6, 7, 8, 0 },
+                { 1, 2, 3, 4, 5, 6, 7, 8, 0 },
+                { 1, 2, 3, 4, 5, 6, 7, 8, 0 },
+                { 1, 2, 3, 4, 5, 6, 7, 8, 0 }
+        };
+
         int[][] testArr2 = {
                 {1, 2, 3, 4, 5, 6, 7, 8, 0},
+                {0, 3, 4, 5, 6, 7, 8, 9, 1},
+                {0, 3, 4, 5, 6, 7, 8, 9, 1},
+                {0, 3, 4, 5, 6, 7, 8, 9, 1},
+                {0, 3, 4, 5, 6, 7, 8, 9, 1},
+                {0, 3, 4, 5, 6, 7, 8, 9, 1},
+                {0, 3, 4, 5, 6, 7, 8, 9, 1},
+                {0, 3, 4, 5, 6, 7, 8, 9, 1},
                 {0, 3, 4, 5, 6, 7, 8, 9, 1}
         };
         Problem testProblem1 = new Problem( testArr1 );
@@ -599,15 +633,15 @@ public class JuniorExplanationTest {
     @Test
     public void colTransformSingleCandidateToConfirmedElement() {
         int[][] testArr = {
-                { 1, 2, 3 },
-                { 2, 3, 0 },
-                { 3, 4, 5 },
-                { 4, 5, 6 },
-                { 0, 6, 7 },
-                { 6, 7, 8 },
-                { 7, 0, 9 },
-                { 8, 9, 1 },
-                { 9, 1, 2 }
+                { 1, 2, 3, 4, 5, 6, 7, 8, 9 },
+                { 2, 3, 0, 5, 6, 7, 8, 9, 1 },
+                { 3, 4, 5, 6, 7, 8, 9, 1, 2 },
+                { 4, 5, 6, 7, 8, 9, 1, 2, 3 },
+                { 0, 6, 7, 8, 9, 2, 3, 4, 5 },
+                { 6, 7, 8, 9, 1, 2, 3, 4, 5 },
+                { 7, 0, 9, 1, 2, 3, 4, 5, 6 },
+                { 8, 9, 1, 2, 3, 4, 5, 6, 7 },
+                { 9, 1, 2, 3, 4, 5, 6, 7, 8 }
 
         };
 
@@ -627,17 +661,32 @@ public class JuniorExplanationTest {
 
     }
 
-    // TODO 3x3 구현
+    // TODO sectionTransformSingleCandidateToConfirmedElement구현 ( 3x3 )
     @Test
     public void sectionTransformSingleCandidateToConfirmedElement() {
+        int[][] testArr = {
+                { 5, 3, 4,  6, 7, 8,  9, 1, 2 },
+                { 6, 7, 2,  1, 9, 5,  3, 4, 8 },
+                { 1, 9, 8,  3, 4, 2,  5, 6, 7 },
+
+                { 8, 5, 9,  7, 6, 1,  4, 2, 3 },
+                { 4, 2, 6,  8, 5, 3,  7, 9, 1 },
+                { 7, 1, 3,  9, 2, 4,  8, 5, 6 },
+
+                { 9, 6, 1,  5, 3, 7,  2, 8, 4 },
+                { 2, 8, 7,  4, 1, 9,  6, 3, 5 },
+                { 3, 4, 5,  2, 8, 6,  1, 7, 9 }
+        };
+
+        Problem testProblem = new Problem( testArr );
+
+        JuniorExplanation.sectionTransformSingleCandidateToConfirmedElement( testProblem, 1 );
 
     }
 
-
-
-    // TODO 3x3section 풀이법 완성하면 추가해서 테스트할것
+    // TODO 3x3section 풀이법 완성하면 테스트 코드에 추가해서 테스트할것
     @Test
-    public void solveSingleCandidate() {
+    public void rowSolveSingleCandidate() {
         int[][] testArr = {
                 {5, 3, 0,  0, 7, 0,  0, 0, 0},
                 {6, 0, 0,  1, 9, 5,  0, 0, 0},
@@ -652,11 +701,64 @@ public class JuniorExplanationTest {
                 {0, 0, 0,  0, 8, 0,  0, 7, 9}
         };
         Problem testProblem = new Problem(testArr);
-
-        JuniorExplanation.solveSingleCandidate( testProblem );
-
+        JuniorExplanation.rowSolveSingleCandidate(testProblem);
     }
 
+    @Test
+    public void colSolveSingleCandidate() {
+        int[][] testArr = {
+                {5, 3, 0,  0, 7, 0,  0, 0, 0},
+                {6, 0, 0,  1, 9, 5,  0, 0, 0},
+                {0, 9, 8,  0, 0, 0,  0, 6, 0},
 
+                {8, 0, 0,  0, 6, 0,  0, 0, 3},
+                {4, 0, 0,  8, 0, 3,  0, 0, 1},
+                {7, 0, 0,  0, 2, 0,  0, 0, 6},
+
+                {0, 6, 0,  0, 0, 0,  2, 8, 0},
+                {0, 0, 0,  4, 1, 9,  0, 0, 5},
+                {0, 0, 0,  0, 8, 0,  0, 7, 9}
+        };
+        Problem testProblem = new Problem(testArr);
+        JuniorExplanation.colSolveSingleCandidate(testProblem);
+    }
+
+    @Test
+    public void sectionSolveSingleCandidate() {
+        int[][] testArr = {
+                {5, 3, 0,  0, 7, 0,  0, 0, 0},
+                {6, 0, 0,  1, 9, 5,  0, 0, 0},
+                {0, 9, 8,  0, 0, 0,  0, 6, 0},
+
+                {8, 0, 0,  0, 6, 0,  0, 0, 3},
+                {4, 0, 0,  8, 0, 3,  0, 0, 1},
+                {7, 0, 0,  0, 2, 0,  0, 0, 6},
+
+                {0, 6, 0,  0, 0, 0,  2, 8, 0},
+                {0, 0, 0,  4, 1, 9,  0, 0, 5},
+                {0, 0, 0,  0, 8, 0,  0, 7, 9}
+        };
+        Problem testProblem = new Problem(testArr);
+        JuniorExplanation.sectionSolveSingleCandidate(testProblem);
+    }
+
+    @Test
+    public void solvingSingleCandidate() {
+        int[][] testArr = {
+                {5, 3, 0,  0, 7, 0,  0, 0, 0},
+                {6, 0, 0,  1, 9, 5,  0, 0, 0},
+                {0, 9, 8,  0, 0, 0,  0, 6, 0},
+
+                {8, 0, 0,  0, 6, 0,  0, 0, 3},
+                {4, 0, 0,  8, 0, 3,  0, 0, 1},
+                {7, 0, 0,  0, 2, 0,  0, 0, 6},
+
+                {0, 6, 0,  0, 0, 0,  2, 8, 0},
+                {0, 0, 0,  4, 1, 9,  0, 0, 5},
+                {0, 0, 0,  0, 8, 0,  0, 7, 9}
+        };
+        Problem testProblem = new Problem(testArr);
+        JuniorExplanation.solvingSingleCandidate( testProblem );
+    }
 
 }
