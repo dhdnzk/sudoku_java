@@ -5,8 +5,8 @@ public class SudokuTest {
         Problem p1 = new Problem( MakingQuestion.makeQuiz() );
         p1.showState();
         while ( 0 < p1.numOfZero ) {
-            SolveSingleCandidate.solveSingleCandidate( p1 );
-//          seniorExplanation( p1 );
+//            SolveSingleCandidate.solveSingleCandidate(p1);
+            SolveHiddenSingleCandidate.solveHiddenSingleCandidate( p1 );
         }
         p1.showState();
     }

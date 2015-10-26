@@ -24,14 +24,13 @@ public class SolveHiddenSingleCandidateTest {
             }
         }
         for ( int candidate = 3; candidate <= 9; candidate ++ ) {
-            testProblem.getCandidateBoard()[0][8].removeACandidate( candidate );
+            testProblem.getCandidateBoard()[0][8].removeACandidate(candidate);
         }
 
         TestCase.assertEquals( 2, SolveHiddenSingleCandidate.rowSearchHiddenSingleCandidate( testProblem, 1));
 
     }
 
-    // TODO 미구현
     @Test
     public void rowSolveHiddenSingleCandidate() {
         int[][] testArr = {
@@ -48,6 +47,7 @@ public class SolveHiddenSingleCandidateTest {
                 {0, 0, 0,  0, 8, 0,  0, 7, 9}
         };
         Problem testProblem = new Problem(testArr);
+        SolveHiddenSingleCandidate.rowSolveHiddenSingleCandidate( testProblem );
     }
 
 

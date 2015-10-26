@@ -88,20 +88,38 @@ public class MakingQuestion {
             { 0, 0, 0,  2, 0, 0,  0, 0, 8 }
 
     };
+
+    static int[][] testArr = {
+            { 0, 1, 0,  0, 0, 4,  0, 0, 0 },
+            { 4, 0, 8,  0, 0, 0,  9, 0, 1 },
+            { 0, 9, 0,  7, 0, 1,  2, 4, 5 },
+
+            { 8, 6, 0,  0, 3, 0,  7, 0, 4 },
+            { 0, 0, 0,  5, 0, 8,  0, 0, 0 },
+            { 1, 3, 7,  0, 2, 6,  5, 8, 9 },
+
+            { 5, 7, 6,  3, 0, 2,  0, 9, 0 },
+            { 2, 0, 9,  0, 0, 0,  1, 0, 7 },
+            { 0, 0, 0,  8, 0, 0,  0, 5, 0 },
+
+    };
+
     public static int[][] makeQuiz() {
         switch ((int) (Math.random() * 5)) {
-            case 1:
-                return easyArr1;
-            case 2:
-                return easyArr2;
-            case 3:
-                return easyArr3;
-            case 4:
-                return difficultArr1;
-            case 5:
-                return difficultArr2;
+//            case 1:
+//                return easyArr1;
+//            case 2:
+//                return easyArr2;
+//            case 3:
+//                return easyArr3;
+//            case 4:
+//                return difficultArr1;
+//            case 5:
+//                return difficultArr2;
+//            default:
+//                return difficultArr3;
             default:
-                return difficultArr3;
+                return testArr;
         }
     }
 }
