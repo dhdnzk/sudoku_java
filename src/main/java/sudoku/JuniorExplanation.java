@@ -109,17 +109,6 @@ public class JuniorExplanation {
         return amountOfNumber;
     }
 
-    public static int whatSectionIsThisSpot(Element[][] candidateTwoDArr, int row, int col) {
-        int section = 0;
-        if (!(inTheArrayBoundary(candidateTwoDArr, row, col))) return -1;
-        if (isHereUpperRowSection(candidateTwoDArr, row)) section++;
-        if (isHereMiddleRowSection(candidateTwoDArr, row)) section += 4;
-        if (isHereLowerRowSection(candidateTwoDArr, row)) section += 7;
-        if (isHereMiddleColSection(candidateTwoDArr, col)) section++;
-        if (isHereRightColSection(candidateTwoDArr, col)) section += 2;
-        return section;
-    }
-
     public static boolean canBeCenterOfThisCross(Element[][] candidateTwoDArr, int row, int col, int number) {
         if (!(isHereZero(candidateTwoDArr, row, col))) return false;
         if (howManyThisNumberInThisRow(candidateTwoDArr, row, number) != 0) return false;
@@ -188,6 +177,17 @@ public class JuniorExplanation {
         if (2 * (candidateTwoDArr[0].length / 3) < col && col <= 3 * (candidateTwoDArr[0].length / 3))
             return true;
         return false;
+    }
+
+    public static int whatSectionIsThisSpot(Element[][] candidateTwoDArr, int row, int col) {
+        int section = 0;
+        if (!(inTheArrayBoundary(candidateTwoDArr, row, col))) return -1;
+        if (isHereUpperRowSection(candidateTwoDArr, row)) section++;
+        if (isHereMiddleRowSection(candidateTwoDArr, row)) section += 4;
+        if (isHereLowerRowSection(candidateTwoDArr, row)) section += 7;
+        if (isHereMiddleColSection(candidateTwoDArr, col)) section++;
+        if (isHereRightColSection(candidateTwoDArr, col)) section += 2;
+        return section;
     }
 
     public static boolean inTheArrayBoundary(Element[][] candidateTwoDArr, int row, int col) {
@@ -507,15 +507,18 @@ public class JuniorExplanation {
         }
     }
 
-    public static void solvingSingleCandidate(Problem problem) {
+    public static void solveSingleCandidate(Problem problem) {
         rowSolveSingleCandidate(problem);
         colSolveSingleCandidate(problem);
         sectionSolveSingleCandidate(problem);
     }
 
     public static void juniorExplanation(Problem problem) {
-        solvingSingleCandidate(problem);
+        solveSingleCandidate(problem);
     }
+
+
+
 
 }
 
