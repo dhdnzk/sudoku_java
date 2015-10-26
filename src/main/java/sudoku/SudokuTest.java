@@ -2,7 +2,7 @@ package sudoku;
 
 public class SudokuTest {
     public static void main ( String[] args ) {
-        Problem p1 = new Problem( MakingQuestion.makeQuiz( 1 ) );
+        Problem p1 = new Problem( MakingQuestion.makeQuiz() );
         p1.showState();
         while ( 0 < p1.numOfZero ) {
             JuniorExplanation.juniorExplanation( p1 );
