@@ -661,7 +661,6 @@ public class JuniorExplanationTest extends JuniorExplanation {
 
     }
 
-    // TODO sectionTransformSingleCandidateToConfirmedElement구현 ( 3x3 )
     @Test
     public void sectionTransformSingleCandidateToConfirmedElement() {
         int[][] testArr = {
@@ -684,7 +683,6 @@ public class JuniorExplanationTest extends JuniorExplanation {
 
     }
 
-    // TODO 3x3section 풀이법 완성하면 테스트 코드에 추가해서 테스트할것
     @Test
     public void rowSolveSingleCandidate() {
         int[][] testArr = {
@@ -743,7 +741,7 @@ public class JuniorExplanationTest extends JuniorExplanation {
     }
 
     @Test
-    public void solvingSingleCandidate() {
+    public void solveSingleCandidate() {
         int[][] testArr = {
                 {5, 3, 0,  0, 7, 0,  0, 0, 0},
                 {6, 0, 0,  1, 9, 5,  0, 0, 0},
@@ -758,7 +756,35 @@ public class JuniorExplanationTest extends JuniorExplanation {
                 {0, 0, 0,  0, 8, 0,  0, 7, 9}
         };
         Problem testProblem = new Problem(testArr);
-        JuniorExplanation.solvingSingleCandidate( testProblem );
+        JuniorExplanation.solveSingleCandidate(testProblem);
+    }
+
+    // TODO 미구현
+    @Test
+    public void rowSolveHiddenSingleCandidate() {
+
+    }
+
+
+    // TODO 미구현
+    @Test
+    public void colSolveHiddenSingleCandidate() {
+
+    }
+
+
+    // TODO 미구현
+    @Test
+    public void sectionSolveHiddenSingleCandidate() {
+
+    }
+
+
+    // TODO 미구현
+    @Test
+    public void solveHiddenSingleCandidate() {
+
+
     }
 
 }
