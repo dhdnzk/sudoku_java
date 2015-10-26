@@ -87,7 +87,7 @@
     <SUITE FILE_PATH="coverage/sudoku$JuniorExplanationTest_rowCandidateRemoval.coverage" NAME="JuniorExplanationTest.rowCandidateRemoval Coverage Results" MODIFIED="1445754587105" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>sudoku.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/sudoku$JuniorExplanationTest_transformSingleCandidateToConfirmedElement.coverage" NAME="JuniorExplanationTest.transformSingleCandidateToConfirmedElement Coverage Results" MODIFIED="1445773443185" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/sudoku$JuniorExplanationTest_transformSingleCandidateToConfirmedElement.coverage" NAME="JuniorExplanationTest.transformSingleCandidateToConfirmedElement Coverage Results" MODIFIED="1445826282412" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>sudoku.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/sudoku$JuniorExplanationTest_calcNumOfZeroOfThreeByThreeSection.coverage" NAME="JuniorExplanationTest.calcNumOfZeroOfThreeByThreeSection Coverage Results" MODIFIED="1445393296417" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
@@ -105,16 +105,16 @@
     <SUITE FILE_PATH="coverage/sudoku$JuniorExplanationTest_howManyThisNumberInThisCol.coverage" NAME="JuniorExplanationTest.howManyThisNumberInThisCol Coverage Results" MODIFIED="1445706384023" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>sudoku.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/sudoku$JuniorExplanationTest_calcNumOfZeroOfRow.coverage" NAME="JuniorExplanationTest.calcNumOfZeroOfRow Coverage Results" MODIFIED="1445418739160" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>sudoku.*</FILTER>
-    </SUITE>
     <SUITE FILE_PATH="coverage/sudoku$JuniorExplanationTest_searchEasySectionToSolve.coverage" NAME="JuniorExplanationTest.searchEasySectionToSolve Coverage Results" MODIFIED="1445706978416" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>sudoku.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/sudoku$JuniorExplanationTest_isThisLeftColSection.coverage" NAME="JuniorExplanationTest.isThisLeftColSection Coverage Results" MODIFIED="1445438695195" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/sudoku$JuniorExplanationTest_calcNumOfZeroOfRow.coverage" NAME="JuniorExplanationTest.calcNumOfZeroOfRow Coverage Results" MODIFIED="1445418739160" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>sudoku.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/sudoku$JuniorExplanationTest_couldBePlacedOnThreeByThree.coverage" NAME="JuniorExplanationTest.couldBePlacedOnThreeByThree Coverage Results" MODIFIED="1445418259410" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>sudoku.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/sudoku$JuniorExplanationTest_isThisLeftColSection.coverage" NAME="JuniorExplanationTest.isThisLeftColSection Coverage Results" MODIFIED="1445438695195" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>sudoku.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/sudoku$FunctionTest_whatSectionIsThisSpot.coverage" NAME="FunctionTest.whatSectionIsThisSpot Coverage Results" MODIFIED="1445319011668" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
@@ -153,6 +153,9 @@
     <SUITE FILE_PATH="coverage/sudoku$JuniorExplanationTest_isThisBottomRowSection.coverage" NAME="JuniorExplanationTest.isThisBottomRowSection Coverage Results" MODIFIED="1445437902922" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>sudoku.*</FILTER>
     </SUITE>
+    <SUITE FILE_PATH="coverage/sudoku$JuniorExplanationTest_sectionCandidateRemoval.coverage" NAME="JuniorExplanationTest.sectionCandidateRemoval Coverage Results" MODIFIED="1445837322904" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>sudoku.*</FILTER>
+    </SUITE>
     <SUITE FILE_PATH="coverage/sudoku$JuniorExplanationTest_isHereThisCandidate.coverage" NAME="JuniorExplanationTest.isHereThisCandidate Coverage Results" MODIFIED="1445747730011" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>sudoku.*</FILTER>
     </SUITE>
@@ -168,7 +171,7 @@
     <SUITE FILE_PATH="coverage/sudoku$JuniorExplanationTest_isHereLeftColSection.coverage" NAME="JuniorExplanationTest.isHereLeftColSection Coverage Results" MODIFIED="1445705306034" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>sudoku.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/sudoku$JuniorExplanationTest.coverage" NAME="JuniorExplanationTest Coverage Results" MODIFIED="1445776776357" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/sudoku$JuniorExplanationTest.coverage" NAME="JuniorExplanationTest Coverage Results" MODIFIED="1445828742991" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>sudoku.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/sudoku$JuniorExplanationTest_isThisRightColSection.coverage" NAME="JuniorExplanationTest.isThisRightColSection Coverage Results" MODIFIED="1445438839670" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
@@ -201,6 +204,9 @@
     <SUITE FILE_PATH="coverage/sudoku$ProblemTest_matchQuizToCandidateBoard.coverage" NAME="ProblemTest.matchQuizToCandidateBoard Coverage Results" MODIFIED="1445698904693" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>sudoku.*</FILTER>
     </SUITE>
+    <SUITE FILE_PATH="coverage/sudoku$JuniorExplanationTest_sectionTransformSingleCandidateToConfirmedElement.coverage" NAME="JuniorExplanationTest.sectionTransformSingleCandidateToConfirmedElement Coverage Results" MODIFIED="1445837866063" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>sudoku.*</FILTER>
+    </SUITE>
     <SUITE FILE_PATH="coverage/sudoku$JuniorExplanationTest_hoManyThisNumbersInThisSection.coverage" NAME="JuniorExplanationTest.hoManyThisNumbersInThisSection Coverage Results" MODIFIED="1445440986949" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>sudoku.*</FILTER>
     </SUITE>
@@ -210,19 +216,19 @@
     <SUITE FILE_PATH="coverage/sudoku$JuniorExplanationTest_calcNumOfZeroOfCol.coverage" NAME="JuniorExplanationTest.calcNumOfZeroOfCol Coverage Results" MODIFIED="1445418802456" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>sudoku.*</FILTER>
     </SUITE>
+    <SUITE FILE_PATH="coverage/sudoku$JuniorExplanationTest_couldBePlacedOnTheCenterOfThisCross.coverage" NAME="JuniorExplanationTest.couldBePlacedOnTheCenterOfThisCross Coverage Results" MODIFIED="1445432125792" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>sudoku.*</FILTER>
+    </SUITE>
     <SUITE FILE_PATH="coverage/sudoku$JuniorExplanationTest_candidateRemoval.coverage" NAME="JuniorExplanationTest.candidateRemoval Coverage Results" MODIFIED="1445749843799" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>sudoku.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/sudoku$JuniorExplanationTest_isHereMiddleColSection.coverage" NAME="JuniorExplanationTest.isHereMiddleColSection Coverage Results" MODIFIED="1445705187145" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>sudoku.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/sudoku$JuniorExplanationTest_couldBePlacedOnTheCenterOfThisCross.coverage" NAME="JuniorExplanationTest.couldBePlacedOnTheCenterOfThisCross Coverage Results" MODIFIED="1445432125792" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/sudoku$JuniorExplanationTest_rowTranformSingleCandidateToConfirmedElement.coverage" NAME="JuniorExplanationTest.rowTranformSingleCandidateToConfirmedElement Coverage Results" MODIFIED="1445826359223" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>sudoku.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/sudoku$JuniorExplanationTest_rowTranformSingleCandidateToConfirmedElement.coverage" NAME="JuniorExplanationTest.rowTranformSingleCandidateToConfirmedElement Coverage Results" MODIFIED="1445774203722" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>sudoku.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/sudoku$JuniorExplanationTest_colTransformSingleCandidateToConfirmedElement.coverage" NAME="JuniorExplanationTest.colTransformSingleCandidateToConfirmedElement Coverage Results" MODIFIED="1445774695707" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/sudoku$JuniorExplanationTest_colTransformSingleCandidateToConfirmedElement.coverage" NAME="JuniorExplanationTest.colTransformSingleCandidateToConfirmedElement Coverage Results" MODIFIED="1445826461954" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>sudoku.*</FILTER>
     </SUITE>
   </component>
@@ -237,15 +243,30 @@
     <favorites_list name="sudoku" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5484375">
+    <splitter split-orientation="horizontal" split-proportion="0.484375">
       <split-first>
         <leaf>
-          <file leaf-file-name="JuniorExplanation.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/sudoku/JuniorExplanation.java">
+          <file leaf-file-name="Problem.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/sudoku/Problem.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0">
-                  <caret line="271" column="24" selection-start-line="271" selection-start-column="24" selection-end-line="271" selection-end-column="24" />
+                  <caret line="54" column="24" selection-start-line="54" selection-start-column="24" selection-end-line="54" selection-end-column="24" />
                   <folding>
+                    <element signature="method#Problem#0;class#Problem#0" expanded="false" />
+                    <element signature="method#matchSimpleBoardToCandidateBoard#0;class#Problem#0" expanded="false" />
+                    <element signature="method#decreaseNumOfCandidates#0;class#Element#0" expanded="false" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="JuniorExplanation.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/java/sudoku/JuniorExplanation.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="1.0">
+                  <caret line="518" column="0" selection-start-line="518" selection-start-column="0" selection-end-line="518" selection-end-column="0" />
+                  <folding>
+                    <element signature="method#howManyThisNumberInThisRow#0;class#JuniorExplanation#0" expanded="false" />
                     <element signature="method#howManyThisNumberInThisCol#0;class#JuniorExplanation#0" expanded="false" />
                     <element signature="method#howManyThisNumberInThisSection#0;class#JuniorExplanation#0" expanded="false" />
                     <element signature="method#whatSectionIsThisSpot#0;class#JuniorExplanation#0" expanded="false" />
@@ -266,8 +287,15 @@
                     <element signature="method#candidateRemoval#0;class#JuniorExplanation#0" expanded="false" />
                     <element signature="method#rowCandidateRemoval#0;class#JuniorExplanation#0" expanded="false" />
                     <element signature="method#colCandidateRemoval#0;class#JuniorExplanation#0" expanded="false" />
-                    <element signature="e#12749#12750#0" expanded="true" />
-                    <element signature="e#12796#12797#0" expanded="true" />
+                    <element signature="method#sectionCandidateRemoval#0;class#JuniorExplanation#0" expanded="false" />
+                    <element signature="method#transformSingleCandidateToConfirmedElement#0;class#JuniorExplanation#0" expanded="false" />
+                    <element signature="method#rowTransformSingleCandidtateToConfirmedElement#0;class#JuniorExplanation#0" expanded="false" />
+                    <element signature="method#colTransformSingleCandidateToConfirmedElement#0;class#JuniorExplanation#0" expanded="false" />
+                    <element signature="method#sectionTransformSingleCandidateToConfirmedElement#0;class#JuniorExplanation#0" expanded="false" />
+                    <element signature="method#rowSolveSingleCandidate#0;class#JuniorExplanation#0" expanded="false" />
+                    <element signature="method#colSolveSingleCandidate#0;class#JuniorExplanation#0" expanded="false" />
+                    <element signature="method#sectionSolveSingleCandidate#0;class#JuniorExplanation#0" expanded="false" />
+                    <element signature="method#solvingSingleCandidate#0;class#JuniorExplanation#0" expanded="false" />
                   </folding>
                 </state>
               </provider>
@@ -277,27 +305,17 @@
             <entry file="file://$PROJECT_DIR$/src/main/java/sudoku/SeniorExplanation.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0">
-                  <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="SudokuTest.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/sudoku/SudokuTest.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
                   <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="MakingQuestion.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="MakingQuestion.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/sudoku/MakingQuestion.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.08583691">
-                  <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -310,8 +328,8 @@
           <file leaf-file-name="JuniorExplanationTest.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/test/java/sudoku/JuniorExplanationTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.35622317">
-                  <caret line="561" column="0" selection-start-line="561" selection-start-column="0" selection-end-line="561" selection-end-column="0" />
+                <state vertical-scroll-proportion="0.8712446">
+                  <caret line="764" column="0" selection-start-line="764" selection-start-column="0" selection-end-line="764" selection-end-column="0" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="method#howManyThisNumberInThisRow#0;class#JuniorExplanationTest#0" expanded="false" />
@@ -340,8 +358,21 @@
                     <element signature="method#rowTranformSingleCandidateToConfirmedElement#0;class#JuniorExplanationTest#0" expanded="false" />
                     <element signature="method#colTransformSingleCandidateToConfirmedElement#0;class#JuniorExplanationTest#0" expanded="false" />
                     <element signature="method#sectionTransformSingleCandidateToConfirmedElement#0;class#JuniorExplanationTest#0" expanded="false" />
-                    <element signature="method#solveSingleCandidate#0;class#JuniorExplanationTest#0" expanded="false" />
+                    <element signature="method#rowSolveSingleCandidate#0;class#JuniorExplanationTest#0" expanded="false" />
+                    <element signature="method#colSolveSingleCandidate#0;class#JuniorExplanationTest#0" expanded="false" />
+                    <element signature="method#sectionSolveSingleCandidate#0;class#JuniorExplanationTest#0" expanded="false" />
+                    <element signature="method#solvingSingleCandidate#0;class#JuniorExplanationTest#0" expanded="false" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="SudokuTest.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/sudoku/SudokuTest.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="7" column="34" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -374,11 +405,11 @@
         <option value="$PROJECT_DIR$/src/test/java/sudoku/ElementTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/sudoku/ProblemTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/sudoku/Problem.java" />
-        <option value="$PROJECT_DIR$/src/test/java/sudoku/JuniorExplanationTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/sudoku/SeniorExplanation.java" />
         <option value="$PROJECT_DIR$/src/main/java/sudoku/SudokuTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/sudoku/JuniorExplanation.java" />
+        <option value="$PROJECT_DIR$/src/test/java/sudoku/JuniorExplanationTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/sudoku/MakingQuestion.java" />
+        <option value="$PROJECT_DIR$/src/main/java/sudoku/JuniorExplanation.java" />
       </list>
     </option>
   </component>
@@ -428,9 +459,8 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -539,6 +569,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -582,58 +613,6 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="JuniorExplanationTest.transformSingleCandidateToConfirmedElement" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="sudoku.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="sudoku" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="sudoku" />
-      <option name="MAIN_CLASS_NAME" value="sudoku.JuniorExplanationTest" />
-      <option name="METHOD_NAME" value="transformSingleCandidateToConfirmedElement" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="JuniorExplanationTest.rowTranformSingleCandidateToConfirmedElement" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="sudoku.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="sudoku" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="sudoku" />
-      <option name="MAIN_CLASS_NAME" value="sudoku.JuniorExplanationTest" />
-      <option name="METHOD_NAME" value="rowTranformSingleCandidateToConfirmedElement" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
     <configuration default="false" name="JuniorExplanationTest.colTransformSingleCandidateToConfirmedElement" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -660,7 +639,7 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="JuniorExplanationTest.solveSingleCandidate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="JuniorExplanationTest.solvingSingleCandidate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="sudoku.*" />
@@ -672,7 +651,59 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="sudoku" />
       <option name="MAIN_CLASS_NAME" value="sudoku.JuniorExplanationTest" />
-      <option name="METHOD_NAME" value="solveSingleCandidate" />
+      <option name="METHOD_NAME" value="solvingSingleCandidate" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="JuniorExplanationTest.sectionCandidateRemoval" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="sudoku.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="sudoku" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="sudoku" />
+      <option name="MAIN_CLASS_NAME" value="sudoku.JuniorExplanationTest" />
+      <option name="METHOD_NAME" value="sectionCandidateRemoval" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="JuniorExplanationTest.sectionTransformSingleCandidateToConfirmedElement" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="sudoku.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="sudoku" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="sudoku" />
+      <option name="MAIN_CLASS_NAME" value="sudoku.JuniorExplanationTest" />
+      <option name="METHOD_NAME" value="sectionTransformSingleCandidateToConfirmedElement" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -957,18 +988,18 @@
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Cucumber java.SudokuTest" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.JuniorExplanationTest" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.JuniorExplanationTest.transformSingleCandidateToConfirmedElement" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.JuniorExplanationTest.rowTranformSingleCandidateToConfirmedElement" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.JuniorExplanationTest.colTransformSingleCandidateToConfirmedElement" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.JuniorExplanationTest.solveSingleCandidate" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.JuniorExplanationTest.colTransformSingleCandidateToConfirmedElement" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.JuniorExplanationTest.solvingSingleCandidate" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.JuniorExplanationTest.sectionCandidateRemoval" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.JuniorExplanationTest.sectionTransformSingleCandidateToConfirmedElement" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.JuniorExplanationTest.solveSingleCandidate" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.JuniorExplanationTest" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.JuniorExplanationTest.colTransformSingleCandidateToConfirmedElement" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.JuniorExplanationTest.rowTranformSingleCandidateToConfirmedElement" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.JuniorExplanationTest.transformSingleCandidateToConfirmedElement" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.JuniorExplanationTest.sectionTransformSingleCandidateToConfirmedElement" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.JuniorExplanationTest.sectionCandidateRemoval" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.JuniorExplanationTest.solvingSingleCandidate" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.JuniorExplanationTest" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.JuniorExplanationTest.colTransformSingleCandidateToConfirmedElement" />
       </list>
     </recent_temporary>
   </component>
@@ -993,12 +1024,13 @@
       <workItem from="1445583776597" duration="1041000" />
       <workItem from="1445586522236" duration="1213000" />
       <workItem from="1445689955401" duration="26944000" />
-      <workItem from="1445769966594" duration="9598000" />
+      <workItem from="1445769966594" duration="16386000" />
+      <workItem from="1445830783193" duration="3293000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="90840000" />
+    <option name="totallyTimeSpent" value="100921000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -1024,7 +1056,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3280757" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32737276" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1046875" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cloverage" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287483" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1032,7 +1064,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.234375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.738652" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4167813" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Test Runs" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1080,128 +1112,8 @@
           <properties />
           <option name="timeStamp" value="131" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/sudoku/JuniorExplanation.java</url>
-          <line>285</line>
-          <properties />
-          <option name="timeStamp" value="133" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/sudoku/JuniorExplanation.java</url>
-          <line>270</line>
-          <properties />
-          <option name="timeStamp" value="134" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/sudoku/JuniorExplanation.java</url>
-          <line>274</line>
-          <properties />
-          <option name="timeStamp" value="135" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/sudoku/JuniorExplanation.java</url>
-          <line>271</line>
-          <properties />
-          <option name="timeStamp" value="137" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/sudoku/JuniorExplanation.java</url>
-          <line>272</line>
-          <properties />
-          <option name="timeStamp" value="138" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/sudoku/JuniorExplanation.java</url>
-          <line>254</line>
-          <properties />
-          <option name="timeStamp" value="139" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/sudoku/JuniorExplanation.java</url>
-          <line>255</line>
-          <properties />
-          <option name="timeStamp" value="140" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/sudoku/JuniorExplanation.java</url>
-          <line>256</line>
-          <properties />
-          <option name="timeStamp" value="141" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/sudoku/JuniorExplanation.java</url>
-          <line>257</line>
-          <properties />
-          <option name="timeStamp" value="142" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/sudoku/JuniorExplanation.java</url>
-          <line>262</line>
-          <properties />
-          <option name="timeStamp" value="143" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/sudoku/JuniorExplanation.java</url>
-          <line>263</line>
-          <properties />
-          <option name="timeStamp" value="144" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/sudoku/JuniorExplanation.java</url>
-          <line>264</line>
-          <properties />
-          <option name="timeStamp" value="145" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/sudoku/JuniorExplanation.java</url>
-          <line>265</line>
-          <properties />
-          <option name="timeStamp" value="146" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/sudoku/JuniorExplanation.java</url>
-          <line>242</line>
-          <properties />
-          <option name="timeStamp" value="147" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/sudoku/JuniorExplanation.java</url>
-          <line>244</line>
-          <properties />
-          <option name="timeStamp" value="148" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/sudoku/JuniorExplanation.java</url>
-          <line>243</line>
-          <properties />
-          <option name="timeStamp" value="149" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/sudoku/JuniorExplanation.java</url>
-          <line>245</line>
-          <properties />
-          <option name="timeStamp" value="150" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/sudoku/JuniorExplanation.java</url>
-          <line>246</line>
-          <properties />
-          <option name="timeStamp" value="151" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/sudoku/JuniorExplanation.java</url>
-          <line>269</line>
-          <properties class="sudoku.JuniorExplanation" method="solveSingleCandidate" />
-          <option name="timeStamp" value="136" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/sudoku/JuniorExplanation.java</url>
-          <line>241</line>
-          <properties class="sudoku.JuniorExplanation" method="transformSingleCandidateToConfirmedElement" />
-          <option name="timeStamp" value="152" />
-        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="153" />
+      <option name="time" value="158" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1213,7 +1125,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/sudoku/Problem.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="61" column="4" selection-start-line="61" selection-start-column="4" selection-end-line="61" selection-end-column="4" />
+          <caret line="54" column="38" selection-start-line="54" selection-start-column="38" selection-end-line="54" selection-end-column="38" />
           <folding>
             <element signature="method#Problem#0;class#Problem#0" expanded="false" />
             <element signature="method#matchSimpleBoardToCandidateBoard#0;class#Problem#0" expanded="false" />
@@ -1225,8 +1137,9 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/sudoku/JuniorExplanation.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="253" column="0" selection-start-line="253" selection-start-column="0" selection-end-line="253" selection-end-column="0" />
+          <caret line="311" column="0" selection-start-line="311" selection-start-column="0" selection-end-line="311" selection-end-column="0" />
           <folding>
+            <element signature="method#howManyThisNumberInThisRow#0;class#JuniorExplanation#0" expanded="false" />
             <element signature="method#howManyThisNumberInThisCol#0;class#JuniorExplanation#0" expanded="false" />
             <element signature="method#howManyThisNumberInThisSection#0;class#JuniorExplanation#0" expanded="false" />
             <element signature="method#whatSectionIsThisSpot#0;class#JuniorExplanation#0" expanded="false" />
@@ -1247,8 +1160,130 @@
             <element signature="method#candidateRemoval#0;class#JuniorExplanation#0" expanded="false" />
             <element signature="method#rowCandidateRemoval#0;class#JuniorExplanation#0" expanded="false" />
             <element signature="method#colCandidateRemoval#0;class#JuniorExplanation#0" expanded="false" />
-            <element signature="e#12749#12750#0" expanded="true" />
-            <element signature="e#12796#12797#0" expanded="true" />
+            <element signature="method#sectionCandidateRemoval#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#transformSingleCandidateToConfirmedElement#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#rowTransformSingleCandidtateToConfirmedElement#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#colTransformSingleCandidateToConfirmedElement#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#sectionTransformSingleCandidateToConfirmedElement#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#rowSolveSingleCandidate#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#colSolveSingleCandidate#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#sectionSolveSingleCandidate#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#solvingSingleCandidate#0;class#JuniorExplanation#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sudoku/SeniorExplanation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sudoku/SudokuTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="34" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sudoku/MakingQuestion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="43" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/sudoku/JuniorExplanationTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="746" column="41" selection-start-line="746" selection-start-column="41" selection-end-line="746" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#howManyThisNumberInThisRow#0;class#JuniorExplanationTest#0" expanded="false" />
+            <element signature="method#howManyThisNumberInThisCol#0;class#JuniorExplanationTest#0" expanded="false" />
+            <element signature="method#howManyThisNumberInThisSection#0;class#JuniorExplanationTest#0" expanded="false" />
+            <element signature="method#whatSectionIsThisSpot#0;class#JuniorExplanationTest#0" expanded="false" />
+            <element signature="method#canBeCenterOfThisCross#0;class#JuniorExplanationTest#0" expanded="false" />
+            <element signature="method#searchEasySectionToSolve#0;class#JuniorExplanationTest#0" expanded="false" />
+            <element signature="method#couldBeHereInThisSection#0;class#JuniorExplanationTest#0" expanded="false" />
+            <element signature="method#isHereZero#0;class#JuniorExplanationTest#0" expanded="false" />
+            <element signature="method#isHereThisNumber#0;class#JuniorExplanationTest#0" expanded="false" />
+            <element signature="method#isHereUpperRowSection#0;class#JuniorExplanationTest#0" expanded="false" />
+            <element signature="method#isHereMiddleRowSection#0;class#JuniorExplanationTest#0" expanded="false" />
+            <element signature="method#isHereLowerRowSection#0;class#JuniorExplanationTest#0" expanded="false" />
+            <element signature="method#isHereLeftColSection#0;class#JuniorExplanationTest#0" expanded="false" />
+            <element signature="method#isHereMiddleColSection#0;class#JuniorExplanationTest#0" expanded="false" />
+            <element signature="method#isHereRightColSection#0;class#JuniorExplanationTest#0" expanded="false" />
+            <element signature="method#inTheArrayBoundary#0;class#JuniorExplanationTest#0" expanded="false" />
+            <element signature="method#isHereThisCandidate#0;class#JuniorExplanationTest#0" expanded="false" />
+            <element signature="method#isHereConfirmed#0;class#JuniorExplanationTest#0" expanded="false" />
+            <element signature="method#candidateRemoval#0;class#JuniorExplanationTest#0" expanded="false" />
+            <element signature="method#rowCandidateRemoval#0;class#JuniorExplanationTest#0" expanded="false" />
+            <element signature="method#colCandidateRemoval#0;class#JuniorExplanationTest#0" expanded="false" />
+            <element signature="method#sectionCandidateRemoval#0;class#JuniorExplanationTest#0" expanded="false" />
+            <element signature="method#transformSingleCandidateToConfirmedElement#0;class#JuniorExplanationTest#0" expanded="false" />
+            <element signature="method#rowTranformSingleCandidateToConfirmedElement#0;class#JuniorExplanationTest#0" expanded="false" />
+            <element signature="method#colTransformSingleCandidateToConfirmedElement#0;class#JuniorExplanationTest#0" expanded="false" />
+            <element signature="method#sectionTransformSingleCandidateToConfirmedElement#0;class#JuniorExplanationTest#0" expanded="false" />
+            <element signature="method#rowSolveSingleCandidate#0;class#JuniorExplanationTest#0" expanded="false" />
+            <element signature="method#colSolveSingleCandidate#0;class#JuniorExplanationTest#0" expanded="false" />
+            <element signature="method#sectionSolveSingleCandidate#0;class#JuniorExplanationTest#0" expanded="false" />
+            <element signature="method#solvingSingleCandidate#0;class#JuniorExplanationTest#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sudoku/Problem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="61" column="4" selection-start-line="61" selection-start-column="4" selection-end-line="61" selection-end-column="4" />
+          <folding>
+            <element signature="method#Problem#0;class#Problem#0" expanded="false" />
+            <element signature="method#matchSimpleBoardToCandidateBoard#0;class#Problem#0" expanded="false" />
+            <element signature="method#decreaseNumOfCandidates#0;class#Element#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sudoku/JuniorExplanation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="253" column="0" selection-start-line="253" selection-start-column="0" selection-end-line="253" selection-end-column="0" />
+          <folding>
+            <element signature="method#howManyThisNumberInThisRow#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#howManyThisNumberInThisCol#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#howManyThisNumberInThisSection#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#whatSectionIsThisSpot#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#canBeCenterOfThisCross#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#searchEasySectionToSolve#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#couldBeHereInThisSection#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#isHereZero#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#isHereThisNumber#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#isHereUpperRowSection#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#isHereMiddleRowSection#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#isHereLowerRowSection#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#isHereLeftColSection#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#isHereMiddleColSection#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#isHereRightColSection#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#inTheArrayBoundary#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#isHereThisCandidate#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#isHereConfirmed#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#candidateRemoval#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#rowCandidateRemoval#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#colCandidateRemoval#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#sectionCandidateRemoval#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#transformSingleCandidateToConfirmedElement#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#rowTransformSingleCandidtateToConfirmedElement#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#colTransformSingleCandidateToConfirmedElement#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#sectionTransformSingleCandidateToConfirmedElement#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#rowSolveSingleCandidate#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#colSolveSingleCandidate#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#sectionSolveSingleCandidate#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#solvingSingleCandidate#0;class#JuniorExplanation#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1285,7 +1320,10 @@
             <element signature="method#rowTranformSingleCandidateToConfirmedElement#0;class#JuniorExplanationTest#0" expanded="false" />
             <element signature="method#colTransformSingleCandidateToConfirmedElement#0;class#JuniorExplanationTest#0" expanded="false" />
             <element signature="method#sectionTransformSingleCandidateToConfirmedElement#0;class#JuniorExplanationTest#0" expanded="false" />
-            <element signature="method#solveSingleCandidate#0;class#JuniorExplanationTest#0" expanded="false" />
+            <element signature="method#rowSolveSingleCandidate#0;class#JuniorExplanationTest#0" expanded="false" />
+            <element signature="method#colSolveSingleCandidate#0;class#JuniorExplanationTest#0" expanded="false" />
+            <element signature="method#sectionSolveSingleCandidate#0;class#JuniorExplanationTest#0" expanded="false" />
+            <element signature="method#solvingSingleCandidate#0;class#JuniorExplanationTest#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1338,7 +1376,10 @@
             <element signature="method#rowTranformSingleCandidateToConfirmedElement#0;class#JuniorExplanationTest#0" expanded="false" />
             <element signature="method#colTransformSingleCandidateToConfirmedElement#0;class#JuniorExplanationTest#0" expanded="false" />
             <element signature="method#sectionTransformSingleCandidateToConfirmedElement#0;class#JuniorExplanationTest#0" expanded="false" />
-            <element signature="method#solveSingleCandidate#0;class#JuniorExplanationTest#0" expanded="false" />
+            <element signature="method#rowSolveSingleCandidate#0;class#JuniorExplanationTest#0" expanded="false" />
+            <element signature="method#colSolveSingleCandidate#0;class#JuniorExplanationTest#0" expanded="false" />
+            <element signature="method#sectionSolveSingleCandidate#0;class#JuniorExplanationTest#0" expanded="false" />
+            <element signature="method#solvingSingleCandidate#0;class#JuniorExplanationTest#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1348,6 +1389,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="4" column="39" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
           <folding>
+            <element signature="method#howManyThisNumberInThisRow#0;class#JuniorExplanation#0" expanded="false" />
             <element signature="method#howManyThisNumberInThisCol#0;class#JuniorExplanation#0" expanded="false" />
             <element signature="method#howManyThisNumberInThisSection#0;class#JuniorExplanation#0" expanded="false" />
             <element signature="method#whatSectionIsThisSpot#0;class#JuniorExplanation#0" expanded="false" />
@@ -1368,8 +1410,15 @@
             <element signature="method#candidateRemoval#0;class#JuniorExplanation#0" expanded="false" />
             <element signature="method#rowCandidateRemoval#0;class#JuniorExplanation#0" expanded="false" />
             <element signature="method#colCandidateRemoval#0;class#JuniorExplanation#0" expanded="false" />
-            <element signature="e#12749#12750#0" expanded="true" />
-            <element signature="e#12796#12797#0" expanded="true" />
+            <element signature="method#sectionCandidateRemoval#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#transformSingleCandidateToConfirmedElement#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#rowTransformSingleCandidtateToConfirmedElement#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#colTransformSingleCandidateToConfirmedElement#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#sectionTransformSingleCandidateToConfirmedElement#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#rowSolveSingleCandidate#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#colSolveSingleCandidate#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#sectionSolveSingleCandidate#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#solvingSingleCandidate#0;class#JuniorExplanation#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1426,7 +1475,10 @@
             <element signature="method#rowTranformSingleCandidateToConfirmedElement#0;class#JuniorExplanationTest#0" expanded="false" />
             <element signature="method#colTransformSingleCandidateToConfirmedElement#0;class#JuniorExplanationTest#0" expanded="false" />
             <element signature="method#sectionTransformSingleCandidateToConfirmedElement#0;class#JuniorExplanationTest#0" expanded="false" />
-            <element signature="method#solveSingleCandidate#0;class#JuniorExplanationTest#0" expanded="false" />
+            <element signature="method#rowSolveSingleCandidate#0;class#JuniorExplanationTest#0" expanded="false" />
+            <element signature="method#colSolveSingleCandidate#0;class#JuniorExplanationTest#0" expanded="false" />
+            <element signature="method#sectionSolveSingleCandidate#0;class#JuniorExplanationTest#0" expanded="false" />
+            <element signature="method#solvingSingleCandidate#0;class#JuniorExplanationTest#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1436,6 +1488,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
           <folding>
+            <element signature="method#howManyThisNumberInThisRow#0;class#JuniorExplanation#0" expanded="false" />
             <element signature="method#howManyThisNumberInThisCol#0;class#JuniorExplanation#0" expanded="false" />
             <element signature="method#howManyThisNumberInThisSection#0;class#JuniorExplanation#0" expanded="false" />
             <element signature="method#whatSectionIsThisSpot#0;class#JuniorExplanation#0" expanded="false" />
@@ -1456,8 +1509,15 @@
             <element signature="method#candidateRemoval#0;class#JuniorExplanation#0" expanded="false" />
             <element signature="method#rowCandidateRemoval#0;class#JuniorExplanation#0" expanded="false" />
             <element signature="method#colCandidateRemoval#0;class#JuniorExplanation#0" expanded="false" />
-            <element signature="e#12749#12750#0" expanded="true" />
-            <element signature="e#12796#12797#0" expanded="true" />
+            <element signature="method#sectionCandidateRemoval#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#transformSingleCandidateToConfirmedElement#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#rowTransformSingleCandidtateToConfirmedElement#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#colTransformSingleCandidateToConfirmedElement#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#sectionTransformSingleCandidateToConfirmedElement#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#rowSolveSingleCandidate#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#colSolveSingleCandidate#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#sectionSolveSingleCandidate#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#solvingSingleCandidate#0;class#JuniorExplanation#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1494,7 +1554,10 @@
             <element signature="method#rowTranformSingleCandidateToConfirmedElement#0;class#JuniorExplanationTest#0" expanded="false" />
             <element signature="method#colTransformSingleCandidateToConfirmedElement#0;class#JuniorExplanationTest#0" expanded="false" />
             <element signature="method#sectionTransformSingleCandidateToConfirmedElement#0;class#JuniorExplanationTest#0" expanded="false" />
-            <element signature="method#solveSingleCandidate#0;class#JuniorExplanationTest#0" expanded="false" />
+            <element signature="method#rowSolveSingleCandidate#0;class#JuniorExplanationTest#0" expanded="false" />
+            <element signature="method#colSolveSingleCandidate#0;class#JuniorExplanationTest#0" expanded="false" />
+            <element signature="method#sectionSolveSingleCandidate#0;class#JuniorExplanationTest#0" expanded="false" />
+            <element signature="method#solvingSingleCandidate#0;class#JuniorExplanationTest#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1504,6 +1567,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="306" column="1" selection-start-line="306" selection-start-column="1" selection-end-line="306" selection-end-column="1" />
           <folding>
+            <element signature="method#howManyThisNumberInThisRow#0;class#JuniorExplanation#0" expanded="false" />
             <element signature="method#howManyThisNumberInThisCol#0;class#JuniorExplanation#0" expanded="false" />
             <element signature="method#howManyThisNumberInThisSection#0;class#JuniorExplanation#0" expanded="false" />
             <element signature="method#whatSectionIsThisSpot#0;class#JuniorExplanation#0" expanded="false" />
@@ -1524,8 +1588,15 @@
             <element signature="method#candidateRemoval#0;class#JuniorExplanation#0" expanded="false" />
             <element signature="method#rowCandidateRemoval#0;class#JuniorExplanation#0" expanded="false" />
             <element signature="method#colCandidateRemoval#0;class#JuniorExplanation#0" expanded="false" />
-            <element signature="e#12749#12750#0" expanded="true" />
-            <element signature="e#12796#12797#0" expanded="true" />
+            <element signature="method#sectionCandidateRemoval#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#transformSingleCandidateToConfirmedElement#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#rowTransformSingleCandidtateToConfirmedElement#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#colTransformSingleCandidateToConfirmedElement#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#sectionTransformSingleCandidateToConfirmedElement#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#rowSolveSingleCandidate#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#colSolveSingleCandidate#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#sectionSolveSingleCandidate#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#solvingSingleCandidate#0;class#JuniorExplanation#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1576,7 +1647,10 @@
             <element signature="method#rowTranformSingleCandidateToConfirmedElement#0;class#JuniorExplanationTest#0" expanded="false" />
             <element signature="method#colTransformSingleCandidateToConfirmedElement#0;class#JuniorExplanationTest#0" expanded="false" />
             <element signature="method#sectionTransformSingleCandidateToConfirmedElement#0;class#JuniorExplanationTest#0" expanded="false" />
-            <element signature="method#solveSingleCandidate#0;class#JuniorExplanationTest#0" expanded="false" />
+            <element signature="method#rowSolveSingleCandidate#0;class#JuniorExplanationTest#0" expanded="false" />
+            <element signature="method#colSolveSingleCandidate#0;class#JuniorExplanationTest#0" expanded="false" />
+            <element signature="method#sectionSolveSingleCandidate#0;class#JuniorExplanationTest#0" expanded="false" />
+            <element signature="method#solvingSingleCandidate#0;class#JuniorExplanationTest#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1586,6 +1660,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="306" column="1" selection-start-line="306" selection-start-column="1" selection-end-line="306" selection-end-column="1" />
           <folding>
+            <element signature="method#howManyThisNumberInThisRow#0;class#JuniorExplanation#0" expanded="false" />
             <element signature="method#howManyThisNumberInThisCol#0;class#JuniorExplanation#0" expanded="false" />
             <element signature="method#howManyThisNumberInThisSection#0;class#JuniorExplanation#0" expanded="false" />
             <element signature="method#whatSectionIsThisSpot#0;class#JuniorExplanation#0" expanded="false" />
@@ -1606,8 +1681,15 @@
             <element signature="method#candidateRemoval#0;class#JuniorExplanation#0" expanded="false" />
             <element signature="method#rowCandidateRemoval#0;class#JuniorExplanation#0" expanded="false" />
             <element signature="method#colCandidateRemoval#0;class#JuniorExplanation#0" expanded="false" />
-            <element signature="e#12749#12750#0" expanded="true" />
-            <element signature="e#12796#12797#0" expanded="true" />
+            <element signature="method#sectionCandidateRemoval#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#transformSingleCandidateToConfirmedElement#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#rowTransformSingleCandidtateToConfirmedElement#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#colTransformSingleCandidateToConfirmedElement#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#sectionTransformSingleCandidateToConfirmedElement#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#rowSolveSingleCandidate#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#colSolveSingleCandidate#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#sectionSolveSingleCandidate#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#solvingSingleCandidate#0;class#JuniorExplanation#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1658,7 +1740,10 @@
             <element signature="method#rowTranformSingleCandidateToConfirmedElement#0;class#JuniorExplanationTest#0" expanded="false" />
             <element signature="method#colTransformSingleCandidateToConfirmedElement#0;class#JuniorExplanationTest#0" expanded="false" />
             <element signature="method#sectionTransformSingleCandidateToConfirmedElement#0;class#JuniorExplanationTest#0" expanded="false" />
-            <element signature="method#solveSingleCandidate#0;class#JuniorExplanationTest#0" expanded="false" />
+            <element signature="method#rowSolveSingleCandidate#0;class#JuniorExplanationTest#0" expanded="false" />
+            <element signature="method#colSolveSingleCandidate#0;class#JuniorExplanationTest#0" expanded="false" />
+            <element signature="method#sectionSolveSingleCandidate#0;class#JuniorExplanationTest#0" expanded="false" />
+            <element signature="method#solvingSingleCandidate#0;class#JuniorExplanationTest#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1695,7 +1780,10 @@
             <element signature="method#rowTranformSingleCandidateToConfirmedElement#0;class#JuniorExplanationTest#0" expanded="false" />
             <element signature="method#colTransformSingleCandidateToConfirmedElement#0;class#JuniorExplanationTest#0" expanded="false" />
             <element signature="method#sectionTransformSingleCandidateToConfirmedElement#0;class#JuniorExplanationTest#0" expanded="false" />
-            <element signature="method#solveSingleCandidate#0;class#JuniorExplanationTest#0" expanded="false" />
+            <element signature="method#rowSolveSingleCandidate#0;class#JuniorExplanationTest#0" expanded="false" />
+            <element signature="method#colSolveSingleCandidate#0;class#JuniorExplanationTest#0" expanded="false" />
+            <element signature="method#sectionSolveSingleCandidate#0;class#JuniorExplanationTest#0" expanded="false" />
+            <element signature="method#solvingSingleCandidate#0;class#JuniorExplanationTest#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1705,6 +1793,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="296" column="2" selection-start-line="296" selection-start-column="2" selection-end-line="296" selection-end-column="2" />
           <folding>
+            <element signature="method#howManyThisNumberInThisRow#0;class#JuniorExplanation#0" expanded="false" />
             <element signature="method#howManyThisNumberInThisCol#0;class#JuniorExplanation#0" expanded="false" />
             <element signature="method#howManyThisNumberInThisSection#0;class#JuniorExplanation#0" expanded="false" />
             <element signature="method#whatSectionIsThisSpot#0;class#JuniorExplanation#0" expanded="false" />
@@ -1725,8 +1814,15 @@
             <element signature="method#candidateRemoval#0;class#JuniorExplanation#0" expanded="false" />
             <element signature="method#rowCandidateRemoval#0;class#JuniorExplanation#0" expanded="false" />
             <element signature="method#colCandidateRemoval#0;class#JuniorExplanation#0" expanded="false" />
-            <element signature="e#12749#12750#0" expanded="true" />
-            <element signature="e#12796#12797#0" expanded="true" />
+            <element signature="method#sectionCandidateRemoval#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#transformSingleCandidateToConfirmedElement#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#rowTransformSingleCandidtateToConfirmedElement#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#colTransformSingleCandidateToConfirmedElement#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#sectionTransformSingleCandidateToConfirmedElement#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#rowSolveSingleCandidate#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#colSolveSingleCandidate#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#sectionSolveSingleCandidate#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#solvingSingleCandidate#0;class#JuniorExplanation#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1763,7 +1859,10 @@
             <element signature="method#rowTranformSingleCandidateToConfirmedElement#0;class#JuniorExplanationTest#0" expanded="false" />
             <element signature="method#colTransformSingleCandidateToConfirmedElement#0;class#JuniorExplanationTest#0" expanded="false" />
             <element signature="method#sectionTransformSingleCandidateToConfirmedElement#0;class#JuniorExplanationTest#0" expanded="false" />
-            <element signature="method#solveSingleCandidate#0;class#JuniorExplanationTest#0" expanded="false" />
+            <element signature="method#rowSolveSingleCandidate#0;class#JuniorExplanationTest#0" expanded="false" />
+            <element signature="method#colSolveSingleCandidate#0;class#JuniorExplanationTest#0" expanded="false" />
+            <element signature="method#sectionSolveSingleCandidate#0;class#JuniorExplanationTest#0" expanded="false" />
+            <element signature="method#solvingSingleCandidate#0;class#JuniorExplanationTest#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1793,10 +1892,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sudoku/SudokuTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="34" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sudoku/MakingQuestion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/sudoku/Problem.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7296137">
-          <caret line="51" column="35" selection-start-line="51" selection-start-column="35" selection-end-line="51" selection-end-column="35" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="54" column="24" selection-start-line="54" selection-start-column="24" selection-end-line="54" selection-end-column="24" />
           <folding>
             <element signature="method#Problem#0;class#Problem#0" expanded="false" />
             <element signature="method#matchSimpleBoardToCandidateBoard#0;class#Problem#0" expanded="false" />
@@ -1805,10 +1920,57 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sudoku/SeniorExplanation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sudoku/JuniorExplanation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.0">
+          <caret line="518" column="0" selection-start-line="518" selection-start-column="0" selection-end-line="518" selection-end-column="0" />
+          <folding>
+            <element signature="method#howManyThisNumberInThisRow#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#howManyThisNumberInThisCol#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#howManyThisNumberInThisSection#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#whatSectionIsThisSpot#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#canBeCenterOfThisCross#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#searchEasySectionToSolve#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#couldBeHereInThisSection#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#isHereZero#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#isHereThisNumber#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#isHereUpperRowSection#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#isHereMiddleRowSection#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#isHereLowerRowSection#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#isHereLeftColSection#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#isHereMiddleColSection#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#isHereRightColSection#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#inTheArrayBoundary#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#isHereThisCandidate#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#isHereConfirmed#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#candidateRemoval#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#rowCandidateRemoval#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#colCandidateRemoval#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#sectionCandidateRemoval#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#transformSingleCandidateToConfirmedElement#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#rowTransformSingleCandidtateToConfirmedElement#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#colTransformSingleCandidateToConfirmedElement#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#sectionTransformSingleCandidateToConfirmedElement#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#rowSolveSingleCandidate#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#colSolveSingleCandidate#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#sectionSolveSingleCandidate#0;class#JuniorExplanation#0" expanded="false" />
+            <element signature="method#solvingSingleCandidate#0;class#JuniorExplanation#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/sudoku/JuniorExplanationTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35622317">
-          <caret line="561" column="0" selection-start-line="561" selection-start-column="0" selection-end-line="561" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.8712446">
+          <caret line="764" column="0" selection-start-line="764" selection-start-column="0" selection-end-line="764" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#howManyThisNumberInThisRow#0;class#JuniorExplanationTest#0" expanded="false" />
@@ -1837,63 +1999,11 @@
             <element signature="method#rowTranformSingleCandidateToConfirmedElement#0;class#JuniorExplanationTest#0" expanded="false" />
             <element signature="method#colTransformSingleCandidateToConfirmedElement#0;class#JuniorExplanationTest#0" expanded="false" />
             <element signature="method#sectionTransformSingleCandidateToConfirmedElement#0;class#JuniorExplanationTest#0" expanded="false" />
-            <element signature="method#solveSingleCandidate#0;class#JuniorExplanationTest#0" expanded="false" />
+            <element signature="method#rowSolveSingleCandidate#0;class#JuniorExplanationTest#0" expanded="false" />
+            <element signature="method#colSolveSingleCandidate#0;class#JuniorExplanationTest#0" expanded="false" />
+            <element signature="method#sectionSolveSingleCandidate#0;class#JuniorExplanationTest#0" expanded="false" />
+            <element signature="method#solvingSingleCandidate#0;class#JuniorExplanationTest#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sudoku/SeniorExplanation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sudoku/SudokuTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sudoku/JuniorExplanation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="271" column="24" selection-start-line="271" selection-start-column="24" selection-end-line="271" selection-end-column="24" />
-          <folding>
-            <element signature="method#howManyThisNumberInThisCol#0;class#JuniorExplanation#0" expanded="false" />
-            <element signature="method#howManyThisNumberInThisSection#0;class#JuniorExplanation#0" expanded="false" />
-            <element signature="method#whatSectionIsThisSpot#0;class#JuniorExplanation#0" expanded="false" />
-            <element signature="method#canBeCenterOfThisCross#0;class#JuniorExplanation#0" expanded="false" />
-            <element signature="method#searchEasySectionToSolve#0;class#JuniorExplanation#0" expanded="false" />
-            <element signature="method#couldBeHereInThisSection#0;class#JuniorExplanation#0" expanded="false" />
-            <element signature="method#isHereZero#0;class#JuniorExplanation#0" expanded="false" />
-            <element signature="method#isHereThisNumber#0;class#JuniorExplanation#0" expanded="false" />
-            <element signature="method#isHereUpperRowSection#0;class#JuniorExplanation#0" expanded="false" />
-            <element signature="method#isHereMiddleRowSection#0;class#JuniorExplanation#0" expanded="false" />
-            <element signature="method#isHereLowerRowSection#0;class#JuniorExplanation#0" expanded="false" />
-            <element signature="method#isHereLeftColSection#0;class#JuniorExplanation#0" expanded="false" />
-            <element signature="method#isHereMiddleColSection#0;class#JuniorExplanation#0" expanded="false" />
-            <element signature="method#isHereRightColSection#0;class#JuniorExplanation#0" expanded="false" />
-            <element signature="method#inTheArrayBoundary#0;class#JuniorExplanation#0" expanded="false" />
-            <element signature="method#isHereThisCandidate#0;class#JuniorExplanation#0" expanded="false" />
-            <element signature="method#isHereConfirmed#0;class#JuniorExplanation#0" expanded="false" />
-            <element signature="method#candidateRemoval#0;class#JuniorExplanation#0" expanded="false" />
-            <element signature="method#rowCandidateRemoval#0;class#JuniorExplanation#0" expanded="false" />
-            <element signature="method#colCandidateRemoval#0;class#JuniorExplanation#0" expanded="false" />
-            <element signature="e#12749#12750#0" expanded="true" />
-            <element signature="e#12796#12797#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sudoku/MakingQuestion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.08583691">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
