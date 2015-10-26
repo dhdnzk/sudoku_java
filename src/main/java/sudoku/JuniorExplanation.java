@@ -196,10 +196,9 @@ public class JuniorExplanation {
         return true;
     }
 
-    public static boolean isHereThisCandidate(Element[][] candidateTwoDArr, int row, int col, int number) {
-        if (!inTheArrayBoundary(candidateTwoDArr, row, col)) return false;
-        if (candidateTwoDArr[row - 1][col - 1].getCandidates() == null) return false;
-        if (candidateTwoDArr[row - 1][col - 1].getCandidates()[number - 1] == 0) return false;
+    public static boolean isHereThisCandidate(Element element, int number) {
+        if (element.getCandidates() == null) return false;
+        if (element.getCandidates()[number - 1] == 0) return false;
         return true;
     }
 
@@ -485,48 +484,12 @@ public class JuniorExplanation {
                 break;
         }
     }
-
-    public static void rowSolveSingleCandidate(Problem problem) {
-        for (int row = 0; row < problem.getCandidateBoard().length; row++) {
-            rowCandidateRemoval(problem.getCandidateBoard(), row + 1);
-            rowTransformSingleCandidtateToConfirmedElement(problem, row + 1);
-        }
-    }
-
-    public static void colSolveSingleCandidate(Problem problem) {
-        for (int col = 0; col < problem.getCandidateBoard()[0].length; col++) {
-            colCandidateRemoval(problem.getCandidateBoard(), col + 1);
-            colTransformSingleCandidateToConfirmedElement(problem, col + 1);
-        }
-    }
-
-    public static void sectionSolveSingleCandidate(Problem problem) {
-        for (int section = 1; section <= 9; section++) {
-            sectionCandidateRemoval(problem, section);
-            sectionTransformSingleCandidateToConfirmedElement(problem, section);
-        }
-    }
-
-    public static void solveSingleCandidate(Problem problem) {
-        rowSolveSingleCandidate(problem);
-        colSolveSingleCandidate(problem);
-        sectionSolveSingleCandidate(problem);
-    }
-
-    public static void juniorExplanation(Problem problem) {
-        solveSingleCandidate(problem);
-    }
-
-
-
-
 }
 
 // TODO 초급 풀이법
 // TODO 후보자 수가 하나일때 : solveSingleCandidate ( 완료 )
 // TODO 후보들 중에서 숨겨진 유일한 후보가 존재할 때 : solveHiddenSingleCandidate
 // TODO 리펙토링 하고싶은 요소들 : showState 메소드를 메인메소드에서 호출하면, 여러 단계를 건너뛰어서 듬성듬성 보여주는 문제, switch문 간결화 문제
-// TODO 풀이법별로 클래스 분리하기
 
 
 

@@ -450,8 +450,8 @@ public class JuniorExplanationTest extends JuniorExplanation {
         };
         Problem testProblem = new Problem( testArr );
 
-        TestCase.assertEquals(false, JuniorExplanation.isHereThisCandidate( testProblem.getCandidateBoard(), 1, 3, 4));
-        TestCase.assertEquals(true, JuniorExplanation.isHereThisCandidate(testProblem.getCandidateBoard(), 1, 1, 4));
+        TestCase.assertEquals(false, JuniorExplanation.isHereThisCandidate( testProblem.getCandidateBoard()[1][3], 4));
+        TestCase.assertEquals(true, JuniorExplanation.isHereThisCandidate(testProblem.getCandidateBoard()[1][1], 4));
     }
 
     @Test
@@ -583,9 +583,9 @@ public class JuniorExplanationTest extends JuniorExplanation {
         for ( int i = 2; i <= 8; i ++ ) {
             testElement.removeACandidate( i );
         }
-        TestCase.assertFalse(JuniorExplanation.transformSingleCandidateToConfirmedElement(testElement));
+        TestCase.assertFalse(SolveSingleCandidate.transformSingleCandidateToConfirmedElement(testElement));
         testElement.removeACandidate( 9 );
-        TestCase.assertTrue(JuniorExplanation.transformSingleCandidateToConfirmedElement(testElement));
+        TestCase.assertTrue(SolveSingleCandidate.transformSingleCandidateToConfirmedElement(testElement));
         TestCase.assertEquals( 1, testElement.getConfirmedElement() );
     }
 
@@ -683,108 +683,5 @@ public class JuniorExplanationTest extends JuniorExplanation {
 
     }
 
-    @Test
-    public void rowSolveSingleCandidate() {
-        int[][] testArr = {
-                {5, 3, 0,  0, 7, 0,  0, 0, 0},
-                {6, 0, 0,  1, 9, 5,  0, 0, 0},
-                {0, 9, 8,  0, 0, 0,  0, 6, 0},
-
-                {8, 0, 0,  0, 6, 0,  0, 0, 3},
-                {4, 0, 0,  8, 0, 3,  0, 0, 1},
-                {7, 0, 0,  0, 2, 0,  0, 0, 6},
-
-                {0, 6, 0,  0, 0, 0,  2, 8, 0},
-                {0, 0, 0,  4, 1, 9,  0, 0, 5},
-                {0, 0, 0,  0, 8, 0,  0, 7, 9}
-        };
-        Problem testProblem = new Problem(testArr);
-        JuniorExplanation.rowSolveSingleCandidate(testProblem);
-    }
-
-    @Test
-    public void colSolveSingleCandidate() {
-        int[][] testArr = {
-                {5, 3, 0,  0, 7, 0,  0, 0, 0},
-                {6, 0, 0,  1, 9, 5,  0, 0, 0},
-                {0, 9, 8,  0, 0, 0,  0, 6, 0},
-
-                {8, 0, 0,  0, 6, 0,  0, 0, 3},
-                {4, 0, 0,  8, 0, 3,  0, 0, 1},
-                {7, 0, 0,  0, 2, 0,  0, 0, 6},
-
-                {0, 6, 0,  0, 0, 0,  2, 8, 0},
-                {0, 0, 0,  4, 1, 9,  0, 0, 5},
-                {0, 0, 0,  0, 8, 0,  0, 7, 9}
-        };
-        Problem testProblem = new Problem(testArr);
-        JuniorExplanation.colSolveSingleCandidate(testProblem);
-    }
-
-    @Test
-    public void sectionSolveSingleCandidate() {
-        int[][] testArr = {
-                {5, 3, 0,  0, 7, 0,  0, 0, 0},
-                {6, 0, 0,  1, 9, 5,  0, 0, 0},
-                {0, 9, 8,  0, 0, 0,  0, 6, 0},
-
-                {8, 0, 0,  0, 6, 0,  0, 0, 3},
-                {4, 0, 0,  8, 0, 3,  0, 0, 1},
-                {7, 0, 0,  0, 2, 0,  0, 0, 6},
-
-                {0, 6, 0,  0, 0, 0,  2, 8, 0},
-                {0, 0, 0,  4, 1, 9,  0, 0, 5},
-                {0, 0, 0,  0, 8, 0,  0, 7, 9}
-        };
-        Problem testProblem = new Problem(testArr);
-        JuniorExplanation.sectionSolveSingleCandidate(testProblem);
-    }
-
-    @Test
-    public void solveSingleCandidate() {
-        int[][] testArr = {
-                {5, 3, 0,  0, 7, 0,  0, 0, 0},
-                {6, 0, 0,  1, 9, 5,  0, 0, 0},
-                {0, 9, 8,  0, 0, 0,  0, 6, 0},
-
-                {8, 0, 0,  0, 6, 0,  0, 0, 3},
-                {4, 0, 0,  8, 0, 3,  0, 0, 1},
-                {7, 0, 0,  0, 2, 0,  0, 0, 6},
-
-                {0, 6, 0,  0, 0, 0,  2, 8, 0},
-                {0, 0, 0,  4, 1, 9,  0, 0, 5},
-                {0, 0, 0,  0, 8, 0,  0, 7, 9}
-        };
-        Problem testProblem = new Problem(testArr);
-        JuniorExplanation.solveSingleCandidate(testProblem);
-    }
-
-    // TODO 미구현
-    @Test
-    public void rowSolveHiddenSingleCandidate() {
-
-    }
-
-
-    // TODO 미구현
-    @Test
-    public void colSolveHiddenSingleCandidate() {
-
-    }
-
-
-    // TODO 미구현
-    @Test
-    public void sectionSolveHiddenSingleCandidate() {
-
-    }
-
-
-    // TODO 미구현
-    @Test
-    public void solveHiddenSingleCandidate() {
-
-
-    }
 
 }
