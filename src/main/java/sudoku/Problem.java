@@ -21,12 +21,12 @@ public class Problem {
         return tmp;
     }
 
-    public int getNumOfZero() {
-        return this.numOfZero;
-    }
-
     public Element[][] getCandidateBoard() {
         return this.candidateBoard;
+    }
+
+    public int getNumOfZero() {
+        return this.numOfZero;
     }
 
     public void showState() {
