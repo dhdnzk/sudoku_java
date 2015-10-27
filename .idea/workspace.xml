@@ -195,6 +195,9 @@
     <SUITE FILE_PATH="coverage/sudoku$JuniorExplanationTest_isHereLowerRowSection.coverage" NAME="JuniorExplanationTest.isHereLowerRowSection Coverage Results" MODIFIED="1445705399984" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>sudoku.*</FILTER>
     </SUITE>
+    <SUITE FILE_PATH="coverage/sudoku$SolveHiddenSingleCandidateTest.coverage" NAME="SolveHiddenSingleCandidateTest Coverage Results" MODIFIED="1445922355969" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>sudoku.*</FILTER>
+    </SUITE>
     <SUITE FILE_PATH="coverage/sudoku$JuniorExplanationTest_howManyThisNumberInThisRow.coverage" NAME="JuniorExplanationTest.howManyThisNumberInThisRow Coverage Results" MODIFIED="1445706279361" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>sudoku.*</FILTER>
     </SUITE>
@@ -258,19 +261,54 @@
     <favorites_list name="sudoku" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.6426991">
+    <splitter split-orientation="horizontal" split-proportion="0.77734375">
       <split-first>
         <leaf>
-          <file leaf-file-name="SolveHiddenSingleCandidate.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="JuniorExplanation.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/java/sudoku/JuniorExplanation.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.25751072">
+                  <caret line="114" column="27" selection-start-line="114" selection-start-column="27" selection-end-line="114" selection-end-column="27" />
+                  <folding>
+                    <element signature="method#howManyThisNumberInThisRow#0;class#JuniorExplanation#0" expanded="false" />
+                    <element signature="method#howManyThisNumberInThisCol#0;class#JuniorExplanation#0" expanded="false" />
+                    <element signature="method#howManyThisNumberInThisSection#0;class#JuniorExplanation#0" expanded="false" />
+                    <element signature="method#searchEasySectionToSolve#0;class#JuniorExplanation#0" expanded="false" />
+                    <element signature="method#couldBeHereInThisSection#0;class#JuniorExplanation#0" expanded="false" />
+                    <element signature="method#isHereZero#0;class#JuniorExplanation#0" expanded="false" />
+                    <element signature="method#isHereThisNumber#0;class#JuniorExplanation#0" expanded="false" />
+                    <element signature="method#isHereUpperRowSection#0;class#JuniorExplanation#0" expanded="false" />
+                    <element signature="method#isHereMiddleRowSection#0;class#JuniorExplanation#0" expanded="false" />
+                    <element signature="method#isHereLowerRowSection#0;class#JuniorExplanation#0" expanded="false" />
+                    <element signature="method#isHereLeftColSection#0;class#JuniorExplanation#0" expanded="false" />
+                    <element signature="method#isHereMiddleColSection#0;class#JuniorExplanation#0" expanded="false" />
+                    <element signature="method#isHereRightColSection#0;class#JuniorExplanation#0" expanded="false" />
+                    <element signature="method#whatSectionIsThisSpot#0;class#JuniorExplanation#0" expanded="false" />
+                    <element signature="method#inTheArrayBoundary#0;class#JuniorExplanation#0" expanded="false" />
+                    <element signature="method#isHereThisCandidate#0;class#JuniorExplanation#0" expanded="false" />
+                    <element signature="method#isHereConfirmed#0;class#JuniorExplanation#0" expanded="false" />
+                    <element signature="method#candidateRemoval#0;class#JuniorExplanation#0" expanded="false" />
+                    <element signature="method#rowCandidateRemoval#0;class#JuniorExplanation#0" expanded="false" />
+                    <element signature="method#colCandidateRemoval#0;class#JuniorExplanation#0" expanded="false" />
+                    <element signature="method#sectionCandidateRemoval#0;class#JuniorExplanation#0" expanded="false" />
+                    <element signature="method#transformSingleCandidateToConfirmedElement#0;class#JuniorExplanation#0" expanded="false" />
+                    <element signature="method#rowTransformSingleCandidtateToConfirmedElement#0;class#JuniorExplanation#0" expanded="false" />
+                    <element signature="method#colTransformSingleCandidateToConfirmedElement#0;class#JuniorExplanation#0" expanded="false" />
+                    <element signature="method#sectionTransformSingleCandidateToConfirmedElement#0;class#JuniorExplanation#0" expanded="false" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="SolveHiddenSingleCandidate.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/sudoku/SolveHiddenSingleCandidate.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.08583691">
-                  <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="48" column="55" selection-start-line="48" selection-start-column="55" selection-end-line="48" selection-end-column="55" />
                   <folding>
                     <element signature="method#transformThisCandidateToConfirmedElement#0;class#SolveHiddenSingleCandidate#0" expanded="false" />
-                    <element signature="method#rowSearchHiddenSingleCandidate#0;class#SolveHiddenSingleCandidate#0" expanded="false" />
-                    <element signature="e#2059#2060#0" expanded="true" />
-                    <element signature="e#2115#2116#0" expanded="true" />
+                    <element signature="method#rowSolveHiddenSingleCandidate#0;class#SolveHiddenSingleCandidate#0" expanded="false" />
+                    <element signature="method#colSolveHiddenSingleCandidate#0;class#SolveHiddenSingleCandidate#0" expanded="false" />
                   </folding>
                 </state>
               </provider>
@@ -280,32 +318,7 @@
             <entry file="file://$PROJECT_DIR$/src/main/java/sudoku/SudokuTest.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0">
-                  <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Problem.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/sudoku/Problem.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-                  <folding>
-                    <element signature="method#Problem#0;class#Problem#0" expanded="false" />
-                    <element signature="method#matchSimpleBoardToCandidateBoard#0;class#Problem#0" expanded="false" />
-                    <element signature="method#showState#0;class#Problem#0" expanded="false" />
-                    <element signature="method#decreaseNumOfCandidates#0;class#Element#0" expanded="false" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="MakingQuestion.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/sudoku/MakingQuestion.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="98" column="34" selection-start-line="98" selection-start-column="34" selection-end-line="98" selection-end-column="34" />
+                  <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
                   <folding />
                 </state>
               </provider>
@@ -318,13 +331,14 @@
           <file leaf-file-name="SolveHiddenSingleCandidateTest.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/test/java/sudoku/SolveHiddenSingleCandidateTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.32188842">
-                  <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+                <state vertical-scroll-proportion="0.27753934">
+                  <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="method#transformThisCandidateToConfirmedElement#0;class#SolveHiddenSingleCandidateTest#0" expanded="false" />
                     <element signature="method#rowSearchHiddenSingleCandidate#0;class#SolveHiddenSingleCandidateTest#0" expanded="false" />
                     <element signature="method#rowSolveHiddenSingleCandidate#0;class#SolveHiddenSingleCandidateTest#0" expanded="false" />
+                    <element signature="method#colSolveHiddenSingleCandidate#0;class#SolveHiddenSingleCandidateTest#0" expanded="false" />
                   </folding>
                 </state>
               </provider>
@@ -364,10 +378,10 @@
         <option value="$PROJECT_DIR$/src/test/java/sudoku/SolveSingleCandidateTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/sudoku/SolveSingleCandidate.java" />
         <option value="$PROJECT_DIR$/src/main/java/sudoku/JuniorExplanation.java" />
+        <option value="$PROJECT_DIR$/src/main/java/sudoku/MakingQuestion.java" />
         <option value="$PROJECT_DIR$/src/test/java/sudoku/SolveHiddenSingleCandidateTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/sudoku/SolveHiddenSingleCandidate.java" />
         <option value="$PROJECT_DIR$/src/main/java/sudoku/SudokuTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/sudoku/MakingQuestion.java" />
       </list>
     </option>
   </component>
@@ -582,32 +596,6 @@
     </key>
   </component>
   <component name="RunManager" selected="Cucumber java.SudokuTest">
-    <configuration default="false" name="JuniorExplanationTest.rowSearchHiddenSingleCandidate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="sudoku.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="sudoku" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="sudoku" />
-      <option name="MAIN_CLASS_NAME" value="sudoku.JuniorExplanationTest" />
-      <option name="METHOD_NAME" value="rowSearchHiddenSingleCandidate" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
     <configuration default="false" name="SolveSingleCandidateTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -700,6 +688,32 @@
       <option name="MAIN_CLASS_NAME" value="sudoku.SolveHiddenSingleCandidateTest" />
       <option name="METHOD_NAME" value="rowSolveHiddenSingleCandidate" />
       <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="SolveHiddenSingleCandidateTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="sudoku.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="sudoku" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="sudoku" />
+      <option name="MAIN_CLASS_NAME" value="sudoku.SolveHiddenSingleCandidateTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -982,19 +996,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Cucumber java.SudokuTest" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.JuniorExplanationTest.rowSearchHiddenSingleCandidate" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.SolveSingleCandidateTest" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.SolveHiddenSingleCandidateTest.transformThisCandidateToConfirmedElement" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.SolveHiddenSingleCandidateTest.rowSearchHiddenSingleCandidate" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.SolveHiddenSingleCandidateTest.rowSolveHiddenSingleCandidate" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.SolveSingleCandidateTest" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.SolveHiddenSingleCandidateTest.transformThisCandidateToConfirmedElement" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.SolveHiddenSingleCandidateTest.rowSearchHiddenSingleCandidate" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.SolveHiddenSingleCandidateTest.rowSolveHiddenSingleCandidate" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.SolveHiddenSingleCandidateTest" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.SolveHiddenSingleCandidateTest.rowSolveHiddenSingleCandidate" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.SolveHiddenSingleCandidateTest.rowSearchHiddenSingleCandidate" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.SolveHiddenSingleCandidateTest.transformThisCandidateToConfirmedElement" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.SolveSingleCandidateTest" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.JuniorExplanationTest.rowSearchHiddenSingleCandidate" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.SolveHiddenSingleCandidateTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.SolveHiddenSingleCandidateTest.rowSolveHiddenSingleCandidate" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.SolveHiddenSingleCandidateTest.rowSearchHiddenSingleCandidate" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.SolveHiddenSingleCandidateTest.transformThisCandidateToConfirmedElement" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.SolveSingleCandidateTest" />
       </list>
     </recent_temporary>
   </component>
@@ -1021,12 +1035,12 @@
       <workItem from="1445689955401" duration="26944000" />
       <workItem from="1445769966594" duration="16386000" />
       <workItem from="1445830783193" duration="15755000" />
-      <workItem from="1445869145444" duration="4227000" />
+      <workItem from="1445869145444" duration="5886000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="117610000" />
+    <option name="totallyTimeSpent" value="119269000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -1050,7 +1064,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.51856947" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29375" sideWeight="0.5048143" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32737276" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1046875" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
@@ -1059,7 +1073,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29375" sideWeight="0.4951857" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3906465" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Test Runs" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -1112,7 +1126,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="166" />
+      <option name="time" value="167" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1174,9 +1188,8 @@
           <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding>
             <element signature="method#transformThisCandidateToConfirmedElement#0;class#SolveHiddenSingleCandidate#0" expanded="false" />
-            <element signature="method#rowSearchHiddenSingleCandidate#0;class#SolveHiddenSingleCandidate#0" expanded="false" />
-            <element signature="e#2059#2060#0" expanded="true" />
-            <element signature="e#2115#2116#0" expanded="true" />
+            <element signature="method#rowSolveHiddenSingleCandidate#0;class#SolveHiddenSingleCandidate#0" expanded="false" />
+            <element signature="method#colSolveHiddenSingleCandidate#0;class#SolveHiddenSingleCandidate#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1244,6 +1257,7 @@
             <element signature="method#transformThisCandidateToConfirmedElement#0;class#SolveHiddenSingleCandidateTest#0" expanded="false" />
             <element signature="method#rowSearchHiddenSingleCandidate#0;class#SolveHiddenSingleCandidateTest#0" expanded="false" />
             <element signature="method#rowSolveHiddenSingleCandidate#0;class#SolveHiddenSingleCandidateTest#0" expanded="false" />
+            <element signature="method#colSolveHiddenSingleCandidate#0;class#SolveHiddenSingleCandidateTest#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2017,10 +2031,65 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sudoku/Problem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5064378">
+          <caret line="90" column="4" selection-start-line="90" selection-start-column="4" selection-end-line="90" selection-end-column="4" />
+          <folding>
+            <element signature="method#Problem#0;class#Problem#0" expanded="false" />
+            <element signature="method#matchSimpleBoardToCandidateBoard#0;class#Problem#0" expanded="false" />
+            <element signature="method#showState#0;class#Problem#0" expanded="false" />
+            <element signature="method#decreaseNumOfCandidates#0;class#Element#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sudoku/MakingQuestion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4635193">
+          <caret line="108" column="20" selection-start-line="108" selection-start-column="20" selection-end-line="108" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/sudoku/SolveHiddenSingleCandidateTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.27753934">
+          <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#transformThisCandidateToConfirmedElement#0;class#SolveHiddenSingleCandidateTest#0" expanded="false" />
+            <element signature="method#rowSearchHiddenSingleCandidate#0;class#SolveHiddenSingleCandidateTest#0" expanded="false" />
+            <element signature="method#rowSolveHiddenSingleCandidate#0;class#SolveHiddenSingleCandidateTest#0" expanded="false" />
+            <element signature="method#colSolveHiddenSingleCandidate#0;class#SolveHiddenSingleCandidateTest#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sudoku/SudokuTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sudoku/SolveHiddenSingleCandidate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="48" column="55" selection-start-line="48" selection-start-column="55" selection-end-line="48" selection-end-column="55" />
+          <folding>
+            <element signature="method#transformThisCandidateToConfirmedElement#0;class#SolveHiddenSingleCandidate#0" expanded="false" />
+            <element signature="method#rowSolveHiddenSingleCandidate#0;class#SolveHiddenSingleCandidate#0" expanded="false" />
+            <element signature="method#colSolveHiddenSingleCandidate#0;class#SolveHiddenSingleCandidate#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/sudoku/JuniorExplanation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.60944206">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.25751072">
+          <caret line="114" column="27" selection-start-line="114" selection-start-column="27" selection-end-line="114" selection-end-column="27" />
           <folding>
             <element signature="method#howManyThisNumberInThisRow#0;class#JuniorExplanation#0" expanded="false" />
             <element signature="method#howManyThisNumberInThisCol#0;class#JuniorExplanation#0" expanded="false" />
@@ -2047,61 +2116,6 @@
             <element signature="method#rowTransformSingleCandidtateToConfirmedElement#0;class#JuniorExplanation#0" expanded="false" />
             <element signature="method#colTransformSingleCandidateToConfirmedElement#0;class#JuniorExplanation#0" expanded="false" />
             <element signature="method#sectionTransformSingleCandidateToConfirmedElement#0;class#JuniorExplanation#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/sudoku/SolveHiddenSingleCandidateTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32188842">
-          <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#transformThisCandidateToConfirmedElement#0;class#SolveHiddenSingleCandidateTest#0" expanded="false" />
-            <element signature="method#rowSearchHiddenSingleCandidate#0;class#SolveHiddenSingleCandidateTest#0" expanded="false" />
-            <element signature="method#rowSolveHiddenSingleCandidate#0;class#SolveHiddenSingleCandidateTest#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sudoku/MakingQuestion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="98" column="34" selection-start-line="98" selection-start-column="34" selection-end-line="98" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sudoku/Problem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding>
-            <element signature="method#Problem#0;class#Problem#0" expanded="false" />
-            <element signature="method#matchSimpleBoardToCandidateBoard#0;class#Problem#0" expanded="false" />
-            <element signature="method#showState#0;class#Problem#0" expanded="false" />
-            <element signature="method#decreaseNumOfCandidates#0;class#Element#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sudoku/SudokuTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sudoku/SolveHiddenSingleCandidate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.08583691">
-          <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
-          <folding>
-            <element signature="method#transformThisCandidateToConfirmedElement#0;class#SolveHiddenSingleCandidate#0" expanded="false" />
-            <element signature="method#rowSearchHiddenSingleCandidate#0;class#SolveHiddenSingleCandidate#0" expanded="false" />
-            <element signature="e#2059#2060#0" expanded="true" />
-            <element signature="e#2115#2116#0" expanded="true" />
           </folding>
         </state>
       </provider>
