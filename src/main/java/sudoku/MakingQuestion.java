@@ -2,7 +2,7 @@ package sudoku;
 
 public class MakingQuestion {
 
-    static int[][] easyArr1 = {
+    static int[][] Arr1 = {
             { 0, 1, 0,  0, 0, 4,  0, 0, 0 },
             { 4, 0, 8,  0, 0, 0,  9, 0, 1 },
             { 0, 9, 0,  7, 0, 1,  2, 4, 5 },
@@ -16,7 +16,7 @@ public class MakingQuestion {
             { 0, 0, 0,  8, 0, 0,  0, 5, 0 },
     };
 
-    static int[][] easyArr2 = {
+    static int[][] Arr2 = {
             { 5, 3, 0,  0, 7, 0,  0, 0, 0 },
             { 6, 0, 0,  1, 9, 5,  0, 0, 0 },
             { 0, 9, 8,  0, 0, 0,  0, 6, 0 },
@@ -30,7 +30,7 @@ public class MakingQuestion {
             { 0, 0, 0,  0, 8, 0,  0, 7, 9 }
     };
 
-    static int[][] easyArr3 = {
+    static int[][] Arr3 = {
             { 0, 3, 0,  0, 0, 7,  0, 0, 4 },
             { 6, 0, 2,  0, 4, 1,  0, 0, 0 },
             { 0, 5, 0,  0, 3, 0,  9, 6, 7 },
@@ -46,7 +46,7 @@ public class MakingQuestion {
 
 
 
-    static int[][] difficultArr1 = {
+    static int[][] Arr4 = {
             { 0, 0, 0,  8, 0, 1,  0, 0, 0 },
             { 0, 0, 0,  0, 0, 0,  4, 3, 0 },
             { 5, 0, 0,  0, 0, 0,  0, 0, 0 },
@@ -60,7 +60,7 @@ public class MakingQuestion {
             { 0, 0, 0,  2, 0, 0,  6, 0, 0 }
     };
 
-    static int[][] difficultArr2 = {
+    static int[][] Arr5 = {
             { 0, 7, 0,  0, 0, 0,  0, 9, 0 },
             { 0, 0, 9,  0, 0, 0,  0, 8, 0 },
             { 5, 0, 0,  0, 7, 9,  0, 0, 0 },
@@ -74,7 +74,7 @@ public class MakingQuestion {
             { 0, 1, 0,  0, 0, 0,  0, 2, 0 }
     };
 
-    static int[][] difficultArr3 = {
+    static int[][] Arr6 = {
             { 0, 3, 0,  0, 0, 0,  0, 0, 0 },
             { 1, 0, 0,  0, 0, 0,  0, 0, 0 },
             { 8, 0, 6,  0, 3, 7,  0, 0, 0 },
@@ -89,37 +89,20 @@ public class MakingQuestion {
 
     };
 
-    static int[][] testArr = {
-            { 0, 1, 0,  0, 0, 4,  0, 0, 0 },
-            { 4, 0, 8,  0, 0, 0,  9, 0, 1 },
-            { 0, 9, 0,  7, 0, 1,  2, 4, 5 },
-
-            { 8, 6, 0,  0, 3, 0,  7, 0, 4 },
-            { 0, 0, 0,  5, 0, 8,  0, 0, 0 },
-            { 1, 3, 7,  0, 2, 6,  5, 8, 9 },
-
-            { 5, 7, 6,  3, 0, 2,  0, 9, 0 },
-            { 2, 0, 9,  0, 0, 0,  1, 0, 7 },
-            { 0, 0, 0,  8, 0, 0,  0, 5, 0 },
-
-    };
-
     public static int[][] makeQuiz() {
-        switch ((int) (Math.random() * 5)) {
-//            case 1:
-//                return easyArr1;
-//            case 2:
-//                return easyArr2;
-//            case 3:
-//                return easyArr3;
-//            case 4:
-//                return difficultArr1;
-//            case 5:
-//                return difficultArr2;
-//            default:
-//                return difficultArr3;
+        switch ((int) (Math.random() * 6)) {
+            case 1:
+                return Arr1;
+            case 2:
+                return Arr2;
+            case 3:
+                return Arr3;
+            case 4:
+                return Arr4;
+            case 5:
+                return Arr5;
             default:
-                return testArr;
+                return Arr6;
         }
     }
 }

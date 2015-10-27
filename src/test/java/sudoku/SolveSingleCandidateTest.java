@@ -63,7 +63,7 @@ public class SolveSingleCandidateTest {
     }
 
     @Test
-    public void solveSingleCandidate() {
+    public void solve() {
         int[][] testArr = {
                 {5, 3, 0,  0, 7, 0,  0, 0, 0},
                 {6, 0, 0,  1, 9, 5,  0, 0, 0},
@@ -78,7 +78,7 @@ public class SolveSingleCandidateTest {
                 {0, 0, 0,  0, 8, 0,  0, 7, 9}
         };
         Problem testProblem = new Problem(testArr);
-        SolveSingleCandidate.solveSingleCandidate(testProblem);
+        SolveSingleCandidate.solve(testProblem);
     }
 
 }

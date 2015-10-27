@@ -1,6 +1,6 @@
 package sudoku;
 
-public class JuniorExplanation {
+abstract public class JuniorExplanation {
 
     public static int howManyThisNumberInThisRow(Element[][] candidateTwoDArr, int row, int number) {
         int numOfNumber = 0;
@@ -484,6 +484,9 @@ public class JuniorExplanation {
                 break;
         }
     }
+
+    public static void solve( Problem problem ){}
+
 }
 
 // TODO 초급 풀이법
