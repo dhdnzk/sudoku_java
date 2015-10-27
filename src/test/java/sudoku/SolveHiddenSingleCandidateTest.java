@@ -47,8 +47,24 @@ public class SolveHiddenSingleCandidateTest {
                 {0, 0, 0,  0, 8, 0,  0, 7, 9}
         };
         Problem testProblem = new Problem(testArr);
-        SolveHiddenSingleCandidate.rowSolveHiddenSingleCandidate( testProblem );
+        SolveHiddenSingleCandidate.rowSolveHiddenSingleCandidate(testProblem);
     }
+
+
+    @Test
+    public void colSearchHiddenSingleCandidate() {
+
+
+
+
+
+
+
+
+
+
+    }
+
 
 
     // TODO 미구현

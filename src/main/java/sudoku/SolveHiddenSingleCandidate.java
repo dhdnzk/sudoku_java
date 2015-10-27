@@ -3,8 +3,8 @@ package sudoku;
 public class SolveHiddenSingleCandidate extends JuniorExplanation {
 
     public static boolean transformThisCandidateToConfirmedElement ( Element element, int candidate ) {
-        if ( element.getConfirmedElement() != 0 ) return false;
-        if ( element.getCandidates()[candidate - 1] != 0 ) {
+        if ( element.getCandidates() == null ) return false;
+        if ( element.getCandidates()[candidate - 1] == candidate  ) {
             element.setConfirmedElement( candidate );
             return true;
         }
@@ -12,10 +12,11 @@ public class SolveHiddenSingleCandidate extends JuniorExplanation {
     }
 
     public static int rowSearchHiddenSingleCandidate( Problem problem, int row ) {
+        rowCandidateRemoval( problem.getCandidateBoard(), row );
         for ( int number = 1; number <= 9; number ++ ) {
             int candidateCount = 0;
             for (int col = 0; col < 9; col ++ ) {
-                if ( problem.getCandidateBoard()[ row - 1][ col ].getConfirmedElement() ==0 && problem.getCandidateBoard()[ row - 1][ col ].getCandidates()[number - 1] != 0 )
+                if ( problem.getCandidateBoard()[ row - 1][ col ].getConfirmedElement() == 0 && problem.getCandidateBoard()[ row - 1][ col ].getCandidates()[number - 1] != 0 )
                    candidateCount ++;
                 if ( candidateCount > 1 )
                     break;
@@ -39,23 +40,48 @@ public class SolveHiddenSingleCandidate extends JuniorExplanation {
 
                 }
             }
-
         }
 
     }
 
+    public static int colSearchHiddenSingleCandidate( Problem problem, int col ) {
+        colCandidateRemoval( problem.getCandidateBoard(), col );
+        for ( int number = 1; number <= 9; number ++ ) {
+            int candidateCount = 0;
+            for (int row = 0; row < 9; row ++ ) {
+                if ( problem.getCandidateBoard()[ row ][ col - 1 ].getConfirmedElement() == 0 && problem.getCandidateBoard()[ row ][ col - 1 ].getCandidates()[number - 1] != 0 )
+                    candidateCount ++;
+                if ( candidateCount > 1 )
+                    break;
+            }
+            if ( candidateCount == 1 )
+                return number;
+        }
+        return 0;
+    }
+
+    public static void colSolveHiddenSingleCandidate( Problem problem ) {
+        for ( int col = 1; col <= problem.getCandidateBoard()[0].length; col ++ ) {
+            int hiddenSingleCandidate = colSearchHiddenSingleCandidate( problem, col );
+            if ( hiddenSingleCandidate != 0 ) {
+                for ( int row = 1; row < problem.getCandidateBoard().length; row ++ ) {
+                    if( transformThisCandidateToConfirmedElement( problem.getCandidateBoard()[row - 1][col - 1], hiddenSingleCandidate ) ){
+                        problem.numOfZero --;
+                        problem.showState();
+                        return;
+                    }
+                }
+            }
+        }
+    }
 
 
-
-//    public static int colSearchHiddenSingleCandidate( Problem problem, int row ) {
-//
-//    }
-//
 //    public static int sectionSearchHiddenSingleCandidate( Problem problem, int row ) {
 //
 //    }
 
     public static void solveHiddenSingleCandidate ( Problem problem ) {
         rowSolveHiddenSingleCandidate( problem );
+        colSolveHiddenSingleCandidate( problem );
     }
 }
