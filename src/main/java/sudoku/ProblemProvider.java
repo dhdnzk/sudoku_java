@@ -2,6 +2,13 @@ package sudoku;
 
 import java.io.*;
 
+/**
+ *
+ * 다양한 방식으로 문제를 입력받은 뒤, int[][]형 배열로 게임판을 생성하는 클래스.
+ * 싱글턴 패턴.
+ * @param <E> : 제네릭을 통해서 문제를 입력받을 때 데이터타입을 고려하지 않아도 되게끔 구현하였다.
+ *
+ */
 class ProblemProvider <E> {
 
     private static ProblemProvider problemProvider = null;
@@ -95,15 +102,15 @@ class ProblemProvider <E> {
         this.gameBoard = ary;
     }
 
-    int[][] getGameBoard() {
-        return this.gameBoard;
-    }
-
     int[][] setNewGameBoard(E e) {
 
         setGameBoard(e);
 
         return getGameBoard();
+    }
+
+    int[][] getGameBoard() {
+        return this.gameBoard;
     }
 
     /**
