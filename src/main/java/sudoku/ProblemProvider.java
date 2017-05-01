@@ -4,7 +4,7 @@ class ProblemProvider <E> {
 
     private static int READ_PROBLEM_FROM_TEXTFILE = 0;
     private static int READ_PROBLEM_FROM_STRING = 1;
-    private static int READ_PROBLEM_FROM_ONE_DEM_ARRAY = 3;
+    private static int READ_PROBLEM_FROM_ONE_DEM_ARRAY = 2;
     private static int READ_PROBLEM_FROM_TWO_DEM_ARRAY = 3;
 
     private static ProblemProvider problemProvider = null;
