@@ -1,16 +1,16 @@
 package sudoku;
 
-class ProblemProvider <E> {
+import java.io.*;
 
-    private static int READ_PROBLEM_FROM_TEXTFILE = 0;
-    private static int READ_PROBLEM_FROM_STRING = 1;
-    private static int READ_PROBLEM_FROM_ONE_DEM_ARRAY = 2;
-    private static int READ_PROBLEM_FROM_TWO_DEM_ARRAY = 3;
+class ProblemProvider <E> {
 
     private static ProblemProvider problemProvider = null;
 
     private int[][] gameBoard;
 
+    /**
+     * Singleton pattern
+     */
     static ProblemProvider getInstance() {
         if(problemProvider == null) {
             setProblemProvider(new ProblemProvider());
@@ -26,48 +26,58 @@ class ProblemProvider <E> {
         ProblemProvider.problemProvider = problemProvider;
     }
 
+    /**
+     *
+     * 매개변수를 instanceof를 이용해서 형변환 해준 뒤,
+     * 이를 매개변수로 하는 setGameBoard 메소드를 호출하는 메소드.
+     * @param e : 데이터타입은 문자열, int[], int[][]중 한가지로만 받는다.
+     */
     private void setGameBoard(E e) {
-        // FIXME : 제네릭스 타입 확인 후에 루틴 분기하는 코드 작성 요
 
-        if (e.getClass().getName().equals("Java.lang.String")) {
-            setGameBoard(((String) e));
+        if (e instanceof String) {
+            setGameBoard((String)e);
+            return;
         }
-        else if (e.getClass().getName().equals("[I")) {
+
+        if (e instanceof int[]) {
             setGameBoard(((int[]) e));
-        }
-        else if (e.getClass().getName().equals("[[I")) {
-            setGameBoard(((int[][]) e));
+            return;
         }
 
-//            String str = "a";
-//            int[] iArr = new int[2];
-//            int[][] iArr2 = new int[2][2];
-//
-//            setGameBoard(str);
-//            setGameBoard(iArr);
-//            setGameBoard(iArr2);
+        if (e instanceof int[][]) {
+            setGameBoard(((int[][]) e));
+            return;
+        }
 
     }
 
-    private void setGameBoard(String str) {
+    /**
+     *
+     * @param trimmedStr : 공백, 줄바꿈 등이 제거되고 81개의 숫자만으로 이루어진 문자열을 매개변수로 받는다.
+     */
+    private void setGameBoard(String trimmedStr) {
 
         int[][] tmp = new int[9][9];
 
-        int j = 0;
-        for(int i = 0; i < str.length(); i ++) {
+        int j = -1;
+        for(int i = 0; i < trimmedStr.length(); i ++) {
             if(i%9 == 0) {
                 j++;
             }
-            tmp[j][i%9] = Integer.parseInt(String.valueOf(str.charAt(i)));
+            tmp[j][i%9] = Integer.parseInt(String.valueOf(trimmedStr.charAt(i)));
         }
         this.gameBoard = tmp;
     }
 
+    /**
+     *
+     * @param ary : int[]형 매개변수를 받아서 <code>gameBoard<code/> 변수에 채워준다.
+     */
     private void setGameBoard(int[] ary){
 
         int[][] tmp = new int[9][9];
 
-        int j = 0;
+        int j = -1;
         for(int i = 0; i < ary.length; i ++) {
             if(i%9 == 0) {
                 j++;
@@ -77,6 +87,10 @@ class ProblemProvider <E> {
         this.gameBoard = tmp;
     }
 
+    /**
+     *
+     * @param ary : <code>gameBoard</code> 변수와 데이터타입이 같으므로 바로 대입해준다.
+     */
     private void setGameBoard(int[][] ary){
         this.gameBoard = ary;
     }
@@ -85,14 +99,33 @@ class ProblemProvider <E> {
         return this.gameBoard;
     }
 
-    int[][] getNewGameBoard(E e) {
+    int[][] setNewGameBoard(E e) {
 
         setGameBoard(e);
 
         return getGameBoard();
     }
 
+    /**
+     *
+     * @param fileName : "./sudokuProblems/"디렉토리상에 있는 문제들을 읽어들임
+     * @throws IOException
+     */
+    void getGameBoardByFilePath(String fileName) throws IOException {
+
+        BufferedReader bufferedReader
+                = new BufferedReader
+                (new FileReader("./sudokuProblems/" + fileName));
+        String returnString = "";
+        String tmpString = bufferedReader.readLine();
+
+        while(tmpString != null) {
+            returnString = returnString + tmpString;
+            tmpString = bufferedReader.readLine();
+        }
+
+        setGameBoard(returnString.replaceAll(" ",""));
+    }
 
 }
-
 
