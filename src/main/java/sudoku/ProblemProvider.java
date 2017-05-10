@@ -6,16 +6,16 @@ import java.io.*;
  *
  * 다양한 방식으로 문제를 입력받은 뒤, int[][]형 배열로 게임판을 생성하는 클래스.
  * 싱글턴 패턴.
- * @param <E> : 제네릭을 통해서 문제를 입력받을 때 데이터타입을 고려하지 않아도 되게끔 구현하였다.
- *
+ * @param <E> : 제네릭을 통해서 문제를 입력받을 때 데이터타입을 판별하여 자동으로 메소드를 호출한다.
  */
-class ProblemProvider <E> {
+public class ProblemProvider <E> {
 
     private static ProblemProvider problemProvider = null;
 
     private int[][] gameBoard;
 
     /**
+     *
      * Singleton pattern
      */
     static ProblemProvider getInstance() {
@@ -25,7 +25,7 @@ class ProblemProvider <E> {
         return problemProvider;
     }
 
-    private ProblemProvider() {
+    public ProblemProvider() {
         gameBoard = new int[9][9];
     }
 
@@ -43,37 +43,32 @@ class ProblemProvider <E> {
 
         if (e instanceof String) {
             setGameBoard((String)e);
-            return;
         }
 
-        if (e instanceof int[]) {
+        else if (e instanceof int[]) {
             setGameBoard(((int[]) e));
-            return;
         }
 
-        if (e instanceof int[][]) {
+        else if (e instanceof int[][]) {
             setGameBoard(((int[][]) e));
-            return;
         }
-
     }
 
     /**
      *
+     * 숫자로 이루어진 문자열을 하나씩 잘라서 배열안에 배치해주는 메소드.
      * @param trimmedStr : 공백, 줄바꿈 등이 제거되고 81개의 숫자만으로 이루어진 문자열을 매개변수로 받는다.
      */
     private void setGameBoard(String trimmedStr) {
-
-        int[][] tmp = new int[9][9];
 
         int j = -1;
         for(int i = 0; i < trimmedStr.length(); i ++) {
             if(i%9 == 0) {
                 j++;
             }
-            tmp[j][i%9] = Integer.parseInt(String.valueOf(trimmedStr.charAt(i)));
+            gameBoard[j][i%9] = Integer.parseInt(String.valueOf(trimmedStr
+                    .charAt(i)));
         }
-        this.gameBoard = tmp;
     }
 
     /**
@@ -106,19 +101,19 @@ class ProblemProvider <E> {
 
         setGameBoard(e);
 
-        return getGameBoard();
+        return getCurGameBoard();
     }
 
-    int[][] getGameBoard() {
+    private int[][] getCurGameBoard() {
         return this.gameBoard;
     }
 
     /**
      *
-     * @param fileName : "./sudokuProblems/"디렉토리상에 있는 문제들을 읽어들임
-     * @throws IOException
+     * @param fileName : 프로젝트 홈을 루트로, "./sudokuProblems/"디렉토리상에 있는 문제들을 읽어들임
+     * @throws IOException : throws IOException
      */
-    void getGameBoardByFilePath(String fileName) throws IOException {
+    int[][] getGameBoardByFileName(String fileName) throws IOException {
 
         BufferedReader bufferedReader
                 = new BufferedReader
@@ -132,6 +127,7 @@ class ProblemProvider <E> {
         }
 
         setGameBoard(returnString.replaceAll(" ",""));
+        return getCurGameBoard();
     }
 
 }
