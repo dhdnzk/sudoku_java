@@ -1,15 +1,16 @@
 package sudoku;
 
+import java.io.IOException;
+
 public class SudokuTest {
-    public static void main ( String[] args ) {
+    public static void main ( String[] args ) throws IOException {
 
-        String str = "010004000408000901090701245860030704000508000107020089576302090209000107000800050";
+        ProblemSolver solver = new ProblemSolver("q_1");
 
-        ProblemProvider gameBoard = ProblemProvider.getInstance();
+        ScreenOut.showState(solver.solve());
 
     }
 }
 
-// TODO 파일 읽어들이는 클래스 만들기.(싱글톤) 텍스트파일에서 읽어오기 or int[]형 1차원 배열 or 2차원 배열 or 스트링
-// TODO static으로 구현된 클래스들 인스턴스 생성으로 리팩토링
+// TODO solve()메소드에 시간 옵션을 주면 그만큼 딜레이를 주면서 콘솔로 진행상황 출력하는 메소드 추가
 // TODO 고급 풀이법 구현
